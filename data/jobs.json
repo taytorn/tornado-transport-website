@@ -1,0 +1,1353 @@
+{
+  "jobs": [
+    {
+      "id": 1,
+      "title": "OTR Flatbed Driver",
+      "location": "Birmingham, AL",
+      "description": "Join our team as an OTR Flatbed Driver. We're looking for experienced drivers who can handle flatbed loads including lumber, coils, machinery, rebar, pipe, and oversized loads. Must have strapping, tarping, chaining, and binders experience.",
+      "requirements": [
+        "1+ year of flatbed experience within the last 3 years",
+        "Experience with strapping, tarping, chaining, and binders",
+        "Class A CDL",
+        "No more than 2 preventable accidents in the past 3 years",
+        "No more than 2 moving violations in the past 3 years"
+      ],
+      "benefits": [
+        "Comprehensive health, vision, dental benefits",
+        "401K with company match",
+        "Paid holidays after six months",
+        "Vacation pay beginning after six months",
+        "Path to Success Pay - $5,000 in first 120 days"
+      ],
+      "pay": "$60,000-$75,000/year",
+      "homeTime": "Home weekly (typically 48-53 hours)",
+      "experience": "1+ years",
+      "equipment": "Flatbed with 72\" sleeper",
+      "applyUrl": "https://intelliapp.driverapponline.com/c/truckers4hire?r=UthemesT",
+      "featured": true,
+      "regionRestriction": {
+        "states": [
+          "AL",
+          "GA",
+          "FL",
+          "TN",
+          "SC",
+          "NC",
+          "KY",
+          "VA",
+          "WV",
+          "OH",
+          "PA",
+          "MD",
+          "DE",
+          "NJ",
+          "MS",
+          "LA",
+          "AR",
+          "MO",
+          "IL",
+          "IN"
+        ],
+        "excludedStates": [
+          "CT",
+          "RI",
+          "MA",
+          "NH",
+          "VT",
+          "ME",
+          "NY",
+          "MI",
+          "WI",
+          "MN",
+          "IA",
+          "ND",
+          "SD",
+          "NE",
+          "KS",
+          "OK",
+          "TX",
+          "NM",
+          "CO",
+          "WY",
+          "MT",
+          "ID",
+          "UT",
+          "AZ",
+          "NV",
+          "CA",
+          "OR",
+          "WA"
+        ],
+        "zipRanges": [
+          {
+            "min": 35000,
+            "max": 36999
+          },
+          {
+            "min": 30000,
+            "max": 31999
+          },
+          {
+            "min": 32000,
+            "max": 34999
+          },
+          {
+            "min": 37000,
+            "max": 38599
+          },
+          {
+            "min": 29000,
+            "max": 29999
+          },
+          {
+            "min": 27000,
+            "max": 28999
+          },
+          {
+            "min": 40000,
+            "max": 42999
+          },
+          {
+            "min": 22000,
+            "max": 24699
+          },
+          {
+            "min": 25000,
+            "max": 26899
+          },
+          {
+            "min": 43000,
+            "max": 45999
+          },
+          {
+            "min": 15000,
+            "max": 19699
+          },
+          {
+            "min": 20000,
+            "max": 21999
+          },
+          {
+            "min": 19700,
+            "max": 19999
+          },
+          {
+            "min": 7000,
+            "max": 8999
+          },
+          {
+            "min": 38600,
+            "max": 39999
+          },
+          {
+            "min": 70000,
+            "max": 71599
+          },
+          {
+            "min": 71600,
+            "max": 72999
+          },
+          {
+            "min": 63000,
+            "max": 65899
+          },
+          {
+            "min": 60000,
+            "max": 62999
+          },
+          {
+            "min": 46000,
+            "max": 47999
+          }
+        ]
+      }
+    },
+    {
+      "id": 2,
+      "title": "Regional Flatbed Driver",
+      "location": "Atlanta, GA",
+      "description": "Regional Flatbed Driver position available. Haul a variety of flatbed freight including steel coils, lumber, and building materials. Average 2,249 miles per week with $1,060 weekly pay protection. Home every weekend for 48+ hours.",
+      "requirements": [
+        "1+ year of flatbed experience",
+        "Experience with strapping, tarping, chaining, and binders",
+        "Class A CDL",
+        "No more than 2 preventable accidents in the past 3 years",
+        "No more than 2 moving violations in the past 3 years"
+      ],
+      "benefits": [
+        "Comprehensive health, vision, dental benefits",
+        "401K with company match",
+        "Paid holidays after six months",
+        "Vacation pay beginning after six months"
+      ],
+      "pay": "$65,000-$80,000/year",
+      "homeTime": "Home weekly (guaranteed 48+ hours)",
+      "experience": "1+ years",
+      "equipment": "Flatbed with 72\" sleeper",
+      "applyUrl": "https://intelliapp.driverapponline.com/c/truckers4hire?r=UthemesT",
+      "featured": false,
+      "regionRestriction": {
+        "states": [
+          "GA",
+          "AL",
+          "TN",
+          "SC",
+          "NC",
+          "FL"
+        ],
+        "excludedStates": [
+          "CT",
+          "RI",
+          "MA",
+          "NH",
+          "VT",
+          "ME",
+          "NY",
+          "PA",
+          "NJ",
+          "DE",
+          "MD",
+          "VA",
+          "WV",
+          "OH",
+          "KY",
+          "MI",
+          "WI",
+          "MN",
+          "IA",
+          "MO",
+          "AR",
+          "LA",
+          "MS",
+          "ND",
+          "SD",
+          "NE",
+          "KS",
+          "OK",
+          "TX",
+          "NM",
+          "CO",
+          "WY",
+          "MT",
+          "ID",
+          "UT",
+          "AZ",
+          "NV",
+          "CA",
+          "OR",
+          "WA"
+        ],
+        "zipRanges": [
+          {
+            "min": 30000,
+            "max": 31999
+          },
+          {
+            "min": 35000,
+            "max": 36999
+          },
+          {
+            "min": 37000,
+            "max": 38599
+          },
+          {
+            "min": 29000,
+            "max": 29999
+          },
+          {
+            "min": 27000,
+            "max": 28999
+          },
+          {
+            "min": 32000,
+            "max": 34999
+          }
+        ]
+      }
+    },
+    {
+      "id": 3,
+      "title": "Midwest Regional Driver",
+      "location": "Chicago, IL",
+      "description": "Midwest Regional Driver position available. Home every weekend with consistent freight lanes. Average 2,100 miles per week with $1,000 weekly minimum guarantee. Primarily drop and hook freight.",
+      "requirements": [
+        "1+ year of Class A CDL experience",
+        "No more than 2 preventable accidents in the past 3 years",
+        "No more than 2 moving violations in the past 3 years"
+      ],
+      "benefits": [
+        "Comprehensive health, vision, dental benefits",
+        "401K with company match",
+        "Paid holidays after six months",
+        "Vacation pay beginning after six months"
+      ],
+      "pay": "$60,000-$75,000/year",
+      "homeTime": "Home weekly (guaranteed 34+ hours)",
+      "experience": "1+ years",
+      "equipment": "Dry Van with 72\" sleeper",
+      "applyUrl": "https://intelliapp.driverapponline.com/c/truckers4hire?r=UthemesT",
+      "featured": false,
+      "regionRestriction": {
+        "states": [
+          "IL",
+          "IN",
+          "OH",
+          "MI",
+          "WI",
+          "MN",
+          "IA",
+          "MO",
+          "KY"
+        ],
+        "excludedStates": [
+          "AL",
+          "GA",
+          "FL",
+          "TN",
+          "SC",
+          "NC",
+          "VA",
+          "WV",
+          "PA",
+          "MD",
+          "DE",
+          "NJ",
+          "CT",
+          "RI",
+          "MA",
+          "NH",
+          "VT",
+          "ME",
+          "NY",
+          "ND",
+          "SD",
+          "NE",
+          "KS",
+          "OK",
+          "TX",
+          "NM",
+          "CO",
+          "WY",
+          "MT",
+          "ID",
+          "UT",
+          "AZ",
+          "NV",
+          "CA",
+          "OR",
+          "WA",
+          "AR",
+          "LA",
+          "MS"
+        ],
+        "zipRanges": [
+          {
+            "min": 60000,
+            "max": 62999
+          },
+          {
+            "min": 46000,
+            "max": 47999
+          },
+          {
+            "min": 43000,
+            "max": 45999
+          },
+          {
+            "min": 48000,
+            "max": 49999
+          },
+          {
+            "min": 53000,
+            "max": 54999
+          },
+          {
+            "min": 55000,
+            "max": 56999
+          },
+          {
+            "min": 50000,
+            "max": 52999
+          },
+          {
+            "min": 63000,
+            "max": 65899
+          },
+          {
+            "min": 40000,
+            "max": 42999
+          }
+        ]
+      }
+    },
+    {
+      "id": 4,
+      "title": "Northeast Regional Driver",
+      "location": "Harrisburg, PA",
+      "description": "Northeast Regional Driver position available. Home every weekend with consistent freight lanes. Average 2,000 miles per week with $950 weekly minimum guarantee. Primarily drop and hook freight.",
+      "requirements": [
+        "1+ year of Class A CDL experience",
+        "No more than 2 preventable accidents in the past 3 years",
+        "No more than 2 moving violations in the past 3 years"
+      ],
+      "benefits": [
+        "Comprehensive health, vision, dental benefits",
+        "401K with company match",
+        "Paid holidays after six months",
+        "Vacation pay beginning after six months"
+      ],
+      "pay": "$65,000-$80,000/year",
+      "homeTime": "Home weekly (guaranteed 34+ hours)",
+      "experience": "1+ years",
+      "equipment": "Dry Van with 72\" sleeper",
+      "applyUrl": "https://intelliapp.driverapponline.com/c/truckers4hire?r=UthemesT",
+      "featured": false,
+      "regionRestriction": {
+        "states": [
+          "PA",
+          "NJ",
+          "NY",
+          "MD",
+          "DE",
+          "VA",
+          "WV",
+          "OH",
+          "CT",
+          "MA",
+          "RI"
+        ],
+        "excludedStates": [
+          "AL",
+          "GA",
+          "FL",
+          "TN",
+          "SC",
+          "NC",
+          "KY",
+          "IN",
+          "IL",
+          "MI",
+          "WI",
+          "MN",
+          "IA",
+          "MO",
+          "AR",
+          "LA",
+          "MS",
+          "ND",
+          "SD",
+          "NE",
+          "KS",
+          "OK",
+          "TX",
+          "NM",
+          "CO",
+          "WY",
+          "MT",
+          "ID",
+          "UT",
+          "AZ",
+          "NV",
+          "CA",
+          "OR",
+          "WA",
+          "NH",
+          "VT",
+          "ME"
+        ],
+        "zipRanges": [
+          {
+            "min": 15000,
+            "max": 19699
+          },
+          {
+            "min": 7000,
+            "max": 8999
+          },
+          {
+            "min": 10000,
+            "max": 14999
+          },
+          {
+            "min": 20000,
+            "max": 21999
+          },
+          {
+            "min": 19700,
+            "max": 19999
+          },
+          {
+            "min": 22000,
+            "max": 24699
+          },
+          {
+            "min": 25000,
+            "max": 26899
+          },
+          {
+            "min": 43000,
+            "max": 45999
+          },
+          {
+            "min": 6000,
+            "max": 6999
+          },
+          {
+            "min": 1000,
+            "max": 2799
+          },
+          {
+            "min": 2800,
+            "max": 2999
+          }
+        ]
+      }
+    },
+    {
+      "id": 5,
+      "title": "OTR Team Driver",
+      "location": "Chicago, IL",
+      "description": "OTR Team Driver position available. Run coast to coast with a partner. Average 5,000+ miles per week with $1,500+ weekly pay per driver. 2-3 weeks out with 4-5 days home time.",
+      "requirements": [
+        "1+ year of Class A CDL experience",
+        "No more than 2 preventable accidents in the past 3 years",
+        "No more than 2 moving violations in the past 3 years"
+      ],
+      "benefits": [
+        "Comprehensive health, vision, dental benefits",
+        "401K with company match",
+        "Paid holidays after six months",
+        "Vacation pay beginning after six months"
+      ],
+      "pay": "$0.60-0.70/mile based on verifiable experience",
+      "homeTime": "Home bi-weekly",
+      "experience": "1+ years",
+      "equipment": "Dry Van",
+      "applyUrl": "https://intelliapp.driverapponline.com/c/truckers4hire?r=UthemesT",
+      "featured": false,
+      "regionRestriction": {
+        "states": [
+          "IL",
+          "IN",
+          "OH",
+          "MI",
+          "WI",
+          "MN",
+          "IA",
+          "MO",
+          "KY",
+          "TN",
+          "GA",
+          "FL",
+          "SC",
+          "NC",
+          "VA",
+          "WV",
+          "PA",
+          "MD",
+          "DE",
+          "NJ",
+          "NY",
+          "CT",
+          "RI",
+          "MA",
+          "NH",
+          "VT",
+          "ME"
+        ],
+        "excludedStates": [],
+        "zipRanges": [
+          {
+            "min": 60000,
+            "max": 62999
+          },
+          {
+            "min": 46000,
+            "max": 47999
+          },
+          {
+            "min": 43000,
+            "max": 45999
+          },
+          {
+            "min": 48000,
+            "max": 49999
+          },
+          {
+            "min": 53000,
+            "max": 54999
+          },
+          {
+            "min": 55000,
+            "max": 56999
+          },
+          {
+            "min": 50000,
+            "max": 52999
+          },
+          {
+            "min": 63000,
+            "max": 65899
+          },
+          {
+            "min": 40000,
+            "max": 42999
+          },
+          {
+            "min": 37000,
+            "max": 38599
+          },
+          {
+            "min": 30000,
+            "max": 31999
+          },
+          {
+            "min": 32000,
+            "max": 34999
+          },
+          {
+            "min": 29000,
+            "max": 29999
+          },
+          {
+            "min": 27000,
+            "max": 28999
+          },
+          {
+            "min": 22000,
+            "max": 24699
+          },
+          {
+            "min": 25000,
+            "max": 26899
+          },
+          {
+            "min": 15000,
+            "max": 19699
+          },
+          {
+            "min": 20000,
+            "max": 21999
+          },
+          {
+            "min": 19700,
+            "max": 19999
+          },
+          {
+            "min": 7000,
+            "max": 8999
+          },
+          {
+            "min": 10000,
+            "max": 14999
+          },
+          {
+            "min": 6000,
+            "max": 6999
+          },
+          {
+            "min": 1000,
+            "max": 5999
+          }
+        ]
+      }
+    },
+    {
+      "id": 6,
+      "title": "Local Virginia Driver",
+      "location": "Richmond, VA",
+      "description": "Local Virginia Driver position available. Home daily with consistent local routes. Average 450-500 miles per week with $1,100 weekly guarantee. No-touch freight, drop and hook.",
+      "requirements": [
+        "1+ year of Class A CDL experience",
+        "No more than 2 preventable accidents in the past 3 years",
+        "No more than 2 moving violations in the past 3 years"
+      ],
+      "benefits": [
+        "Comprehensive health, vision, dental benefits",
+        "401K with company match",
+        "Paid holidays after six months",
+        "Vacation pay beginning after six months"
+      ],
+      "pay": "$65,000-$75,000/year",
+      "homeTime": "Home daily",
+      "experience": "1+ years",
+      "equipment": "Day cab",
+      "applyUrl": "https://intelliapp.driverapponline.com/c/truckers4hire?r=UthemesT",
+      "featured": true,
+      "regionRestriction": {
+        "states": [
+          "VA"
+        ],
+        "excludedStates": [
+          "AL",
+          "GA",
+          "FL",
+          "TN",
+          "SC",
+          "NC",
+          "KY",
+          "WV",
+          "PA",
+          "MD",
+          "DE",
+          "NJ",
+          "CT",
+          "RI",
+          "MA",
+          "NH",
+          "VT",
+          "ME",
+          "NY",
+          "OH",
+          "IN",
+          "IL",
+          "MI",
+          "WI",
+          "MN",
+          "IA",
+          "MO",
+          "AR",
+          "LA",
+          "MS",
+          "ND",
+          "SD",
+          "NE",
+          "KS",
+          "OK",
+          "TX",
+          "NM",
+          "CO",
+          "WY",
+          "MT",
+          "ID",
+          "UT",
+          "AZ",
+          "NV",
+          "CA",
+          "OR",
+          "WA"
+        ],
+        "zipRanges": [
+          {
+            "min": 22000,
+            "max": 24699
+          }
+        ]
+      }
+    },
+    {
+      "id": 7,
+      "title": "Florida Salary Driver",
+      "location": "Orlando, FL",
+      "description": "Florida Salary Driver position available. Home daily with consistent local routes. Average 450-500 miles per week with $1,100 weekly guarantee. No-touch freight, drop and hook.",
+      "requirements": [
+        "1+ year of Class A CDL experience",
+        "No more than 2 preventable accidents in the past 3 years",
+        "No more than 2 moving violations in the past 3 years"
+      ],
+      "benefits": [
+        "Comprehensive health, vision, dental benefits",
+        "401K with company match",
+        "Paid holidays after six months",
+        "Vacation pay beginning after six months"
+      ],
+      "pay": "$65,000-$75,000/year",
+      "homeTime": "Home daily",
+      "experience": "1+ years",
+      "equipment": "Day cab",
+      "applyUrl": "https://intelliapp.driverapponline.com/c/truckers4hire?r=UthemesT",
+      "featured": false,
+      "regionRestriction": {
+        "states": [
+          "FL"
+        ],
+        "excludedStates": [
+          "AL",
+          "GA",
+          "TN",
+          "SC",
+          "NC",
+          "KY",
+          "VA",
+          "WV",
+          "PA",
+          "MD",
+          "DE",
+          "NJ",
+          "CT",
+          "RI",
+          "MA",
+          "NH",
+          "VT",
+          "ME",
+          "NY",
+          "OH",
+          "IN",
+          "IL",
+          "MI",
+          "WI",
+          "MN",
+          "IA",
+          "MO",
+          "AR",
+          "LA",
+          "MS",
+          "ND",
+          "SD",
+          "NE",
+          "KS",
+          "OK",
+          "TX",
+          "NM",
+          "CO",
+          "WY",
+          "MT",
+          "ID",
+          "UT",
+          "AZ",
+          "NV",
+          "CA",
+          "OR",
+          "WA"
+        ],
+        "zipRanges": [
+          {
+            "min": 32000,
+            "max": 34999
+          }
+        ]
+      }
+    },
+    {
+      "id": 8,
+      "title": "USA OTR Driver - 48 States",
+      "location": "Nationwide",
+      "description": "USA OTR Driver position available. Run all 48 states with consistent freight. Average 2,500+ miles per week with $1,250 weekly minimum guarantee. Primarily drop and hook freight.",
+      "requirements": [
+        "1+ year of Class A CDL experience",
+        "No more than 2 preventable accidents in the past 3 years",
+        "No more than 2 moving violations in the past 3 years"
+      ],
+      "benefits": [
+        "Comprehensive health, vision, dental benefits",
+        "401K with company match",
+        "Paid holidays after six months",
+        "Vacation pay beginning after six months"
+      ],
+      "pay": "$65,000-$75,000/year",
+      "homeTime": "Home bi-weekly (14 days out, 2-3 days home)",
+      "experience": "1+ years",
+      "equipment": "Dry Van with 72\" sleeper",
+      "applyUrl": "https://intelliapp.driverapponline.com/c/truckers4hire?r=UthemesT",
+      "featured": true,
+      "regionRestriction": {
+        "states": [
+          "AL",
+          "GA",
+          "FL",
+          "TN",
+          "SC",
+          "NC",
+          "KY",
+          "VA",
+          "WV",
+          "PA",
+          "MD",
+          "DE",
+          "NJ",
+          "CT",
+          "RI",
+          "MA",
+          "NH",
+          "VT",
+          "ME",
+          "NY",
+          "OH",
+          "IN",
+          "IL",
+          "MI",
+          "WI",
+          "MN",
+          "IA",
+          "MO",
+          "AR",
+          "LA",
+          "MS",
+          "ND",
+          "SD",
+          "NE",
+          "KS",
+          "OK",
+          "TX",
+          "NM",
+          "CO",
+          "WY",
+          "MT",
+          "ID",
+          "UT",
+          "AZ",
+          "NV",
+          "CA",
+          "OR",
+          "WA"
+        ],
+        "excludedStates": [],
+        "zipRanges": []
+      }
+    },
+    {
+      "id": 9,
+      "title": "Texas Regional Driver",
+      "location": "Dallas, TX",
+      "description": "Texas Regional Driver position available. Home weekly with consistent freight lanes. Average 2,200-2,400 miles per week with $1,050 weekly minimum guarantee. Primarily drop and hook freight.",
+      "requirements": [
+        "1+ year of Class A CDL experience",
+        "No more than 2 preventable accidents in the past 3 years",
+        "No more than 2 moving violations in the past 3 years"
+      ],
+      "benefits": [
+        "Comprehensive health, vision, dental benefits",
+        "401K with company match",
+        "Paid holidays after six months",
+        "Vacation pay beginning after six months"
+      ],
+      "pay": "$55,000-$65,000/year",
+      "homeTime": "Home weekly (5-6 days out, 2 days home)",
+      "experience": "1+ years",
+      "equipment": "Dry Van with 72\" sleeper",
+      "applyUrl": "https://intelliapp.driverapponline.com/c/truckers4hire?r=UthemesT",
+      "featured": false,
+      "regionRestriction": {
+        "states": [
+          "TX",
+          "OK",
+          "LA",
+          "AR"
+        ],
+        "excludedStates": [
+          "AL",
+          "GA",
+          "FL",
+          "TN",
+          "SC",
+          "NC",
+          "KY",
+          "VA",
+          "WV",
+          "PA",
+          "MD",
+          "DE",
+          "NJ",
+          "CT",
+          "RI",
+          "MA",
+          "NH",
+          "VT",
+          "ME",
+          "NY",
+          "OH",
+          "IN",
+          "IL",
+          "MI",
+          "WI",
+          "MN",
+          "IA",
+          "MO",
+          "MS",
+          "ND",
+          "SD",
+          "NE",
+          "KS",
+          "NM",
+          "CO",
+          "WY",
+          "MT",
+          "ID",
+          "UT",
+          "AZ",
+          "NV",
+          "CA",
+          "OR",
+          "WA"
+        ],
+        "zipRanges": [
+          {
+            "min": 75000,
+            "max": 79999
+          },
+          {
+            "min": 73000,
+            "max": 74999
+          },
+          {
+            "min": 70000,
+            "max": 71599
+          },
+          {
+            "min": 71600,
+            "max": 72999
+          }
+        ]
+      }
+    },
+    {
+      "id": 10,
+      "title": "Lease Solo & Team Driver",
+      "location": "Dallas, TX",
+      "description": "Lease Solo & Team opportunities available. Running Southwest, Southeast, and Midwest regions. CDL-A with 1+ year verifiable experience required.",
+      "requirements": [
+        "1+ year of Class A CDL experience",
+        "No more than 2 preventable accidents in the past 3 years",
+        "No more than 2 moving violations in the past 3 years"
+      ],
+      "benefits": [
+        "Flexible home time",
+        "Consistent freight",
+        "Weekly settlements"
+      ],
+      "pay": "Based on verifiable experience",
+      "homeTime": "Flexible",
+      "experience": "1+ years",
+      "equipment": "Dry Van",
+      "applyUrl": "https://intelliapp.driverapponline.com/c/truckers4hire?r=UthemesT",
+      "featured": false,
+      "regionRestriction": {
+        "states": [
+          "TX",
+          "OK",
+          "LA",
+          "AR",
+          "MS",
+          "AL",
+          "GA",
+          "FL",
+          "TN",
+          "SC",
+          "NC",
+          "KY",
+          "MO",
+          "IL",
+          "IN",
+          "OH"
+        ],
+        "excludedStates": [
+          "VA",
+          "WV",
+          "PA",
+          "MD",
+          "DE",
+          "NJ",
+          "CT",
+          "RI",
+          "MA",
+          "NH",
+          "VT",
+          "ME",
+          "NY",
+          "MI",
+          "WI",
+          "MN",
+          "IA",
+          "ND",
+          "SD",
+          "NE",
+          "KS",
+          "NM",
+          "CO",
+          "WY",
+          "MT",
+          "ID",
+          "UT",
+          "AZ",
+          "NV",
+          "CA",
+          "OR",
+          "WA"
+        ],
+        "zipRanges": [
+          {
+            "min": 75000,
+            "max": 79999
+          }
+        ]
+      }
+    },
+    {
+      "id": 11,
+      "title": "OTR Solo Engineered Driver - Chicago to Minneapolis",
+      "location": "Chicago, IL",
+      "description": "OTR Solo Engineered Driver position available. Run dedicated route between Chicago, IL and Minneapolis/St. Paul, MN. Average 2,200-2,400 miles per week with consistent schedule.",
+      "requirements": [
+        "1+ year of Class A CDL experience",
+        "No more than 2 preventable accidents in the past 3 years",
+        "No more than 2 moving violations in the past 3 years"
+      ],
+      "benefits": [
+        "Comprehensive health, vision, dental benefits",
+        "401K with company match",
+        "Paid holidays after six months",
+        "Vacation pay beginning after six months"
+      ],
+      "pay": "$52,000-$60,000/year",
+      "homeTime": "Home weekly",
+      "experience": "1+ years",
+      "equipment": "Dry Van with 72\" sleeper",
+      "applyUrl": "https://intelliapp.driverapponline.com/c/truckers4hire?r=UthemesT",
+      "featured": false,
+      "regionRestriction": {
+        "states": [
+          "IL",
+          "MN",
+          "WI"
+        ],
+        "excludedStates": [
+          "AL",
+          "GA",
+          "FL",
+          "TN",
+          "SC",
+          "NC",
+          "KY",
+          "VA",
+          "WV",
+          "PA",
+          "MD",
+          "DE",
+          "NJ",
+          "CT",
+          "RI",
+          "MA",
+          "NH",
+          "VT",
+          "ME",
+          "NY",
+          "OH",
+          "IN",
+          "MI",
+          "IA",
+          "MO",
+          "AR",
+          "LA",
+          "MS",
+          "ND",
+          "SD",
+          "NE",
+          "KS",
+          "OK",
+          "TX",
+          "NM",
+          "CO",
+          "WY",
+          "MT",
+          "ID",
+          "UT",
+          "AZ",
+          "NV",
+          "CA",
+          "OR",
+          "WA"
+        ],
+        "zipRanges": [
+          {
+            "min": 60000,
+            "max": 62999
+          },
+          {
+            "min": 55000,
+            "max": 56999
+          },
+          {
+            "min": 53000,
+            "max": 54999
+          }
+        ]
+      }
+    },
+    {
+      "id": 12,
+      "title": "OTR Solo Engineered Driver - St. Louis to Memphis",
+      "location": "St. Louis, MO",
+      "description": "OTR Solo Engineered Driver position available. Run dedicated route between St. Louis, MO and Memphis, TN to Nashville, TN. Average 2,200-2,400 miles per week with consistent schedule.",
+      "requirements": [
+        "1+ year of Class A CDL experience",
+        "No more than 2 preventable accidents in the past 3 years",
+        "No more than 2 moving violations in the past 3 years"
+      ],
+      "benefits": [
+        "Comprehensive health, vision, dental benefits",
+        "401K with company match",
+        "Paid holidays after six months",
+        "Vacation pay beginning after six months"
+      ],
+      "pay": "$52,000-$60,000/year",
+      "homeTime": "Home weekly",
+      "experience": "1+ years",
+      "equipment": "Dry Van with 72\" sleeper",
+      "applyUrl": "https://intelliapp.driverapponline.com/c/truckers4hire?r=UthemesT",
+      "featured": false,
+      "regionRestriction": {
+        "states": [
+          "MO",
+          "TN"
+        ],
+        "excludedStates": [
+          "AL",
+          "GA",
+          "FL",
+          "SC",
+          "NC",
+          "KY",
+          "VA",
+          "WV",
+          "PA",
+          "MD",
+          "DE",
+          "NJ",
+          "CT",
+          "RI",
+          "MA",
+          "NH",
+          "VT",
+          "ME",
+          "NY",
+          "OH",
+          "IN",
+          "IL",
+          "MI",
+          "WI",
+          "MN",
+          "IA",
+          "AR",
+          "LA",
+          "MS",
+          "ND",
+          "SD",
+          "NE",
+          "KS",
+          "OK",
+          "TX",
+          "NM",
+          "CO",
+          "WY",
+          "MT",
+          "ID",
+          "UT",
+          "AZ",
+          "NV",
+          "CA",
+          "OR",
+          "WA"
+        ],
+        "zipRanges": [
+          {
+            "min": 63000,
+            "max": 65899
+          },
+          {
+            "min": 37000,
+            "max": 38599
+          }
+        ]
+      }
+    },
+    {
+      "id": 13,
+      "title": "OTR Solo Engineered Driver - Southern CA/AZ/NV/NM/UT",
+      "location": "Southern California",
+      "description": "OTR Solo Engineered Driver position available. Run dedicated routes in Southern CA, AZ, NV, NM, and UT. Average 2,300-2,500 miles per week with consistent schedule.",
+      "requirements": [
+        "1+ year of Class A CDL experience",
+        "No more than 2 preventable accidents in the past 3 years",
+        "No more than 2 moving violations in the past 3 years"
+      ],
+      "benefits": [
+        "Comprehensive health, vision, dental benefits",
+        "401K with company match",
+        "Paid holidays after six months",
+        "Vacation pay beginning after six months"
+      ],
+      "pay": "$60,000-$70,000/year",
+      "homeTime": "Home weekly",
+      "experience": "1+ years",
+      "equipment": "Dry Van with 72\" sleeper",
+      "applyUrl": "https://intelliapp.driverapponline.com/c/truckers4hire?r=UthemesT",
+      "featured": false,
+      "regionRestriction": {
+        "states": [
+          "CA",
+          "AZ",
+          "NV",
+          "NM",
+          "UT"
+        ],
+        "excludedStates": [
+          "AL",
+          "GA",
+          "FL",
+          "TN",
+          "SC",
+          "NC",
+          "KY",
+          "VA",
+          "WV",
+          "PA",
+          "MD",
+          "DE",
+          "NJ",
+          "CT",
+          "RI",
+          "MA",
+          "NH",
+          "VT",
+          "ME",
+          "NY",
+          "OH",
+          "IN",
+          "IL",
+          "MI",
+          "WI",
+          "MN",
+          "IA",
+          "MO",
+          "AR",
+          "LA",
+          "MS",
+          "ND",
+          "SD",
+          "NE",
+          "KS",
+          "OK",
+          "TX",
+          "CO",
+          "WY",
+          "MT",
+          "ID",
+          "OR",
+          "WA"
+        ],
+        "zipRanges": [
+          {
+            "min": 90000,
+            "max": 93599
+          },
+          {
+            "min": 85000,
+            "max": 86599
+          },
+          {
+            "min": 87000,
+            "max": 88499
+          },
+          {
+            "min": 89000,
+            "max": 89899
+          },
+          {
+            "min": 84000,
+            "max": 84799
+          }
+        ]
+      }
+    }
+  ]
+}

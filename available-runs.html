@@ -1,0 +1,627 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tornado Transport - Available Runs</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <style>
+        :root {
+            --primary: #0056b3;
+            --secondary: #e74c3c;
+            --accent: #f39c12;
+            --light: #f8f9fa;
+            --dark: #343a40;
+        }
+        
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            color: var(--dark);
+            background-color: #f5f5f5;
+        }
+        
+        .navbar {
+            background-color: var(--dark);
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+        
+        .navbar-brand {
+            font-size: 1.8rem;
+            font-weight: 700;
+            color: var(--accent) !important;
+        }
+        
+        .nav-link {
+            font-weight: 500;
+            color: white !important;
+            margin: 0 10px;
+            transition: color 0.3s;
+        }
+        
+        .nav-link:hover {
+            color: var(--accent) !important;
+        }
+        
+        .btn-primary {
+            background-color: var(--primary);
+            border-color: var(--primary);
+        }
+        
+        .btn-primary:hover {
+            background-color: #004494;
+            border-color: #004494;
+        }
+        
+        .btn-secondary {
+            background-color: var(--secondary);
+            border-color: var(--secondary);
+        }
+        
+        .btn-secondary:hover {
+            background-color: #c0392b;
+            border-color: #c0392b;
+        }
+        
+        .btn-accent {
+            background-color: var(--accent);
+            border-color: var(--accent);
+            color: white;
+        }
+        
+        .btn-accent:hover {
+            background-color: #e67e22;
+            border-color: #e67e22;
+            color: white;
+        }
+        
+        .hero-section {
+            background-color: var(--primary);
+            color: white;
+            padding: 60px 0;
+            position: relative;
+        }
+        
+        .section-heading {
+            position: relative;
+            padding-bottom: 15px;
+            margin-bottom: 30px;
+            font-weight: 700;
+        }
+        
+        .section-heading:after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 70px;
+            height: 3px;
+            background-color: var(--accent);
+        }
+        
+        .job-card {
+            background-color: white;
+            border-radius: 5px;
+            overflow: hidden;
+            box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s, box-shadow 0.3s;
+            margin-bottom: 30px;
+        }
+        
+        .job-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.15);
+        }
+        
+        .job-card-header {
+            background-color: var(--primary);
+            color: white;
+            padding: 15px 20px;
+        }
+        
+        .job-card-body {
+            padding: 20px;
+        }
+        
+        .job-feature {
+            display: flex;
+            align-items: center;
+            margin-bottom: 15px;
+        }
+        
+        .job-feature i {
+            color: var(--primary);
+            font-size: 18px;
+            margin-right: 10px;
+            width: 25px;
+            text-align: center;
+        }
+        
+        .job-tag {
+            display: inline-block;
+            background-color: rgba(0, 86, 179, 0.1);
+            color: var(--primary);
+            padding: 5px 10px;
+            border-radius: 20px;
+            font-size: 0.85rem;
+            margin-right: 10px;
+            margin-bottom: 10px;
+        }
+        
+        .job-tag.experience {
+            background-color: rgba(231, 76, 60, 0.1);
+            color: var(--secondary);
+        }
+        
+        .job-tag.equipment {
+            background-color: rgba(243, 156, 18, 0.1);
+            color: var(--accent);
+        }
+        
+        .footer {
+            background-color: var(--dark);
+            color: white;
+            padding: 60px 0 30px;
+        }
+        
+        .footer-heading {
+            color: white;
+            font-size: 1.3rem;
+            margin-bottom: 25px;
+            font-weight: 600;
+        }
+        
+        .footer a {
+            color: #ddd;
+            text-decoration: none;
+            transition: color 0.3s;
+        }
+        
+        .footer a:hover {
+            color: var(--accent);
+        }
+        
+        .footer-bottom {
+            border-top: 1px solid rgba(255, 255, 255, 0.1);
+            padding-top: 20px;
+            margin-top: 40px;
+        }
+        
+        .social-icon {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            background-color: rgba(255, 255, 255, 0.1);
+            color: white;
+            margin-right: 10px;
+            transition: all 0.3s;
+        }
+        
+        .social-icon:hover {
+            background-color: var(--accent);
+            color: white;
+        }
+        
+        .search-box {
+            background-color: white;
+            padding: 30px;
+            border-radius: 5px;
+            box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
+            margin-bottom: 40px;
+        }
+        
+        .search-box .form-control {
+            border-radius: 0;
+            border: 1px solid #ddd;
+            padding: 12px 15px;
+        }
+        
+        .search-box .form-control:focus {
+            box-shadow: none;
+            border-color: var(--primary);
+        }
+        
+        .search-box .btn {
+            padding: 12px 20px;
+        }
+    </style>
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-dark sticky-top">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">TORNADO TRANSPORT</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="job-map.html">Job Map</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="available-runs.html">Available Runs</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="about.html">About Us</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contact.html">Contact</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link btn btn-accent ms-lg-3" href="https://intelliapp.driverapponline.com/c/tornadotransport">Apply Now</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero-section">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 mx-auto text-center">
+                    <h1>Available Driving Positions</h1>
+                    <p class="lead">Find the perfect driving position with Tornado Transport. All pay rates are based on verifiable trucking experience.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Search Section -->
+    <section class="py-5">
+        <div class="container">
+            <div class="search-box">
+                <form id="zipCodeSearchForm">
+                    <div class="row">
+                        <div class="col-md-4 mb-3 mb-md-0">
+                            <input type="text" class="form-control" id="zipCodeInput" placeholder="Enter Your ZIP Code" required>
+                        </div>
+                        <div class="col-md-3 mb-3 mb-md-0">
+                            <select class="form-select" id="jobTypeSelect">
+                                <option value="all">All Job Types</option>
+                                <option value="otr">OTR</option>
+                                <option value="regional">Regional</option>
+                                <option value="local">Local</option>
+                            </select>
+                        </div>
+                        <div class="col-md-3 mb-3 mb-md-0">
+                            <select class="form-select" id="experienceSelect">
+                                <option value="all">All Experience Levels</option>
+                                <option value="experienced">Experienced (1+ years)</option>
+                                <option value="recent">Recent Graduate</option>
+                            </select>
+                        </div>
+                        <div class="col-md-2">
+                            <button type="submit" class="btn btn-primary w-100">Search</button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+            
+            <div class="row" id="searchResults">
+                <div class="col-12 mb-4">
+                    <h2 class="section-heading">Available Positions</h2>
+                    <p>Enter your ZIP code above to find positions available in your area. Below are some of our featured positions.</p>
+                </div>
+                
+                <!-- OTR Position -->
+                <div class="col-lg-4 col-md-6">
+                    <div class="job-card">
+                        <div class="job-card-header">
+                            <h3>OTR Dry Van Driver</h3>
+                            <p class="mb-0">Chicago, IL Based</p>
+                        </div>
+                        <div class="job-card-body">
+                            <div class="job-feature">
+                                <i class="fas fa-dollar-sign"></i>
+                                <span>$70,000-$85,000/year (based on experience)</span>
+                            </div>
+                            <div class="job-feature">
+                                <i class="fas fa-home"></i>
+                                <span>Home weekly</span>
+                            </div>
+                            <div class="job-feature">
+                                <i class="fas fa-truck"></i>
+                                <span>2023-2024 Freightliner/Volvo</span>
+                            </div>
+                            <div class="job-feature">
+                                <i class="fas fa-map-marker-alt"></i>
+                                <span>Midwest Regional Routes</span>
+                            </div>
+                            
+                            <div class="mt-3 mb-3">
+                                <span class="job-tag">OTR</span>
+                                <span class="job-tag experience">1+ years experience</span>
+                                <span class="job-tag equipment">Dry Van</span>
+                            </div>
+                            
+                            <p>Join our OTR team based in Chicago with consistent freight, weekly home time, and late-model equipment. CDL-A with 1+ year verifiable experience required.</p>
+                            
+                            <a href="https://intelliapp.driverapponline.com/c/tornadotransport" class="btn btn-primary mt-2">Apply Now</a>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Regional Position -->
+                <div class="col-lg-4 col-md-6">
+                    <div class="job-card">
+                        <div class="job-card-header">
+                            <h3>Regional Flatbed Driver</h3>
+                            <p class="mb-0">Atlanta, GA Based</p>
+                        </div>
+                        <div class="job-card-body">
+                            <div class="job-feature">
+                                <i class="fas fa-dollar-sign"></i>
+                                <span>$65,000-$80,000/year (based on experience)</span>
+                            </div>
+                            <div class="job-feature">
+                                <i class="fas fa-home"></i>
+                                <span>Home weekends</span>
+                            </div>
+                            <div class="job-feature">
+                                <i class="fas fa-truck"></i>
+                                <span>2022-2024 Kenworth/Peterbilt</span>
+                            </div>
+                            <div class="job-feature">
+                                <i class="fas fa-map-marker-alt"></i>
+                                <span>Southeast Regional Routes</span>
+                            </div>
+                            
+                            <div class="mt-3 mb-3">
+                                <span class="job-tag">Regional</span>
+                                <span class="job-tag experience">1+ years experience</span>
+                                <span class="job-tag equipment">Flatbed</span>
+                            </div>
+                            
+                            <p>Regional flatbed position with consistent home time every weekend. Primarily running Southeast states with excellent pay and benefits. CDL-A with 1+ year verifiable experience required.</p>
+                            
+                            <a href="https://intelliapp.driverapponline.com/c/tornadotransport" class="btn btn-primary mt-2">Apply Now</a>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Local Position -->
+                <div class="col-lg-4 col-md-6">
+                    <div class="job-card">
+                        <div class="job-card-header">
+                            <h3>Local Delivery Driver</h3>
+                            <p class="mb-0">Dallas, TX Based</p>
+                        </div>
+                        <div class="job-card-body">
+                            <div class="job-feature">
+                                <i class="fas fa-dollar-sign"></i>
+                                <span>$60,000-$75,000/year (based on experience)</span>
+                            </div>
+                            <div class="job-feature">
+                                <i class="fas fa-home"></i>
+                                <span>Home daily</span>
+                            </div>
+                            <div class="job-feature">
+                                <i class="fas fa-truck"></i>
+                                <span>2023-2024 Freightliner</span>
+                            </div>
+                            <div class="job-feature">
+                                <i class="fas fa-map-marker-alt"></i>
+                                <span>Dallas Metro Area</span>
+                            </div>
+                            
+                            <div class="mt-3 mb-3">
+                                <span class="job-tag">Local</span>
+                                <span class="job-tag experience">Recent graduates welcome</span>
+                                <span class="job-tag equipment">Dry Van</span>
+                            </div>
+                            
+                            <p>Local delivery position with daily home time. No-touch freight, consistent schedule, and excellent benefits. Recent CDL graduates are welcome to apply.</p>
+                            
+                            <a href="https://intelliapp.driverapponline.com/c/tornadotransport" class="btn btn-primary mt-2">Apply Now</a>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Dedicated Position -->
+                <div class="col-lg-4 col-md-6">
+                    <div class="job-card">
+                        <div class="job-card-header">
+                            <h3>Dedicated Account Driver</h3>
+                            <p class="mb-0">Indianapolis, IN Based</p>
+                        </div>
+                        <div class="job-card-body">
+                            <div class="job-feature">
+                                <i class="fas fa-dollar-sign"></i>
+                                <span>$72,000-$85,000/year (based on experience)</span>
+                            </div>
+                            <div class="job-feature">
+                                <i class="fas fa-home"></i>
+                                <span>Home weekly</span>
+                            </div>
+                            <div class="job-feature">
+                                <i class="fas fa-truck"></i>
+                                <span>2024 Volvo/Freightliner</span>
+                            </div>
+                            <div class="job-feature">
+                                <i class="fas fa-map-marker-alt"></i>
+                                <span>Midwest Routes</span>
+                            </div>
+                            
+                            <div class="mt-3 mb-3">
+                                <span class="job-tag">Dedicated</span>
+                                <span class="job-tag experience">1+ years experience</span>
+                                <span class="job-tag equipment">Dry Van</span>
+                            </div>
+                            
+                            <p>Dedicated account position with consistent routes, freight, and schedule. Weekly home time with premium pay and benefits. CDL-A with 1+ year verifiable experience required.</p>
+                            
+                            <a href="https://intelliapp.driverapponline.com/c/tornadotransport" class="btn btn-primary mt-2">Apply Now</a>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Team Position -->
+                <div class="col-lg-4 col-md-6">
+                    <div class="job-card">
+                        <div class="job-card-header">
+                            <h3>Team OTR Drivers</h3>
+                            <p class="mb-0">Multiple Locations</p>
+                        </div>
+                        <div class="job-card-body">
+                            <div class="job-feature">
+                                <i class="fas fa-dollar-sign"></i>
+                                <span>$85,000-$110,000/year per driver (based on experience)</span>
+                            </div>
+                            <div class="job-feature">
+                                <i class="fas fa-home"></i>
+                                <span>Home every 10-14 days</span>
+                            </div>
+                            <div class="job-feature">
+                                <i class="fas fa-truck"></i>
+                                <span>2023-2024 Kenworth/Peterbilt</span>
+                            </div>
+                            <div class="job-feature">
+                                <i class="fas fa-map-marker-alt"></i>
+                                <span>Coast to Coast Routes</span>
+                            </div>
+                            
+                            <div class="mt-3 mb-3">
+                                <span class="job-tag">Team</span>
+                                <span class="job-tag experience">1+ years experience</span>
+                                <span class="job-tag equipment">Dry Van</span>
+                            </div>
+                            
+                            <p>Team driving positions with premium pay and benefits. Consistent miles and freight with newer equipment. CDL-A with 1+ year verifiable experience required for both drivers.</p>
+                            
+                            <a href="https://intelliapp.driverapponline.com/c/tornadotransport" class="btn btn-primary mt-2">Apply Now</a>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Recent Graduate Position -->
+                <div class="col-lg-4 col-md-6">
+                    <div class="job-card">
+                        <div class="job-card-header">
+                            <h3>Recent Graduate Program</h3>
+                            <p class="mb-0">Multiple Locations</p>
+                        </div>
+                        <div class="job-card-body">
+                            <div class="job-feature">
+                                <i class="fas fa-dollar-sign"></i>
+                                <span>$55,000-$65,000/year first year</span>
+                            </div>
+                            <div class="job-feature">
+                                <i class="fas fa-home"></i>
+                                <span>Home time options available</span>
+                            </div>
+                            <div class="job-feature">
+                                <i class="fas fa-truck"></i>
+                                <span>2022-2024 Freightliner/Volvo</span>
+                            </div>
+                            <div class="job-feature">
+                                <i class="fas fa-map-marker-alt"></i>
+                                <span>Regional Routes</span>
+                            </div>
+                            
+                            <div class="mt-3 mb-3">
+                                <span class="job-tag">OTR/Regional</span>
+                                <span class="job-tag experience">Recent Graduate</span>
+                                <span class="job-tag equipment">Dry Van</span>
+                            </div>
+                            
+                            <p>Excellent opportunity for recent CDL graduates. Includes mentoring program, consistent miles, and competitive starting pay with scheduled increases. Must have CDL-A.</p>
+                            
+                            <a href="https://intelliapp.driverapponline.com/c/tornadotransport" class="btn btn-primary mt-2">Apply Now</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="row mt-4">
+                <div class="col-12 text-center">
+                    <p class="lead">Don't see what you're looking for? Enter your ZIP code above to find more positions in your area.</p>
+                    <p>For assistance finding the right position, call us at <strong>(972) 573-8906</strong> or email <strong>info@tornado-transport.com</strong></p>
+                    <a href="https://intelliapp.driverapponline.com/c/tornadotransport" class="btn btn-accent btn-lg mt-3">Apply Now</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <h4 class="footer-heading">Tornado Transport</h4>
+                    <p>Professional Trucking Carrier</p>
+                    <div class="mt-4">
+                        <a href="https://www.facebook.com/" target="_blank" class="social-icon"><i class="fab fa-facebook-f"></i></a>
+                        <a href="https://www.linkedin.com/" target="_blank" class="social-icon"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="https://www.instagram.com/" target="_blank" class="social-icon"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+                
+                <div class="col-lg-2 col-md-6 mb-4">
+                    <h4 class="footer-heading">Quick Links</h4>
+                    <ul class="list-unstyled">
+                        <li class="mb-2"><a href="index.html">Home</a></li>
+                        <li class="mb-2"><a href="job-map.html">Job Map</a></li>
+                        <li class="mb-2"><a href="available-runs.html">Available Runs</a></li>
+                        <li class="mb-2"><a href="about.html">About Us</a></li>
+                        <li class="mb-2"><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                
+                <div class="col-lg-3 col-md-6 mb-4">
+                    <h4 class="footer-heading">Job Types</h4>
+                    <ul class="list-unstyled">
+                        <li class="mb-2"><a href="job-map.html">OTR Positions</a></li>
+                        <li class="mb-2"><a href="job-map.html">Regional Runs</a></li>
+                        <li class="mb-2"><a href="job-map.html">Local Positions</a></li>
+                        <li class="mb-2"><a href="job-map.html">Team Driving</a></li>
+                        <li class="mb-2"><a href="job-map.html">Recent Graduate Programs</a></li>
+                    </ul>
+                </div>
+                
+                <div class="col-lg-3 col-md-6 mb-4">
+                    <h4 class="footer-heading">Contact Info</h4>
+                    <ul class="list-unstyled">
+                        <li class="mb-2"><i class="fas fa-phone me-2"></i> (972) 573-8906</li>
+                        <li class="mb-2"><i class="fas fa-envelope me-2"></i> info@tornado-transport.com</li>
+                        <li class="mb-2"><i class="fas fa-clock me-2"></i> Mon-Fri: 8:00 AM - 6:00 PM CT</li>
+                    </ul>
+                    <a href="https://intelliapp.driverapponline.com/c/tornadotransport" class="btn btn-accent mt-3">Apply Now</a>
+                </div>
+            </div>
+            
+            <div class="row footer-bottom">
+                <div class="col-md-6">
+                    <p class="mb-0">&copy; 2025 Tornado Transport. All rights reserved.</p>
+                </div>
+                <div class="col-md-6 text-md-end">
+                    <p class="mb-0">Professional Trucking Carrier</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+        // ZIP Code Search Functionality
+        document.getElementById('zipCodeSearchForm').addEventListener('submit', function(e) {
+            e.preventDefault();
+            
+            const zipCode = document.getElementById('zipCodeInput').value;
+            const jobType = document.getElementById('jobTypeSelect').value;
+            const experience = document.getElementById('experienceSelect').value;
+            
+            // In a real implementation, this would call an API to get jobs based on ZIP code
+            // For now, we'll just show an alert
+            alert(`Searching for ${jobType} jobs near ZIP code ${zipCode} for ${experience} drivers. In the full implementation, this would show jobs available in your running area.`);
+        });
+    </script>
+</body>
+</html>

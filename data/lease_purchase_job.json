@@ -1,0 +1,79 @@
+{
+  "jobs": [
+    {
+      "id": "lease_purchase_program",
+      "title": "Owner Operator Lease Program",
+      "location": "Central & Eastern US",
+      "description": "<div class=\"job-summary\">\n  <div class=\"job-section\">\n    <h4>Running Area:</h4>\n    <p>Central and Eastern US routes with consistent freight and excellent earning potential. This premium lease purchase opportunity offers a path to truck ownership with no money down.</p>\n  </div>\n  <div class=\"job-section\">\n    <h4>Pay & Mileage:</h4>\n    <ul>\n      <li><strong>Gross Weekly Average:</strong> $1,250-$1,550/week</li>\n      <li>Mileage pay between $1.00-$2.00 per mile on loaded and dispatched empty miles</li>\n      <li>Tiered mileage pay: 0-200 miles: $2.00, 201-400 miles: $1.15, 401+ miles: $1.00</li>\n      <li>Fuel surcharge paid on all loaded miles</li>\n      <li>70% of accessorial pay (stops, detention, layover)</li>\n      <li>100% of unloading fees with receipt</li>\n    </ul>\n  </div>\n  <div class=\"job-section\">\n    <h4>Lease Program Highlights:</h4>\n    <ul>\n      <li>2015 Freightliner Cascadia with Detroit engines</li>\n      <li>No money down, no credit check, no balloon payment</li>\n      <li>Walkaway lease program with low weekly payments ($490-$590)</li>\n      <li>All-inclusive tractor package ($750-$850) covers tractor payment, insurance, IFTA, plates, and satellite communications</li>\n      <li>Powertrain warranty up to 500,000 miles</li>\n      <li>Fuel saver automatic transmissions</li>\n      <li>Double bunks, full fairing kits, and dual drive tires</li>\n      <li>Significant fuel and maintenance discounts through vendor network</li>\n    </ul>\n  </div>\n</div>",
+      "requirements": [
+        "Valid Class A CDL",
+        "Minimum 1 year of verifiable OTR experience",
+        "Clean driving record",
+        "Must NOT reside in California, Illinois, New York, or New Jersey",
+        "Must pass DOT physical and drug screen",
+        "Must be able to attend Monday orientation"
+      ],
+      "benefits": [
+        "Path to truck ownership with no money down",
+        "Fuel discounts through vendor network",
+        "Maintenance and tire discounts",
+        "EZ Pass provided for tolls",
+        "Security deposit returned after lease completion",
+        "Maintenance escrow program"
+      ],
+      "pay": "$1,250-$1,550 weekly take-home potential",
+      "homeTime": "Flexible options available",
+      "experience": "1+ year OTR experience",
+      "equipment": "2015 Freightliner Cascadia with Detroit engines",
+      "applyUrl": "https://intelliapp.driverapponline.com/c/tornadotransport",
+      "featured": true,
+      "regionRestriction": {
+        "states": [
+          "AL",
+          "AR",
+          "CT",
+          "DE",
+          "FL",
+          "GA",
+          "IA",
+          "IN",
+          "KS",
+          "KY",
+          "LA",
+          "MA",
+          "MD",
+          "ME",
+          "MI",
+          "MN",
+          "MO",
+          "MS",
+          "NC",
+          "NE",
+          "NH",
+          "OH",
+          "OK",
+          "PA",
+          "RI",
+          "SC",
+          "TN",
+          "TX",
+          "VA",
+          "VT",
+          "WI",
+          "WV"
+        ],
+        "excludedStates": [
+          "CA",
+          "IL",
+          "NY",
+          "NJ"
+        ],
+        "zipRanges": []
+      },
+      "coordinates": {
+        "lat": 39.9612,
+        "lng": -82.9988
+      }
+    }
+  ]
+}

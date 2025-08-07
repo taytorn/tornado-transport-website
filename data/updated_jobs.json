@@ -1,0 +1,478 @@
+{
+  "jobs": [
+    {
+      "id": 1,
+      "title": "USA OTR Driver - 48 States",
+      "location": "Multiple Locations",
+      "regions": ["Midwest", "Southeast", "Northeast", "Southwest", "West"],
+      "payRange": "$65,000-$75,000/year based on verifiable experience",
+      "homeTime": "Home bi-weekly (14 days out, 2-3 days home)",
+      "equipment": "Dry Van",
+      "experience": "12+ months verifiable experience required",
+      "type": "otr",
+      "description": "OTR nationwide position covering all 48 states. Average 2,300-2,500 miles per week with pay protection of $1,250 weekly. CDL-A with 12+ months verifiable experience required. No more than 2 moving violations in 12 months. Consistent freight and miles with excellent home time options.",
+      "restrictions": ["Not hiring west of I-35 (Desmoines up to Minneapolis area)", "Not hiring south of I-70 at the moment", "WI & MI are CLOSED at this time", "Not hiring south of Orlando/Tampa, FL", "Not hiring in NH, VT, ME, CT, NY at this time", "Not hiring in WA, CA, OR, NV, most of AZ, ID, MT at this time"]
+    },
+    {
+      "id": 2,
+      "title": "System East Regional Driver",
+      "location": "Multiple Locations",
+      "regions": ["Southeast", "Northeast"],
+      "payRange": "$65,000-$75,000/year based on verifiable experience",
+      "homeTime": "Home every other week",
+      "equipment": "Dry Van",
+      "experience": "12+ months verifiable experience required",
+      "type": "regional",
+      "description": "System East Regional position covering the Eastern US. Average 2,290 miles per week with pay protection of $1,250 weekly. CDL-A with 12+ months verifiable experience required. No more than 2 moving violations in 12 months. Consistent freight with regular home time.",
+      "restrictions": ["Not hiring south of Orlando/Tampa, FL", "Not accepting Drivers out of KY & TN at this time", "Not hiring in NH, VT, ME, CT, NY at this time"]
+    },
+    {
+      "id": 3,
+      "title": "Texas Regional Driver",
+      "location": "Dallas, TX",
+      "regions": ["Southwest"],
+      "payRange": "$55,000-$65,000/year based on verifiable experience",
+      "homeTime": "Home weekly (5-6 days out, 2 days home)",
+      "equipment": "Dry Van",
+      "experience": "12+ months verifiable experience required",
+      "type": "regional",
+      "description": "Texas Regional position primarily operating within Texas and neighboring states. Average 2,200-2,400 miles per week. CDL-A with 12+ months verifiable experience required. No more than 2 moving violations in 12 months. Consistent freight and regular home time."
+    },
+    {
+      "id": 4,
+      "title": "Midwest Regional Driver",
+      "location": "Chicago, IL",
+      "regions": ["Midwest"],
+      "payRange": "$55,000-$65,000/year based on verifiable experience",
+      "homeTime": "Home weekly",
+      "equipment": "Dry Van",
+      "experience": "12+ months verifiable experience required",
+      "type": "regional",
+      "description": "Midwest Regional position covering IL, IN, IA, KS, MI, MN, MO, NE, OH, WI. Average 2,145 miles per week with pay protection of $1,060 weekly. CDL-A with 12+ months verifiable experience required. No more than 2 moving violations in 12 months. Not hiring west of I-35 or south of I-70 at this time.",
+      "restrictions": ["Not hiring west of I-35 (Desmoines up to Minneapolis area)", "Not hiring south of I-70 at the moment", "WI & MI are CLOSED at this time"]
+    },
+    {
+      "id": 5,
+      "title": "Southeast Regional Driver",
+      "location": "Atlanta, GA",
+      "regions": ["Southeast"],
+      "payRange": "$55,000-$65,000/year based on verifiable experience",
+      "homeTime": "Home weekly",
+      "equipment": "Dry Van",
+      "experience": "12+ months verifiable experience required",
+      "type": "regional",
+      "description": "Southeast Regional position covering AL, FL, GA, MS, NC, SC, TN, VA. Average 2,300-2,500 miles per week. CDL-A with 12+ months verifiable experience required. No more than 2 moving violations in 12 months. Not hiring south of Orlando/Tampa, FL or out of KY & TN at this time.",
+      "restrictions": ["Not hiring south of Orlando/Tampa, FL", "Not accepting Drivers out of KY & TN at this time"]
+    },
+    {
+      "id": 6,
+      "title": "Northeast Regional Driver",
+      "location": "Multiple Locations",
+      "regions": ["Northeast"],
+      "payRange": "$55,000-$65,000/year based on verifiable experience",
+      "homeTime": "Home weekly",
+      "equipment": "Dry Van",
+      "experience": "12+ months verifiable experience required",
+      "type": "regional",
+      "description": "Northeast Regional position covering DC, DE, MD, NJ, OH, PA, VA, WV. Average 2,200-2,400 miles per week. CDL-A with 12+ months verifiable experience required. No more than 2 moving violations in 12 months. Not hiring in NH, VT, ME, CT, NY at this time.",
+      "restrictions": ["Not hiring in NH, VT, ME, CT, NY at this time"]
+    },
+    {
+      "id": 7,
+      "title": "Chicago to Minneapolis Route Driver",
+      "location": "Chicago, IL",
+      "regions": ["Midwest"],
+      "payRange": "$52,000-$60,000/year based on verifiable experience",
+      "homeTime": "Home weekly",
+      "equipment": "Dry Van",
+      "experience": "12+ months verifiable experience required",
+      "type": "regional",
+      "description": "Dedicated route position operating between Chicago, IL and Minneapolis/St. Paul, MN. Average 2,200-2,400 miles per week with pay protection of $1,000 weekly. CDL-A with 12+ months verifiable experience required. No more than 2 moving violations in 12 months. Consistent schedule with regular home time.",
+      "restrictions": ["Limited to Chicago to Minneapolis corridor"]
+    },
+    {
+      "id": 8,
+      "title": "Flatbed Regional Driver",
+      "location": "Birmingham, AL",
+      "regions": ["Southeast", "Midwest", "Northeast"],
+      "payRange": "Up to 70 CPM based on verifiable experience",
+      "homeTime": "Home weekly",
+      "equipment": "Flatbed",
+      "experience": "12+ months verifiable experience required",
+      "type": "regional",
+      "description": "Regional flatbed position covering Southeast, Midwest, and Northeast regions. CDL-A with 12+ months verifiable experience required. No more than 2 moving violations in 12 months. CPM Pay Increase - Outbound Freight - 70 CPM!",
+      "restrictions": ["Not hiring south of Orlando/Tampa, FL", "Not accepting Drivers out of KY & TN at this time", "Not hiring in NH, VT, ME, CT, NY at this time"]
+    },
+    {
+      "id": 9,
+      "title": "Local Virginia Driver",
+      "location": "Richmond, VA",
+      "regions": ["Southeast"],
+      "payRange": "$60,000-$75,000/year based on verifiable experience",
+      "homeTime": "Home daily",
+      "equipment": "Dry Van",
+      "experience": "12+ months verifiable experience required",
+      "type": "local",
+      "description": "Local position based in Richmond, VA. Home daily with consistent routes. CDL-A with 12+ months verifiable experience required. No more than 2 moving violations in 12 months. No-touch freight with regular schedule.",
+      "restrictions": ["Limited to Richmond, VA area"]
+    },
+    {
+      "id": 10,
+      "title": "Florida Salary Driver",
+      "location": "Orlando, FL",
+      "regions": ["Southeast"],
+      "payRange": "$65,000-$75,000/year based on verifiable experience",
+      "homeTime": "Home daily",
+      "equipment": "Dry Van",
+      "experience": "12+ months verifiable experience required",
+      "type": "local",
+      "description": "Florida shorthaul position based in Orlando, FL. Home daily with consistent routes throughout Florida. CDL-A with 12+ months verifiable experience required. No more than 2 moving violations in 12 months. Salary-based position with benefits.",
+      "restrictions": ["Limited to Orlando, FL area", "Not hiring south of Orlando/Tampa, FL"]
+    },
+    {
+      "id": 11,
+      "title": "Team Driver",
+      "location": "Multiple Locations",
+      "regions": ["Midwest", "Southeast", "Northeast", "Southwest", "West"],
+      "payRange": "$70,000-$80,000/year based on verifiable experience",
+      "homeTime": "Home every 3 weeks",
+      "equipment": "Dry Van",
+      "experience": "12+ months verifiable experience required",
+      "type": "team",
+      "description": "Team driving position covering nationwide routes. Average 5,000-6,000 miles per week with pay protection of $1,350 weekly per driver. CDL-A with 12+ months verifiable experience required. No more than 2 moving violations in 12 months. Excellent earning potential with consistent miles.",
+      "restrictions": ["Not hiring west of I-35 (Desmoines up to Minneapolis area)", "Not hiring south of I-70 at the moment", "WI & MI are CLOSED at this time", "Not hiring south of Orlando/Tampa, FL", "Not hiring in NH, VT, ME, CT, NY at this time", "Not hiring in WA, CA, OR, NV, most of AZ, ID, MT at this time"]
+    },
+    {
+      "id": 12,
+      "title": "Southwest Regional Driver",
+      "location": "Phoenix, AZ",
+      "regions": ["Southwest", "West"],
+      "payRange": "$55,000-$65,000/year based on verifiable experience",
+      "homeTime": "Home weekly",
+      "equipment": "Dry Van",
+      "experience": "12+ months verifiable experience required",
+      "type": "regional",
+      "description": "Southwest Regional position covering AZ, NM, NV, Southern CA, and UT. Average 2,177 miles per week with pay protection of $1,060 weekly. CDL-A with 12+ months verifiable experience required. No more than 2 moving violations in 12 months. Consistent freight and regular home time.",
+      "restrictions": ["Not hiring in WA, CA, OR, NV, most of AZ, ID, MT at this time"]
+    },
+    {
+      "id": 13,
+      "title": "Home Daily - Hagerstown, MD",
+      "location": "Hagerstown, MD",
+      "regions": ["Northeast"],
+      "payRange": "$65,000-$75,000/year based on verifiable experience",
+      "homeTime": "Home daily",
+      "equipment": "Dry Van",
+      "experience": "12+ months verifiable experience required",
+      "type": "local",
+      "description": "Home daily position based in Hagerstown, MD. Local routes with consistent schedule. CDL-A with 12+ months verifiable experience required. No more than 2 moving violations in 12 months. Salary-based position with benefits.",
+      "restrictions": ["Limited to Hagerstown, MD area"]
+    },
+    {
+      "id": 14,
+      "title": "Northwest Regional Driver",
+      "location": "Tacoma, WA",
+      "regions": ["West"],
+      "payRange": "$55,000-$65,000/year based on verifiable experience",
+      "homeTime": "Home weekly",
+      "equipment": "Dry Van",
+      "experience": "12+ months verifiable experience required",
+      "type": "regional",
+      "description": "Northwest Regional position covering the Tacoma, Medford, Boise areas. Average 2,249 miles per week with pay protection of $1,060 weekly. CDL-A with 12+ months verifiable experience required. No more than 2 moving violations in 12 months. Consistent freight and regular home time.",
+      "restrictions": ["Not hiring in WA, CA, OR, NV, most of AZ, ID, MT at this time"]
+    },
+    {
+      "id": 15,
+      "title": "Middle Tennessee Regional Driver",
+      "location": "Mt. Juliet, TN",
+      "regions": ["Southeast"],
+      "payRange": "$55,000-$65,000/year based on verifiable experience",
+      "homeTime": "Home weekly",
+      "equipment": "Dry Van",
+      "experience": "12+ months verifiable experience required",
+      "type": "regional",
+      "description": "Middle Tennessee Regional position covering Mt Juliet, Columbus, Kingsport, Atlanta, Olive Branch, Pontoon Beach, Chester, Memphis areas. Average 2,109 miles per week with pay protection of $1,060 weekly. CDL-A with 12+ months verifiable experience required. No more than 2 moving violations in 12 months.",
+      "restrictions": ["Not accepting Drivers out of KY & TN at this time"]
+    },
+    {
+      "id": 16,
+      "title": "St. Louis to Memphis Route Driver",
+      "location": "St. Louis, MO",
+      "regions": ["Midwest", "Southeast"],
+      "payRange": "$52,000-$60,000/year based on verifiable experience",
+      "homeTime": "Home weekly",
+      "equipment": "Dry Van",
+      "experience": "12+ months verifiable experience required",
+      "type": "regional",
+      "description": "Dedicated route position operating between St. Louis, MO and Memphis, TN to Nashville, TN. Average 2,200-2,400 miles per week with pay protection of $1,000 weekly. CDL-A with 12+ months verifiable experience required. No more than 2 moving violations in 12 months. Consistent schedule with regular home time.",
+      "restrictions": ["Limited to St. Louis to Memphis/Nashville corridor"]
+    },
+    {
+      "id": 17,
+      "title": "System West Regional Driver",
+      "location": "Multiple Locations",
+      "regions": ["West", "Southwest"],
+      "payRange": "$65,000-$75,000/year based on verifiable experience",
+      "homeTime": "Home every other week",
+      "equipment": "Dry Van",
+      "experience": "12+ months verifiable experience required",
+      "type": "regional",
+      "description": "System West Regional position covering the Western US. Average 2,301 miles per week with pay protection of $1,250 weekly. CDL-A with 12+ months verifiable experience required. No more than 2 moving violations in 12 months. Consistent freight with regular home time.",
+      "restrictions": ["Not hiring in WA, CA, OR, NV, most of AZ, ID, MT at this time"]
+    },
+    {
+      "id": 18,
+      "title": "DTS Midwest Regional Driver",
+      "location": "Davenport, IA",
+      "regions": ["Midwest"],
+      "payRange": "$55,000-$65,000/year based on verifiable experience",
+      "homeTime": "Home weekly",
+      "equipment": "Dry Van",
+      "experience": "12+ months verifiable experience required",
+      "type": "regional",
+      "description": "Midwest Regional position based in Davenport, IA covering eastern Iowa, western Illinois, southern Wisconsin, eastern Nebraska, and northern Missouri. Average 2,200-2,400 miles per week. CDL-A with 12+ months verifiable experience required. No more than 2 moving violations in 12 months. Consistent freight and regular home time.",
+      "restrictions": ["Limited to Davenport, IA area and surrounding states"]
+    },
+    {
+      "id": 19,
+      "title": "Met Express Northeast Regional Driver",
+      "location": "Multiple Locations",
+      "regions": ["Northeast"],
+      "payRange": "$1,400-$1,500/week based on verifiable experience",
+      "homeTime": "Home every weekend (48+ hours)",
+      "equipment": "Freightliner Cascadia (2021-2024)",
+      "experience": "3+ months verifiable experience required",
+      "type": "regional",
+      "description": "Northeast Regional position covering the Northeast region, no further north than Maine, no further south than Atlanta, and no further west than Indiana or Illinois. Average 250 miles per haul. Drivers average between $0.68 and $0.71 CPM with minimum pay guarantee of $1,200 per week. 100% no-touch freight, 50-60% drop and hook. Freightliner Cascadia trucks with SiriusXM, TV, and refrigerator. CDL-A required with minimum 3 months OTR experience.",
+      "restrictions": ["Must live in hiring area", "Limited to Northeast region"]
+    },
+    {
+      "id": 20,
+      "title": "Met Express Boston Driver",
+      "location": "Boston, MA",
+      "regions": ["Northeast"],
+      "payRange": "$1,400-$1,500/week based on verifiable experience",
+      "homeTime": "Home every weekend (48+ hours)",
+      "equipment": "Freightliner Cascadia (2021-2024)",
+      "experience": "3+ months verifiable experience required",
+      "type": "regional",
+      "description": "Regional position based in Boston, MA. Home every weekend for minimum 48 hours with 5-day work week. Average 250 miles per haul. Drivers average between $0.68 and $0.71 CPM with minimum pay guarantee of $1,200 per week. 100% no-touch freight, 50-60% drop and hook. Freightliner Cascadia trucks with SiriusXM, TV, and refrigerator. CDL-A required with minimum 3 months OTR experience.",
+      "restrictions": ["Must live in Boston, MA area"]
+    },
+    {
+      "id": 21,
+      "title": "Met Express Philadelphia Driver",
+      "location": "Philadelphia, PA",
+      "regions": ["Northeast"],
+      "payRange": "$1,400-$1,500/week based on verifiable experience",
+      "homeTime": "Home every weekend (48+ hours)",
+      "equipment": "Freightliner Cascadia (2021-2024)",
+      "experience": "3+ months verifiable experience required",
+      "type": "regional",
+      "description": "Regional position based in Philadelphia, PA. Home every weekend for minimum 48 hours with 5-day work week. Average 250 miles per haul. Drivers average between $0.68 and $0.71 CPM with minimum pay guarantee of $1,200 per week. 100% no-touch freight, 50-60% drop and hook. Freightliner Cascadia trucks with SiriusXM, TV, and refrigerator. CDL-A required with minimum 3 months OTR experience.",
+      "restrictions": ["Must live in Philadelphia, PA area"]
+    }
+  ],
+  "regions": {
+    "Midwest": {
+      "states": ["IL", "IN", "IA", "KS", "MI", "MN", "MO", "NE", "ND", "OH", "SD", "WI"],
+      "zipRanges": [
+        { "min": 43000, "max": 45999 },
+        { "min": 46000, "max": 47999 },
+        { "min": 48000, "max": 49999 },
+        { "min": 50000, "max": 52999 },
+        { "min": 53000, "max": 54999 },
+        { "min": 55000, "max": 56999 },
+        { "min": 57000, "max": 57999 },
+        { "min": 58000, "max": 58999 },
+        { "min": 60000, "max": 62999 },
+        { "min": 63000, "max": 65999 },
+        { "min": 66000, "max": 67999 },
+        { "min": 68000, "max": 69999 }
+      ],
+      "restrictions": [
+        "Not hiring west of I-35 (Desmoines up to Minneapolis area)",
+        "Not hiring south of I-70 at the moment",
+        "WI & MI are CLOSED at this time"
+      ],
+      "corridors": [
+        {
+          "name": "Chicago to Minneapolis",
+          "states": ["IL", "WI", "MN"],
+          "cities": ["Chicago, IL", "Minneapolis, MN"]
+        },
+        {
+          "name": "St. Louis to Memphis",
+          "states": ["MO", "TN"],
+          "cities": ["St. Louis, MO", "Memphis, TN"]
+        },
+        {
+          "name": "DTS Davenport",
+          "states": ["IA", "IL", "WI", "NE", "MO"],
+          "cities": ["Davenport, IA", "Chicago, IL", "Omaha, NE"]
+        }
+      ]
+    },
+    "Southeast": {
+      "states": ["AL", "FL", "GA", "KY", "MS", "NC", "SC", "TN", "VA", "WV"],
+      "zipRanges": [
+        { "min": 23000, "max": 24999 },
+        { "min": 25000, "max": 26999 },
+        { "min": 27000, "max": 28999 },
+        { "min": 29000, "max": 29999 },
+        { "min": 30000, "max": 31999 },
+        { "min": 32000, "max": 34999 },
+        { "min": 35000, "max": 36999 },
+        { "min": 37000, "max": 38599 },
+        { "min": 38600, "max": 39999 },
+        { "min": 40000, "max": 42999 }
+      ],
+      "restrictions": [
+        "Not hiring south of Orlando/Tampa, FL",
+        "Not accepting Drivers out of KY & TN at this time"
+      ],
+      "localAreas": [
+        {
+          "name": "Richmond, VA",
+          "zipRanges": [
+            { "min": 23200, "max": 23299 }
+          ]
+        },
+        {
+          "name": "Orlando, FL",
+          "zipRanges": [
+            { "min": 32800, "max": 32899 }
+          ]
+        }
+      ]
+    },
+    "Northeast": {
+      "states": ["CT", "DE", "ME", "MD", "MA", "NH", "NJ", "NY", "PA", "RI", "VT"],
+      "zipRanges": [
+        { "min": 1000, "max": 2799 },
+        { "min": 2800, "max": 2999 },
+        { "min": 3000, "max": 3899 },
+        { "min": 3900, "max": 4999 },
+        { "min": 5000, "max": 5999 },
+        { "min": 6000, "max": 6999 },
+        { "min": 7000, "max": 8999 },
+        { "min": 10000, "max": 14999 },
+        { "min": 15000, "max": 19699 },
+        { "min": 19700, "max": 19999 },
+        { "min": 20000, "max": 21999 }
+      ],
+      "restrictions": [
+        "Not hiring in NH, VT, ME, CT, NY at this time"
+      ],
+      "metExpressCities": [
+        {
+          "name": "Boston, MA",
+          "zipRanges": [
+            { "min": 2100, "max": 2299 }
+          ]
+        },
+        {
+          "name": "Edison, NJ",
+          "zipRanges": [
+            { "min": 8800, "max": 8899 }
+          ]
+        },
+        {
+          "name": "Philadelphia, PA",
+          "zipRanges": [
+            { "min": 19100, "max": 19199 }
+          ]
+        },
+        {
+          "name": "Pittsburgh, PA",
+          "zipRanges": [
+            { "min": 15200, "max": 15299 }
+          ]
+        },
+        {
+          "name": "Bloomsburg, PA",
+          "zipRanges": [
+            { "min": 17800, "max": 17899 }
+          ]
+        },
+        {
+          "name": "Plainfield, CT",
+          "zipRanges": [
+            { "min": 6300, "max": 6399 }
+          ]
+        },
+        {
+          "name": "Baltimore, MD",
+          "zipRanges": [
+            { "min": 21200, "max": 21299 }
+          ]
+        },
+        {
+          "name": "Harrisburg, PA",
+          "zipRanges": [
+            { "min": 17100, "max": 17199 }
+          ]
+        }
+      ],
+      "localAreas": [
+        {
+          "name": "Hagerstown, MD",
+          "zipRanges": [
+            { "min": 21740, "max": 21749 }
+          ]
+        }
+      ]
+    },
+    "Southwest": {
+      "states": ["AR", "LA", "NM", "OK", "TX"],
+      "zipRanges": [
+        { "min": 70000, "max": 71599 },
+        { "min": 71600, "max": 72999 },
+        { "min": 73000, "max": 74999 },
+        { "min": 75000, "max": 79999 },
+        { "min": 87000, "max": 88499 }
+      ],
+      "restrictions": []
+    },
+    "West": {
+      "states": ["AZ", "CA", "CO", "ID", "MT", "NV", "OR", "UT", "WA", "WY"],
+      "zipRanges": [
+        { "min": 80000, "max": 81999 },
+        { "min": 82000, "max": 83199 },
+        { "min": 83200, "max": 83999 },
+        { "min": 84000, "max": 84999 },
+        { "min": 85000, "max": 86999 },
+        { "min": 88900, "max": 89999 },
+        { "min": 90000, "max": 96699 },
+        { "min": 97000, "max": 97999 },
+        { "min": 98000, "max": 99499 },
+        { "min": 59000, "max": 59999 }
+      ],
+      "restrictions": [
+        "Not hiring in WA, CA, OR, NV, most of AZ, ID, MT at this time"
+      ]
+    }
+  },
+  "hiringRestrictions": [
+    "Not accepting Drivers out of KY & TN at this time",
+    "WI & MI are CLOSED at this time",
+    "Not hiring south of Orlando/Tampa, FL",
+    "Not hiring west of I-35 (Desmoines up to Minneapolis area)",
+    "Not hiring in NH, VT, ME, CT, NY at this time",
+    "Not hiring in WA, CA, OR, NV, most of AZ, ID, MT at this time",
+    "All positions require minimum 12 months verifiable experience",
+    "No more than 2 moving violations in 12 months",
+    "No DUI/DWI in 5 years"
+  ],
+  "metExpressRestrictions": [
+    "Must live in hiring area",
+    "No further north than Maine",
+    "No further south than Atlanta",
+    "No further west than Indiana or Illinois",
+    "Minimum 3 months OTR experience required",
+    "No more than 3 preventable accidents in past 3 years",
+    "No more than 5 points in 3 years",
+    "No more than 3 speeding tickets in 3 years",
+    "No DUI or refusal to test in last 5 years"
+  ]
+}

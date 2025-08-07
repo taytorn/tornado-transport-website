@@ -1,0 +1,616 @@
+{
+  "jobs": [
+    {
+      "id": 1,
+      "title": "National OTR Driver",
+      "location": "Nationwide",
+      "description": "<div class=\"job-summary\">\n  <div class=\"job-section\">\n    <h4>Running Area:</h4>\n    <p>Nationwide OTR position covering all 48 states with consistent freight.</p>\n  </div>\n  <div class=\"job-section\">\n    <h4>Pay & Mileage:</h4>\n    <ul>\n      <li>Average 2,312 miles per week</li>\n      <li>$1,000 weekly pay protection</li>\n      <li>Top earners make $1,750 per week</li>\n      <li>Safety bonus miles, driven miles, and green zones (extra 5¢ per mile) contribute to additional pay</li>\n    </ul>\n  </div>\n  <div class=\"job-section\">\n    <h4>Freight & Schedule:</h4>\n    <p>Primarily drop and hook freight with weekly home time options.</p>\n  </div>\n</div>",
+      "requirements": [
+        "12+ months of Class A CDL experience",
+        "No more than 2 moving violations in 12 months",
+        "No more than 4 moving violations in 3 years",
+        "No more than 1 serious violation in 3 years",
+        "No more than 3 accidents in 36 months"
+      ],
+      "benefits": [
+        "Comprehensive health, vision, dental benefits",
+        "401K with company match",
+        "Paid holidays after six months",
+        "Vacation pay beginning after six months"
+      ],
+      "pay": "$65,000 annually with pay protection",
+      "homeTime": "Home 4 days out 4 weeks",
+      "experience": "12+ months",
+      "equipment": "Dry Van with 72\" sleeper",
+      "applyUrl": "https://intelliapp.driverapponline.com/c/truckers4hire?r=UthemesT",
+      "featured": true,
+      "regionRestriction": {
+        "states": [
+          "AL", "GA", "FL", "TN", "SC", "NC", "KY", "VA", "WV", "PA", "MD", "DE", "NJ", 
+          "CT", "RI", "MA", "NH", "VT", "ME", "NY", "OH", "IN", "IL", "MI", "WI", "MN", 
+          "IA", "MO", "AR", "LA", "MS", "ND", "SD", "NE", "KS", "OK", "TX", "NM", "CO", 
+          "WY", "MT", "ID", "UT", "AZ", "NV", "CA", "OR", "WA"
+        ],
+        "excludedStates": [],
+        "zipRanges": []
+      }
+    },
+    {
+      "id": 2,
+      "title": "Eastern Region Driver",
+      "location": "Eastern US",
+      "description": "<div class=\"job-summary\">\n  <div class=\"job-section\">\n    <h4>Running Area:</h4>\n    <p>Eastern US regional position with consistent freight throughout the eastern states.</p>\n  </div>\n  <div class=\"job-section\">\n    <h4>Pay & Mileage:</h4>\n    <ul>\n      <li>Average 2,250 miles per week</li>\n      <li>$1,000 weekly pay protection</li>\n      <li>Top earners make $1,650 per week</li>\n      <li>Safety bonus miles, driven miles, and green zones (extra 5¢ per mile) contribute to additional pay</li>\n    </ul>\n  </div>\n  <div class=\"job-section\">\n    <h4>Freight & Schedule:</h4>\n    <p>Primarily drop and hook freight with regular home time.</p>\n  </div>\n</div>",
+      "requirements": [
+        "12+ months of Class A CDL experience",
+        "No more than 2 moving violations in 12 months",
+        "No more than 4 moving violations in 3 years",
+        "No more than 1 serious violation in 3 years",
+        "No more than 3 accidents in 36 months"
+      ],
+      "benefits": [
+        "Comprehensive health, vision, dental benefits",
+        "401K with company match",
+        "Paid holidays after six months",
+        "Vacation pay beginning after six months"
+      ],
+      "pay": "$65,000 annually with pay protection",
+      "homeTime": "Home every other week",
+      "experience": "12+ months",
+      "equipment": "Dry Van with 72\" sleeper",
+      "applyUrl": "https://intelliapp.driverapponline.com/c/truckers4hire?r=UthemesT",
+      "featured": false,
+      "regionRestriction": {
+        "states": [
+          "AL", "GA", "FL", "TN", "SC", "NC", "KY", "VA", "WV", "PA", "MD", "DE", "NJ", 
+          "CT", "RI", "MA", "NH", "VT", "ME", "NY", "OH", "IN", "IL", "MI"
+        ],
+        "excludedStates": [],
+        "zipRanges": []
+      }
+    },
+    {
+      "id": 3,
+      "title": "Western Region Driver",
+      "location": "Western US",
+      "description": "<div class=\"job-summary\">\n  <div class=\"job-section\">\n    <h4>Running Area:</h4>\n    <p>Western US regional position with consistent freight throughout the western states.</p>\n  </div>\n  <div class=\"job-section\">\n    <h4>Pay & Mileage:</h4>\n    <ul>\n      <li>Average 2,300 miles per week</li>\n      <li>$1,000 weekly pay protection</li>\n      <li>Top earners make $1,650 per week</li>\n      <li>Safety bonus miles, driven miles, and green zones (extra 5¢ per mile) contribute to additional pay</li>\n    </ul>\n  </div>\n  <div class=\"job-section\">\n    <h4>Freight & Schedule:</h4>\n    <p>Primarily drop and hook freight with regular home time.</p>\n  </div>\n</div>",
+      "requirements": [
+        "12+ months of Class A CDL experience",
+        "No more than 2 moving violations in 12 months",
+        "No more than 4 moving violations in 3 years",
+        "No more than 1 serious violation in 3 years",
+        "No more than 3 accidents in 36 months"
+      ],
+      "benefits": [
+        "Comprehensive health, vision, dental benefits",
+        "401K with company match",
+        "Paid holidays after six months",
+        "Vacation pay beginning after six months"
+      ],
+      "pay": "$65,000 annually with pay protection",
+      "homeTime": "Home every other week",
+      "experience": "12+ months",
+      "equipment": "Dry Van with 72\" sleeper",
+      "applyUrl": "https://intelliapp.driverapponline.com/c/truckers4hire?r=UthemesT",
+      "featured": false,
+      "regionRestriction": {
+        "states": [
+          "CA", "OR", "WA", "NV", "ID", "MT", "WY", "UT", "CO", "AZ", "NM", "TX", "OK", "KS", "NE"
+        ],
+        "excludedStates": [],
+        "zipRanges": []
+      }
+    },
+    {
+      "id": 4,
+      "title": "Lone Star Regional",
+      "location": "Dallas, TX",
+      "description": "<div class=\"job-summary\">\n  <div class=\"job-section\">\n    <h4>Running Area:</h4>\n    <p>Texas-based regional position covering TX, OK, LA, and AR with consistent freight lanes.</p>\n  </div>\n  <div class=\"job-section\">\n    <h4>Pay & Mileage:</h4>\n    <ul>\n      <li>Average 2,200 miles per week</li>\n      <li>$1,000 weekly pay protection</li>\n      <li>Top earners make $1,650 per week</li>\n      <li>Safety bonus miles, driven miles, and green zones (extra 5¢ per mile) contribute to additional pay</li>\n    </ul>\n  </div>\n  <div class=\"job-section\">\n    <h4>Freight & Schedule:</h4>\n    <p>Primarily drop and hook freight with weekly home time.</p>\n  </div>\n</div>",
+      "requirements": [
+        "12+ months of Class A CDL experience",
+        "No more than 2 moving violations in 12 months",
+        "No more than 4 moving violations in 3 years",
+        "No more than 1 serious violation in 3 years",
+        "No more than 3 accidents in 36 months"
+      ],
+      "benefits": [
+        "Comprehensive health, vision, dental benefits",
+        "401K with company match",
+        "Paid holidays after six months",
+        "Vacation pay beginning after six months"
+      ],
+      "pay": "$65,000 annually with pay protection",
+      "homeTime": "Home weekly",
+      "experience": "12+ months",
+      "equipment": "Dry Van with 72\" sleeper",
+      "applyUrl": "https://intelliapp.driverapponline.com/c/truckers4hire?r=UthemesT",
+      "featured": false,
+      "regionRestriction": {
+        "states": [
+          "TX", "OK", "LA", "AR"
+        ],
+        "excludedStates": [],
+        "zipRanges": [
+          {
+            "min": 75000,
+            "max": 79999
+          },
+          {
+            "min": 73000,
+            "max": 74999
+          },
+          {
+            "min": 70000,
+            "max": 71599
+          },
+          {
+            "min": 71600,
+            "max": 72999
+          }
+        ]
+      }
+    },
+    {
+      "id": 5,
+      "title": "Pacific Northwest Regional",
+      "location": "Portland, OR",
+      "description": "<div class=\"job-summary\">\n  <div class=\"job-section\">\n    <h4>Running Area:</h4>\n    <p>Pacific Northwest regional position covering OR, WA, ID, MT, and WY with consistent freight lanes.</p>\n  </div>\n  <div class=\"job-section\">\n    <h4>Pay & Mileage:</h4>\n    <ul>\n      <li>Average 2,200 miles per week</li>\n      <li>$1,000 weekly pay protection</li>\n      <li>Top earners make $1,650 per week</li>\n      <li>Safety bonus miles, driven miles, and green zones (extra 5¢ per mile) contribute to additional pay</li>\n    </ul>\n  </div>\n  <div class=\"job-section\">\n    <h4>Freight & Schedule:</h4>\n    <p>Primarily drop and hook freight with weekly home time.</p>\n  </div>\n</div>",
+      "requirements": [
+        "12+ months of Class A CDL experience",
+        "No more than 2 moving violations in 12 months",
+        "No more than 4 moving violations in 3 years",
+        "No more than 1 serious violation in 3 years",
+        "No more than 3 accidents in 36 months"
+      ],
+      "benefits": [
+        "Comprehensive health, vision, dental benefits",
+        "401K with company match",
+        "Paid holidays after six months",
+        "Vacation pay beginning after six months"
+      ],
+      "pay": "$65,000 annually with pay protection",
+      "homeTime": "Home weekly",
+      "experience": "12+ months",
+      "equipment": "Dry Van with 72\" sleeper",
+      "applyUrl": "https://intelliapp.driverapponline.com/c/truckers4hire?r=UthemesT",
+      "featured": false,
+      "regionRestriction": {
+        "states": [
+          "OR", "WA", "ID", "MT", "WY"
+        ],
+        "excludedStates": [],
+        "zipRanges": [
+          {
+            "min": 97000,
+            "max": 97999
+          },
+          {
+            "min": 98000,
+            "max": 99499
+          },
+          {
+            "min": 83200,
+            "max": 83899
+          },
+          {
+            "min": 59000,
+            "max": 59999
+          },
+          {
+            "min": 82000,
+            "max": 83199
+          }
+        ]
+      }
+    },
+    {
+      "id": 6,
+      "title": "Desert Region Driver",
+      "location": "Phoenix, AZ",
+      "description": "<div class=\"job-summary\">\n  <div class=\"job-section\">\n    <h4>Running Area:</h4>\n    <p>Southwest regional position covering AZ, NM, NV, UT, and parts of CA with consistent freight lanes.</p>\n  </div>\n  <div class=\"job-section\">\n    <h4>Pay & Mileage:</h4>\n    <ul>\n      <li>Average 2,200 miles per week</li>\n      <li>$1,000 weekly pay protection</li>\n      <li>Top earners make $1,650 per week</li>\n      <li>Safety bonus miles, driven miles, and green zones (extra 5¢ per mile) contribute to additional pay</li>\n    </ul>\n  </div>\n  <div class=\"job-section\">\n    <h4>Freight & Schedule:</h4>\n    <p>Primarily drop and hook freight with weekly home time.</p>\n  </div>\n</div>",
+      "requirements": [
+        "12+ months of Class A CDL experience",
+        "No more than 2 moving violations in 12 months",
+        "No more than 4 moving violations in 3 years",
+        "No more than 1 serious violation in 3 years",
+        "No more than 3 accidents in 36 months"
+      ],
+      "benefits": [
+        "Comprehensive health, vision, dental benefits",
+        "401K with company match",
+        "Paid holidays after six months",
+        "Vacation pay beginning after six months"
+      ],
+      "pay": "$65,000 annually with pay protection",
+      "homeTime": "Home weekly",
+      "experience": "12+ months",
+      "equipment": "Dry Van with 72\" sleeper",
+      "applyUrl": "https://intelliapp.driverapponline.com/c/truckers4hire?r=UthemesT",
+      "featured": false,
+      "regionRestriction": {
+        "states": [
+          "AZ", "NM", "NV", "UT", "CA"
+        ],
+        "excludedStates": [],
+        "zipRanges": [
+          {
+            "min": 85000,
+            "max": 86599
+          },
+          {
+            "min": 87000,
+            "max": 88499
+          },
+          {
+            "min": 89000,
+            "max": 89899
+          },
+          {
+            "min": 84000,
+            "max": 84799
+          },
+          {
+            "min": 90000,
+            "max": 93599
+          }
+        ]
+      }
+    },
+    {
+      "id": 7,
+      "title": "Southern States Regional",
+      "location": "Atlanta, GA",
+      "description": "<div class=\"job-summary\">\n  <div class=\"job-section\">\n    <h4>Running Area:</h4>\n    <p>Southeast regional position covering GA, AL, TN, SC, NC, and FL with consistent freight lanes.</p>\n  </div>\n  <div class=\"job-section\">\n    <h4>Pay & Mileage:</h4>\n    <ul>\n      <li>Average 2,200 miles per week</li>\n      <li>$1,000 weekly pay protection</li>\n      <li>Top earners make $1,650 per week</li>\n      <li>Safety bonus miles, driven miles, and green zones (extra 5¢ per mile) contribute to additional pay</li>\n    </ul>\n  </div>\n  <div class=\"job-section\">\n    <h4>Freight & Schedule:</h4>\n    <p>Primarily drop and hook freight with weekly home time.</p>\n  </div>\n</div>",
+      "requirements": [
+        "12+ months of Class A CDL experience",
+        "No more than 2 moving violations in 12 months",
+        "No more than 4 moving violations in 3 years",
+        "No more than 1 serious violation in 3 years",
+        "No more than 3 accidents in 36 months"
+      ],
+      "benefits": [
+        "Comprehensive health, vision, dental benefits",
+        "401K with company match",
+        "Paid holidays after six months",
+        "Vacation pay beginning after six months"
+      ],
+      "pay": "$65,000 annually with pay protection",
+      "homeTime": "Home weekly",
+      "experience": "12+ months",
+      "equipment": "Dry Van with 72\" sleeper",
+      "applyUrl": "https://intelliapp.driverapponline.com/c/truckers4hire?r=UthemesT",
+      "featured": false,
+      "regionRestriction": {
+        "states": [
+          "GA", "AL", "TN", "SC", "NC", "FL"
+        ],
+        "excludedStates": [],
+        "zipRanges": [
+          {
+            "min": 30000,
+            "max": 31999
+          },
+          {
+            "min": 35000,
+            "max": 36999
+          },
+          {
+            "min": 37000,
+            "max": 38599
+          },
+          {
+            "min": 29000,
+            "max": 29999
+          },
+          {
+            "min": 27000,
+            "max": 28999
+          },
+          {
+            "min": 32000,
+            "max": 34999
+          }
+        ]
+      }
+    },
+    {
+      "id": 8,
+      "title": "Great Lakes Regional",
+      "location": "Chicago, IL",
+      "description": "<div class=\"job-summary\">\n  <div class=\"job-section\">\n    <h4>Running Area:</h4>\n    <p>Midwest regional position covering IL, IN, OH, MI, WI, MN, IA, MO, and KY with consistent freight lanes.</p>\n  </div>\n  <div class=\"job-section\">\n    <h4>Pay & Mileage:</h4>\n    <ul>\n      <li>Average 2,200 miles per week</li>\n      <li>$1,000 weekly pay protection</li>\n      <li>Top earners make $1,650 per week</li>\n      <li>Safety bonus miles, driven miles, and green zones (extra 5¢ per mile) contribute to additional pay</li>\n    </ul>\n  </div>\n  <div class=\"job-section\">\n    <h4>Freight & Schedule:</h4>\n    <p>Primarily drop and hook freight with weekly home time.</p>\n  </div>\n</div>",
+      "requirements": [
+        "12+ months of Class A CDL experience",
+        "No more than 2 moving violations in 12 months",
+        "No more than 4 moving violations in 3 years",
+        "No more than 1 serious violation in 3 years",
+        "No more than 3 accidents in 36 months"
+      ],
+      "benefits": [
+        "Comprehensive health, vision, dental benefits",
+        "401K with company match",
+        "Paid holidays after six months",
+        "Vacation pay beginning after six months"
+      ],
+      "pay": "$65,000 annually with pay protection",
+      "homeTime": "Home weekly",
+      "experience": "12+ months",
+      "equipment": "Dry Van with 72\" sleeper",
+      "applyUrl": "https://intelliapp.driverapponline.com/c/truckers4hire?r=UthemesT",
+      "featured": false,
+      "regionRestriction": {
+        "states": [
+          "IL", "IN", "OH", "MI", "WI", "MN", "IA", "MO", "KY"
+        ],
+        "excludedStates": [],
+        "zipRanges": [
+          {
+            "min": 60000,
+            "max": 62999
+          },
+          {
+            "min": 46000,
+            "max": 47999
+          },
+          {
+            "min": 43000,
+            "max": 45999
+          },
+          {
+            "min": 48000,
+            "max": 49999
+          },
+          {
+            "min": 53000,
+            "max": 54999
+          },
+          {
+            "min": 55000,
+            "max": 56999
+          },
+          {
+            "min": 50000,
+            "max": 52999
+          },
+          {
+            "min": 63000,
+            "max": 65899
+          },
+          {
+            "min": 40000,
+            "max": 42999
+          }
+        ]
+      }
+    },
+    {
+      "id": 9,
+      "title": "Atlantic Coast Regional",
+      "location": "Harrisburg, PA",
+      "description": "<div class=\"job-summary\">\n  <div class=\"job-section\">\n    <h4>Running Area:</h4>\n    <p>Northeast regional position covering PA, NJ, NY, MD, DE, VA, WV, OH, CT, MA, and RI with consistent freight lanes.</p>\n  </div>\n  <div class=\"job-section\">\n    <h4>Pay & Mileage:</h4>\n    <ul>\n      <li>Average 2,200 miles per week</li>\n      <li>$1,000 weekly pay protection</li>\n      <li>Top earners make $1,650 per week</li>\n      <li>Safety bonus miles, driven miles, and green zones (extra 5¢ per mile) contribute to additional pay</li>\n    </ul>\n  </div>\n  <div class=\"job-section\">\n    <h4>Freight & Schedule:</h4>\n    <p>Primarily drop and hook freight with weekly home time.</p>\n  </div>\n</div>",
+      "requirements": [
+        "12+ months of Class A CDL experience",
+        "No more than 2 moving violations in 12 months",
+        "No more than 4 moving violations in 3 years",
+        "No more than 1 serious violation in 3 years",
+        "No more than 3 accidents in 36 months"
+      ],
+      "benefits": [
+        "Comprehensive health, vision, dental benefits",
+        "401K with company match",
+        "Paid holidays after six months",
+        "Vacation pay beginning after six months"
+      ],
+      "pay": "$65,000 annually with pay protection",
+      "homeTime": "Home weekly",
+      "experience": "12+ months",
+      "equipment": "Dry Van with 72\" sleeper",
+      "applyUrl": "https://intelliapp.driverapponline.com/c/truckers4hire?r=UthemesT",
+      "featured": false,
+      "regionRestriction": {
+        "states": [
+          "PA", "NJ", "NY", "MD", "DE", "VA", "WV", "OH", "CT", "MA", "RI"
+        ],
+        "excludedStates": [],
+        "zipRanges": [
+          {
+            "min": 15000,
+            "max": 19699
+          },
+          {
+            "min": 7000,
+            "max": 8999
+          },
+          {
+            "min": 10000,
+            "max": 14999
+          },
+          {
+            "min": 20000,
+            "max": 21999
+          },
+          {
+            "min": 19700,
+            "max": 19999
+          },
+          {
+            "min": 22000,
+            "max": 24699
+          },
+          {
+            "min": 25000,
+            "max": 26899
+          },
+          {
+            "min": 43000,
+            "max": 45999
+          },
+          {
+            "min": 6000,
+            "max": 6999
+          },
+          {
+            "min": 1000,
+            "max": 2999
+          }
+        ]
+      }
+    },
+    {
+      "id": 10,
+      "title": "Four-State Southeast Route",
+      "location": "Atlanta, GA",
+      "description": "<div class=\"job-summary\">\n  <div class=\"job-section\">\n    <h4>Running Area:</h4>\n    <p>Southeast regional position covering GA, AL, TN, and SC with dedicated routes and consistent schedule.</p>\n  </div>\n  <div class=\"job-section\">\n    <h4>Pay & Mileage:</h4>\n    <ul>\n      <li>Average 2,200-2,400 miles per week</li>\n      <li>Average weekly pay: $1,041</li>\n      <li>$1,000 weekly pay protection</li>\n      <li>Top earners make $1,575 per week</li>\n      <li>Safety bonus miles, driven miles, and green zones (extra 5¢ per mile) contribute to additional pay</li>\n    </ul>\n  </div>\n  <div class=\"job-section\">\n    <h4>Freight & Schedule:</h4>\n    <p>Primarily drop and hook freight with consistent schedule and weekly home time.</p>\n  </div>\n</div>",
+      "requirements": [
+        "12+ months of Class A CDL experience",
+        "No more than 2 moving violations in 12 months",
+        "No more than 4 moving violations in 3 years",
+        "No more than 1 serious violation in 3 years",
+        "No more than 3 accidents in 36 months"
+      ],
+      "benefits": [
+        "Comprehensive health, vision, dental benefits",
+        "401K with company match",
+        "Paid holidays after six months",
+        "Vacation pay beginning after six months"
+      ],
+      "pay": "$65,000 annually with pay protection",
+      "homeTime": "Home weekly",
+      "experience": "12+ months",
+      "equipment": "Dry Van with 72\" sleeper",
+      "applyUrl": "https://intelliapp.driverapponline.com/c/truckers4hire?r=UthemesT",
+      "featured": false,
+      "regionRestriction": {
+        "states": [
+          "GA", "AL", "TN", "SC"
+        ],
+        "excludedStates": [],
+        "zipRanges": [
+          {
+            "min": 30000,
+            "max": 31999
+          },
+          {
+            "min": 35000,
+            "max": 36999
+          },
+          {
+            "min": 37000,
+            "max": 38599
+          },
+          {
+            "min": 29000,
+            "max": 29999
+          }
+        ]
+      }
+    },
+    {
+      "id": 11,
+      "title": "Middle Tennessee Regional Driver",
+      "location": "Nashville, TN",
+      "description": "<div class=\"job-summary\">\n  <div class=\"job-section\">\n    <h4>Running Area:</h4>\n    <p>Tennessee-based regional position covering the Middle Tennessee region with dedicated routes.</p>\n  </div>\n  <div class=\"job-section\">\n    <h4>Pay & Mileage:</h4>\n    <ul>\n      <li>Average 2,200 miles per week</li>\n      <li>$1,000 weekly pay protection</li>\n      <li>Top earners make $1,650 per week</li>\n      <li>Safety bonus miles, driven miles, and green zones (extra 5¢ per mile) contribute to additional pay</li>\n    </ul>\n  </div>\n  <div class=\"job-section\">\n    <h4>Freight & Schedule:</h4>\n    <p>Primarily drop and hook freight with consistent schedule and weekly home time.</p>\n  </div>\n</div>",
+      "requirements": [
+        "12+ months of Class A CDL experience",
+        "No more than 2 moving violations in 12 months",
+        "No more than 4 moving violations in 3 years",
+        "No more than 1 serious violation in 3 years",
+        "No more than 3 accidents in 36 months"
+      ],
+      "benefits": [
+        "Comprehensive health, vision, dental benefits",
+        "401K with company match",
+        "Paid holidays after six months",
+        "Vacation pay beginning after six months"
+      ],
+      "pay": "$65,000 annually with pay protection",
+      "homeTime": "Home weekly",
+      "experience": "12+ months",
+      "equipment": "Dry Van with 72\" sleeper",
+      "applyUrl": "https://intelliapp.driverapponline.com/c/truckers4hire?r=UthemesT",
+      "featured": false,
+      "regionRestriction": {
+        "states": [
+          "TN", "KY", "GA", "AL", "MS", "AR", "MO", "IL", "IN", "OH", "VA", "NC", "SC"
+        ],
+        "excludedStates": [],
+        "zipRanges": [
+          {
+            "min": 37000,
+            "max": 38599
+          }
+        ]
+      }
+    },
+    {
+      "id": 12,
+      "title": "Georgia OTR Driver",
+      "location": "Columbus, GA",
+      "description": "<div class=\"job-summary\">\n  <div class=\"job-section\">\n    <h4>Running Area:</h4>\n    <p>Georgia-based OTR position with nationwide routes and consistent freight.</p>\n  </div>\n  <div class=\"job-section\">\n    <h4>Pay & Mileage:</h4>\n    <ul>\n      <li>Average 2,312 miles per week</li>\n      <li>$1,000 weekly pay protection</li>\n      <li>Top earners make $1,750 per week</li>\n      <li>Safety bonus miles, driven miles, and green zones (extra 5¢ per mile) contribute to additional pay</li>\n    </ul>\n  </div>\n  <div class=\"job-section\">\n    <h4>Freight & Schedule:</h4>\n    <p>Primarily drop and hook freight with excellent home time options.</p>\n  </div>\n</div>",
+      "requirements": [
+        "12+ months of Class A CDL experience",
+        "No more than 2 moving violations in 12 months",
+        "No more than 4 moving violations in 3 years",
+        "No more than 1 serious violation in 3 years",
+        "No more than 3 accidents in 36 months"
+      ],
+      "benefits": [
+        "Comprehensive health, vision, dental benefits",
+        "401K with company match",
+        "Paid holidays after six months",
+        "Vacation pay beginning after six months"
+      ],
+      "pay": "$65,000 annually with pay protection",
+      "homeTime": "Home bi-weekly (14 days out, 2-3 days home)",
+      "experience": "12+ months",
+      "equipment": "Dry Van with 72\" sleeper",
+      "applyUrl": "https://intelliapp.driverapponline.com/c/truckers4hire?r=UthemesT",
+      "featured": false,
+      "regionRestriction": {
+        "states": [
+          "GA", "AL", "FL", "SC", "NC", "TN"
+        ],
+        "excludedStates": [],
+        "zipRanges": [
+          {
+            "min": 30000,
+            "max": 31999
+          }
+        ]
+      }
+    },
+    {
+      "id": 13,
+      "title": "Coast to Coast Team",
+      "location": "Nationwide",
+      "description": "<div class=\"job-summary\">\n  <div class=\"job-section\">\n    <h4>Running Area:</h4>\n    <p>Nationwide team position running coast to coast with a partner.</p>\n  </div>\n  <div class=\"job-section\">\n    <h4>Pay & Mileage:</h4>\n    <ul>\n      <li>Average 5,000+ miles per week</li>\n      <li>Average weekly pay: $1,550 per driver</li>\n      <li>$1,000 weekly pay protection per driver</li>\n      <li>Top earners make $2,200 per week</li>\n      <li>Safety bonus miles, driven miles, and green zones (extra 5¢ per mile) contribute to additional pay</li>\n    </ul>\n  </div>\n  <div class=\"job-section\">\n    <h4>Freight & Schedule:</h4>\n    <p>Run coast to coast with a partner with 2-3 weeks out followed by 4-5 days home time.</p>\n  </div>\n</div>",
+      "requirements": [
+        "12+ months of Class A CDL experience",
+        "No more than 2 moving violations in 12 months",
+        "No more than 4 moving violations in 3 years",
+        "No more than 1 serious violation in 3 years",
+        "No more than 3 accidents in 36 months"
+      ],
+      "benefits": [
+        "Comprehensive health, vision, dental benefits",
+        "401K with company match",
+        "Paid holidays after six months",
+        "Vacation pay beginning after six months"
+      ],
+      "pay": "$0.60-0.70/mile based on verifiable experience",
+      "homeTime": "Home bi-weekly",
+      "experience": "12+ months",
+      "equipment": "Dry Van",
+      "applyUrl": "https://intelliapp.driverapponline.com/c/truckers4hire?r=UthemesT",
+      "featured": false,
+      "regionRestriction": {
+        "states": [
+          "AL", "GA", "FL", "TN", "SC", "NC", "KY", "VA", "WV", "PA", "MD", "DE", "NJ", 
+          "CT", "RI", "MA", "NH", "VT", "ME", "NY", "OH", "IN", "IL", "MI", "WI", "MN", 
+          "IA", "MO", "AR", "LA", "MS", "ND", "SD", "NE", "KS", "OK", "TX", "NM", "CO", 
+          "WY", "MT", "ID", "UT", "AZ", "NV", "CA", "OR", "WA"
+        ],
+        "excludedStates": [],
+        "zipRanges": []
+      }
+    }
+  ]
+}

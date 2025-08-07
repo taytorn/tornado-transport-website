@@ -1,0 +1,543 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>US DOT Number Guide - Tornado Transport</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+        :root {
+            --primary-yellow: #FFD700;
+            --primary-black: #222222;
+            --neutral-white: #FFFFFF;
+            --neutral-gray: #EEEEEE;
+            --hover-yellow: #FFE066;
+        }
+        
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: var(--neutral-gray);
+            color: var(--primary-black);
+        }
+        
+        .navbar {
+            background-color: var(--primary-black);
+            padding: 15px 0;
+        }
+        
+        .navbar-brand {
+            color: var(--primary-yellow) !important;
+            font-weight: bold;
+            font-size: 1.8rem;
+        }
+        
+        .nav-link {
+            color: var(--neutral-white) !important;
+            font-weight: 500;
+            margin: 0 10px;
+            transition: color 0.3s;
+        }
+        
+        .nav-link:hover {
+            color: var(--primary-yellow) !important;
+        }
+        
+        .nav-link.active {
+            color: var(--primary-yellow) !important;
+        }
+        
+        .btn-primary {
+            background-color: var(--primary-yellow);
+            color: var(--primary-black);
+            border: none;
+            font-weight: bold;
+            padding: 10px 20px;
+            transition: background-color 0.3s;
+        }
+        
+        .btn-primary:hover {
+            background-color: var(--hover-yellow);
+            color: var(--primary-black);
+        }
+        
+        .card {
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+            margin-bottom: 20px;
+            border: none;
+        }
+        
+        .card-header {
+            background-color: var(--primary-yellow);
+            color: var(--primary-black);
+            font-weight: bold;
+            border: none;
+        }
+        
+        .footer {
+            background-color: var(--primary-black);
+            color: var(--neutral-white);
+            padding: 40px 0 20px;
+            margin-top: 40px;
+        }
+        
+        .footer a {
+            color: var(--primary-yellow);
+            text-decoration: none;
+        }
+        
+        .footer a:hover {
+            text-decoration: underline;
+        }
+        
+        .footer-heading {
+            color: var(--primary-yellow);
+            margin-bottom: 20px;
+            font-weight: bold;
+        }
+        
+        .social-icon {
+            font-size: 1.5rem;
+            margin-right: 15px;
+            color: var(--neutral-white);
+            transition: color 0.3s;
+        }
+        
+        .social-icon:hover {
+            color: var(--primary-yellow);
+        }
+        
+        .step-card {
+            position: relative;
+            padding-left: 50px;
+            margin-bottom: 30px;
+        }
+        
+        .step-number {
+            position: absolute;
+            left: 0;
+            top: 0;
+            width: 40px;
+            height: 40px;
+            background-color: var(--primary-yellow);
+            color: var(--primary-black);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: bold;
+            font-size: 1.2rem;
+        }
+        
+        .faq-item {
+            margin-bottom: 20px;
+        }
+        
+        .faq-question {
+            font-weight: bold;
+            margin-bottom: 10px;
+            color: var(--primary-black);
+        }
+        
+        .faq-answer {
+            color: #555;
+        }
+        
+        .resource-link {
+            display: block;
+            padding: 15px;
+            background-color: var(--neutral-white);
+            border-radius: 8px;
+            margin-bottom: 15px;
+            text-decoration: none;
+            color: var(--primary-black);
+            transition: transform 0.3s, box-shadow 0.3s;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+        
+        .resource-link:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+            color: var(--primary-black);
+        }
+        
+        .resource-link i {
+            color: var(--primary-yellow);
+            margin-right: 10px;
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">TORNADO TRANSPORT</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="job-map.html">Job Map</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="available-runs.html">Available Runs</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="about.html">About Us</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contact.html">Contact</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link btn btn-primary ms-lg-3" href="https://intelliapp.driverapponline.com/c/truckers4hire?r=UthemesT" target="_blank">Apply Now</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container mt-4 mb-5">
+        <div class="row mb-4">
+            <div class="col-12 text-center">
+                <h1 class="display-5 fw-bold">US DOT Number Application Guide</h1>
+                <p class="lead">A comprehensive guide to obtaining your USDOT Number</p>
+            </div>
+        </div>
+
+        <div class="row mb-5">
+            <div class="col-lg-8 mx-auto">
+                <div class="card">
+                    <div class="card-header">
+                        <h3 class="h5 mb-0">What is a USDOT Number?</h3>
+                    </div>
+                    <div class="card-body">
+                        <p>A USDOT Number serves as a unique identifier for motor carriers, brokers, and shippers who operate commercial vehicles transporting passengers or hauling cargo in interstate commerce. This number is used by the Federal Motor Carrier Safety Administration (FMCSA) to monitor a company's safety information, including crash investigations, compliance reviews, and inspections.</p>
+                        
+                        <div class="alert alert-warning mt-3">
+                            <i class="fas fa-exclamation-triangle me-2"></i> <strong>Important:</strong> Operating without a required USDOT Number can result in significant penalties and fines.
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="row mb-5">
+            <div class="col-12">
+                <h2 class="text-center mb-4">Who Needs a USDOT Number?</h2>
+                <div class="row">
+                    <div class="col-md-6 mb-4">
+                        <div class="card h-100">
+                            <div class="card-body">
+                                <h4 class="card-title">You NEED a USDOT Number if:</h4>
+                                <ul class="list-group list-group-flush">
+                                    <li class="list-group-item">You operate commercial vehicles transporting passengers or hauling cargo in interstate commerce</li>
+                                    <li class="list-group-item">Your vehicles have a gross vehicle weight rating or gross combination weight rating of 10,001 pounds or more</li>
+                                    <li class="list-group-item">You transport hazardous materials in quantities requiring placarding</li>
+                                    <li class="list-group-item">You transport 9-15 passengers (including the driver) for compensation</li>
+                                    <li class="list-group-item">You transport 16+ passengers (including the driver)</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 mb-4">
+                        <div class="card h-100">
+                            <div class="card-body">
+                                <h4 class="card-title">You DON'T NEED a USDOT Number if:</h4>
+                                <ul class="list-group list-group-flush">
+                                    <li class="list-group-item">You operate exclusively in intrastate commerce (within a single state) and your state doesn't require it</li>
+                                    <li class="list-group-item">You operate personal vehicles not used for commercial purposes</li>
+                                    <li class="list-group-item">You operate farm vehicles that meet specific exemption criteria</li>
+                                    <li class="list-group-item">You operate certain government vehicles</li>
+                                    <li class="list-group-item">You operate vehicles below the weight thresholds and not transporting regulated materials</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="alert alert-info mt-3">
+                    <i class="fas fa-info-circle me-2"></i> <strong>Note:</strong> Some states require USDOT Numbers for intrastate commerce as well. Check with your state's transportation department for specific requirements.
+                </div>
+            </div>
+        </div>
+
+        <div class="row mb-5">
+            <div class="col-12">
+                <h2 class="text-center mb-4">Step-by-Step Application Process</h2>
+                <div class="step-card">
+                    <div class="step-number">1</div>
+                    <h4>Gather Required Information</h4>
+                    <p>Before starting your application, gather the following information:</p>
+                    <ul>
+                        <li>Business name, address, and contact information</li>
+                        <li>Type of operation (private carrier, for-hire carrier, etc.)</li>
+                        <li>Type of cargo you'll be transporting</li>
+                        <li>Number of vehicles and drivers</li>
+                        <li>Hazardous materials information (if applicable)</li>
+                        <li>Tax ID number (EIN) or Social Security Number</li>
+                    </ul>
+                </div>
+                
+                <div class="step-card">
+                    <div class="step-number">2</div>
+                    <h4>Create a FMCSA Portal Account</h4>
+                    <p>Visit the FMCSA website and create an account in the URS (Unified Registration System) portal:</p>
+                    <ol>
+                        <li>Go to <a href="https://portal.fmcsa.dot.gov" target="_blank">https://portal.fmcsa.dot.gov</a></li>
+                        <li>Click on "Register" to create a new account</li>
+                        <li>Follow the prompts to set up your username and password</li>
+                        <li>Verify your email address</li>
+                    </ol>
+                </div>
+                
+                <div class="step-card">
+                    <div class="step-number">3</div>
+                    <h4>Complete the URS Application</h4>
+                    <p>Once logged in to the FMCSA Portal:</p>
+                    <ol>
+                        <li>Select "FMCSA Registration" from the available options</li>
+                        <li>Choose "I need to create a new USDOT Number"</li>
+                        <li>Complete all sections of the application with your prepared information</li>
+                        <li>Review all information for accuracy before submission</li>
+                    </ol>
+                </div>
+                
+                <div class="step-card">
+                    <div class="step-number">4</div>
+                    <h4>Pay the Filing Fee (if applicable)</h4>
+                    <p>Some carriers are required to pay a filing fee:</p>
+                    <ul>
+                        <li>For-hire carriers typically need to pay a fee</li>
+                        <li>Private carriers may be exempt from fees</li>
+                        <li>Fees can be paid online via credit card or electronic check</li>
+                        <li>Current fees range from $300-$600 depending on your operation type</li>
+                    </ul>
+                </div>
+                
+                <div class="step-card">
+                    <div class="step-number">5</div>
+                    <h4>Submit Your Application</h4>
+                    <p>After reviewing all information and paying any required fees:</p>
+                    <ol>
+                        <li>Submit your application through the portal</li>
+                        <li>Save or print your confirmation page</li>
+                        <li>Note your application tracking number</li>
+                    </ol>
+                </div>
+                
+                <div class="step-card">
+                    <div class="step-number">6</div>
+                    <h4>Receive Your USDOT Number</h4>
+                    <p>Processing times vary, but typically:</p>
+                    <ul>
+                        <li>USDOT Numbers are issued within 1-3 business days</li>
+                        <li>You'll receive notification via email</li>
+                        <li>You can check your application status in the FMCSA Portal</li>
+                    </ul>
+                </div>
+                
+                <div class="step-card">
+                    <div class="step-number">7</div>
+                    <h4>Display Your USDOT Number</h4>
+                    <p>Once received, your USDOT Number must be displayed:</p>
+                    <ul>
+                        <li>On both sides of each commercial motor vehicle</li>
+                        <li>In a contrasting color to the vehicle</li>
+                        <li>In letters at least 2 inches high</li>
+                        <li>Clearly legible during daylight hours from 50 feet</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="row mb-5">
+            <div class="col-12">
+                <h2 class="text-center mb-4">Post-Application Requirements</h2>
+                <div class="card">
+                    <div class="card-body">
+                        <div class="row">
+                            <div class="col-md-6 mb-4">
+                                <h4><i class="fas fa-clipboard-check text-warning me-2"></i>Biennial Updates</h4>
+                                <p>Every two years, you must update your company information with FMCSA, even if nothing has changed. Failure to complete this update can result in deactivation of your USDOT Number.</p>
+                            </div>
+                            <div class="col-md-6 mb-4">
+                                <h4><i class="fas fa-shield-alt text-warning me-2"></i>Safety Audits</h4>
+                                <p>New carriers are subject to a safety audit within the first 12 months of operation. Be prepared by maintaining proper records and ensuring compliance with all safety regulations.</p>
+                            </div>
+                            <div class="col-md-6 mb-4">
+                                <h4><i class="fas fa-file-alt text-warning me-2"></i>Record Keeping</h4>
+                                <p>Maintain records of driver qualification files, vehicle maintenance, hours of service logs, and accident reports as required by FMCSA regulations.</p>
+                            </div>
+                            <div class="col-md-6 mb-4">
+                                <h4><i class="fas fa-balance-scale text-warning me-2"></i>Compliance Reviews</h4>
+                                <p>FMCSA may conduct compliance reviews to ensure your operation meets safety standards. These reviews can be triggered by complaints, accidents, or roadside inspection results.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="row mb-5">
+            <div class="col-12">
+                <h2 class="text-center mb-4">Frequently Asked Questions</h2>
+                <div class="accordion" id="faqAccordion">
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="headingOne">
+                            <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                How long does it take to get a USDOT Number?
+                            </button>
+                        </h2>
+                        <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#faqAccordion">
+                            <div class="accordion-body">
+                                Typically, USDOT Numbers are issued within 1-3 business days after submitting a complete application. However, processing times may vary based on application volume and whether additional information is required.
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="headingTwo">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                Is there a fee to obtain a USDOT Number?
+                            </button>
+                        </h2>
+                        <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#faqAccordion">
+                            <div class="accordion-body">
+                                For private carriers (those who transport their own goods), there is typically no fee to obtain a USDOT Number. However, for-hire carriers (those who transport goods or passengers for compensation) must register for operating authority (MC Number) in addition to a USDOT Number, which does require a fee, currently around $300.
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="headingThree">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                                What's the difference between a USDOT Number and an MC Number?
+                            </button>
+                        </h2>
+                        <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#faqAccordion">
+                            <div class="accordion-body">
+                                A USDOT Number is a unique identifier used for monitoring safety information, while an MC (Motor Carrier) Number is an operating authority that grants permission to transport regulated commodities for hire across state lines. For-hire carriers typically need both numbers, while private carriers generally only need a USDOT Number.
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="headingFour">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                                Do I need a USDOT Number if I only operate within one state?
+                            </button>
+                        </h2>
+                        <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour" data-bs-parent="#faqAccordion">
+                            <div class="accordion-body">
+                                If you only operate within one state (intrastate commerce), federal regulations don't require a USDOT Number. However, many states have adopted requirements for intrastate carriers to obtain a USDOT Number. Check with your state's transportation department for specific requirements.
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="headingFive">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
+                                Can I apply for a USDOT Number on behalf of someone else?
+                            </button>
+                        </h2>
+                        <div id="collapseFive" class="accordion-collapse collapse" aria-labelledby="headingFive" data-bs-parent="#faqAccordion">
+                            <div class="accordion-body">
+                                Yes, you can apply on behalf of someone else as a third-party representative, but you must have proper authorization. The FMCSA requires a signed Power of Attorney or other authorization document if you're applying on behalf of another entity.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="row mb-5">
+            <div class="col-12">
+                <h2 class="text-center mb-4">Official Resources</h2>
+                <div class="row">
+                    <div class="col-md-6 mb-3">
+                        <a href="https://www.fmcsa.dot.gov/registration" target="_blank" class="resource-link">
+                            <i class="fas fa-external-link-alt fa-lg"></i> FMCSA Registration Page
+                        </a>
+                    </div>
+                    <div class="col-md-6 mb-3">
+                        <a href="https://portal.fmcsa.dot.gov" target="_blank" class="resource-link">
+                            <i class="fas fa-external-link-alt fa-lg"></i> FMCSA Portal (URS)
+                        </a>
+                    </div>
+                    <div class="col-md-6 mb-3">
+                        <a href="https://www.fmcsa.dot.gov/regulations" target="_blank" class="resource-link">
+                            <i class="fas fa-external-link-alt fa-lg"></i> FMCSA Regulations
+                        </a>
+                    </div>
+                    <div class="col-md-6 mb-3">
+                        <a href="https://www.fmcsa.dot.gov/contact-us" target="_blank" class="resource-link">
+                            <i class="fas fa-external-link-alt fa-lg"></i> FMCSA Contact Information
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-12 text-center">
+                <h2 class="mb-4">Need Assistance?</h2>
+                <p class="lead mb-4">Our team can help guide you through the USDOT Number application process.</p>
+                <a href="contact.html" class="btn btn-primary me-3">Contact Us</a>
+                <a href="https://intelliapp.driverapponline.com/c/truckers4hire?r=UthemesT" target="_blank" class="btn btn-outline-dark">Apply for a Driving Position</a>
+            </div>
+        </div>
+    </div>
+
+    <div class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <h4 class="footer-heading">Tornado Transport</h4>
+                    <p>Connecting Professional Drivers with Premier Carriers Nationwide</p>
+                    <div class="mt-4">
+                        <a href="#" class="social-icon"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" class="social-icon"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="#" class="social-icon"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+                
+                <div class="col-lg-2 col-md-6 mb-4">
+                    <h4 class="footer-heading">Quick Links</h4>
+                    <ul class="list-unstyled">
+                        <li class="mb-2"><a href="index.html">Home</a></li>
+                        <li class="mb-2"><a href="job-map.html">Job Map</a></li>
+                        <li class="mb-2"><a href="available-runs.html">Available Runs</a></li>
+                        <li class="mb-2"><a href="about.html">About Us</a></li>
+                        <li class="mb-2"><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                
+                <div class="col-lg-3 col-md-6 mb-4">
+                    <h4 class="footer-heading">Job Types</h4>
+                    <ul class="list-unstyled">
+                        <li class="mb-2"><a href="available-runs.html">OTR Positions</a></li>
+                        <li class="mb-2"><a href="available-runs.html">Regional Routes</a></li>
+                        <li class="mb-2"><a href="available-runs.html">Local Delivery</a></li>
+                        <li class="mb-2"><a href="available-runs.html">Dedicated Accounts</a></li>
+                        <li class="mb-2"><a href="available-runs.html">Recent Graduate Programs</a></li>
+                    </ul>
+                </div>
+                
+                <div class="col-lg-3 col-md-6 mb-4">
+                    <h4 class="footer-heading">Contact Us</h4>
+                    <p><i class="fas fa-phone me-2"></i> Taylor: 470-664-1300</p>
+                    <p><i class="fas fa-envelope me-2"></i> recruiting@tornadotransport.com</p>
+                    <a href="https://intelliapp.driverapponline.com/c/truckers4hire?r=UthemesT" target="_blank" class="btn btn-primary mt-3">Apply Now</a>
+                </div>
+            </div>
+            
+            <div class="row mt-4">
+                <div class="col-12 text-center">
+                    <p>&copy; 2025 Tornado Transport. All rights reserved.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

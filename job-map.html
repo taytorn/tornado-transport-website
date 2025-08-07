@@ -1,0 +1,898 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tornado Transport - Job Map</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css" />
+    <style>
+        :root {
+            --primary-yellow: #FFD700;
+            --primary-black: #222222;
+            --neutral-white: #FFFFFF;
+            --neutral-gray: #EEEEEE;
+            --hover-yellow: #FFE066;
+        }
+        
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: var(--neutral-white);
+            color: var(--primary-black);
+        }
+        
+        .navbar {
+            background-color: var(--primary-black);
+            padding: 15px 0;
+        }
+        
+        .navbar-brand {
+            color: var(--primary-yellow) !important;
+            font-weight: bold;
+            font-size: 1.8rem;
+        }
+        
+        .nav-link {
+            color: var(--neutral-white) !important;
+            font-weight: 500;
+            margin: 0 10px;
+            transition: color 0.3s;
+        }
+        
+        .nav-link:hover {
+            color: var(--primary-yellow) !important;
+        }
+        
+        .btn-primary {
+            background-color: var(--primary-yellow);
+            color: var(--primary-black);
+            border: none;
+            font-weight: bold;
+            padding: 10px 20px;
+            transition: background-color 0.3s;
+        }
+        
+        .btn-primary:hover {
+            background-color: var(--hover-yellow);
+            color: var(--primary-black);
+        }
+        
+        .page-header {
+            background-color: var(--primary-black);
+            color: var(--neutral-white);
+            padding: 40px 0;
+            position: relative;
+        }
+        
+        .page-header h1 {
+            font-weight: bold;
+        }
+        
+        .page-header h1 span {
+            color: var(--primary-yellow);
+        }
+        
+        .map-container {
+            padding: 40px 0;
+        }
+        
+        #job-map {
+            height: 600px;
+            width: 100%;
+            border-radius: 10px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+        }
+        
+        .filter-panel {
+            background-color: var(--neutral-white);
+            border-radius: 10px;
+            padding: 20px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+            margin-bottom: 20px;
+        }
+        
+        .filter-panel h3 {
+            font-weight: bold;
+            margin-bottom: 20px;
+            color: var(--primary-black);
+        }
+        
+        .filter-section {
+            margin-bottom: 20px;
+        }
+        
+        .filter-section h4 {
+            font-weight: bold;
+            font-size: 1.1rem;
+            margin-bottom: 10px;
+            color: var(--primary-black);
+        }
+        
+        .filter-option {
+            margin-bottom: 10px;
+        }
+        
+        .filter-option label {
+            margin-left: 5px;
+            cursor: pointer;
+        }
+        
+        .job-popup {
+            max-width: 300px;
+        }
+        
+        .job-popup h3 {
+            font-weight: bold;
+            margin-bottom: 10px;
+            color: var(--primary-black);
+        }
+        
+        .job-popup p {
+            margin-bottom: 5px;
+        }
+        
+        .apply-btn {
+            display: inline-block;
+            background-color: var(--primary-yellow);
+            color: var(--primary-black);
+            font-weight: bold;
+            padding: 8px 15px;
+            border-radius: 5px;
+            text-decoration: none;
+            margin-top: 10px;
+            transition: background-color 0.3s;
+        }
+        
+        .apply-btn:hover {
+            background-color: var(--hover-yellow);
+            color: var(--primary-black);
+        }
+        
+        .footer {
+            background-color: var(--primary-black);
+            color: var(--neutral-white);
+            padding: 40px 0 20px;
+        }
+        
+        .footer a {
+            color: var(--primary-yellow);
+            text-decoration: none;
+        }
+        
+        .footer a:hover {
+            text-decoration: underline;
+        }
+        
+        .footer-heading {
+            color: var(--primary-yellow);
+            margin-bottom: 20px;
+            font-weight: bold;
+        }
+        
+        .social-icon {
+            font-size: 1.5rem;
+            margin-right: 15px;
+            color: var(--neutral-white);
+            transition: color 0.3s;
+        }
+        
+        .social-icon:hover {
+            color: var(--primary-yellow);
+        }
+        
+        /* Admin Panel Styles */
+        .admin-panel {
+            position: fixed;
+            top: 20px;
+            right: 20px;
+            width: 400px;
+            max-height: 80vh;
+            overflow-y: auto;
+            background-color: var(--neutral-white);
+            border-radius: 10px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+            padding: 20px;
+            z-index: 1000;
+        }
+        
+        .admin-panel h3 {
+            font-weight: bold;
+            margin-bottom: 10px;
+            color: var(--primary-black);
+        }
+        
+        .admin-controls {
+            display: flex;
+            gap: 10px;
+            margin-bottom: 20px;
+        }
+        
+        .admin-controls button {
+            background-color: var(--primary-yellow);
+            color: var(--primary-black);
+            border: none;
+            padding: 8px 15px;
+            border-radius: 5px;
+            cursor: pointer;
+            font-weight: bold;
+            transition: background-color 0.3s;
+        }
+        
+        .admin-controls button:hover {
+            background-color: var(--hover-yellow);
+        }
+        
+        .job-list ul {
+            list-style: none;
+            padding: 0;
+        }
+        
+        .job-list li {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 10px;
+            border-bottom: 1px solid #ddd;
+        }
+        
+        .job-actions {
+            display: flex;
+            gap: 5px;
+        }
+        
+        .job-actions button {
+            background-color: var(--primary-yellow);
+            color: var(--primary-black);
+            border: none;
+            padding: 5px 10px;
+            border-radius: 3px;
+            cursor: pointer;
+            font-size: 0.8rem;
+            transition: background-color 0.3s;
+        }
+        
+        .job-actions button:hover {
+            background-color: var(--hover-yellow);
+        }
+        
+        .job-form {
+            background-color: var(--neutral-white);
+            padding: 20px;
+            border-radius: 10px;
+        }
+        
+        .form-group {
+            margin-bottom: 15px;
+        }
+        
+        .form-group label {
+            display: block;
+            margin-bottom: 5px;
+            font-weight: bold;
+        }
+        
+        .form-group input,
+        .form-group select,
+        .form-group textarea {
+            width: 100%;
+            padding: 8px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+        }
+        
+        .form-group textarea {
+            height: 100px;
+        }
+        
+        .form-actions {
+            display: flex;
+            gap: 10px;
+            margin-top: 20px;
+        }
+        
+        .form-actions button {
+            background-color: var(--primary-yellow);
+            color: var(--primary-black);
+            border: none;
+            padding: 8px 15px;
+            border-radius: 5px;
+            cursor: pointer;
+            font-weight: bold;
+            transition: background-color 0.3s;
+        }
+        
+        .form-actions button:hover {
+            background-color: var(--hover-yellow);
+        }
+        
+        @media (max-width: 768px) {
+            .admin-panel {
+                width: 90%;
+                right: 5%;
+            }
+            
+            #job-map {
+                height: 400px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">TORNADO TRANSPORT</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="job-map.html">Job Map</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="available-runs.html">Available Runs</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="about.html">About Us</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contact.html">Contact</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link btn btn-primary ms-lg-3" href="https://intelliapp.driverapponline.com/c/truckers4hire?r=UthemesT" target="_blank">Apply Now</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div class="page-header">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8">
+                    <h1>Find Your Perfect <span>Driving Position</span></h1>
+                    <p>Use our interactive map to explore available driving positions across the United States. Filter by job type, experience level, equipment, and region to find the perfect match for your career goals.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="map-container">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-3">
+                    <div class="filter-panel">
+                        <h3>Filter Jobs</h3>
+                        <p>Currently showing <span id="job-count">0</span> positions</p>
+                        
+                        <div class="filter-section">
+                            <h4>Job Type</h4>
+                            <div class="filter-option">
+                                <input type="checkbox" id="otr" name="job-type" value="OTR" checked>
+                                <label for="otr">OTR</label>
+                            </div>
+                            <div class="filter-option">
+                                <input type="checkbox" id="regional" name="job-type" value="Regional" checked>
+                                <label for="regional">Regional</label>
+                            </div>
+                            <div class="filter-option">
+                                <input type="checkbox" id="local" name="job-type" value="Local" checked>
+                                <label for="local">Local</label>
+                            </div>
+                        </div>
+                        
+                        <div class="filter-section">
+                            <h4>Experience Level</h4>
+                            <div class="filter-option">
+                                <input type="checkbox" id="experienced" name="experience" value="Experienced (1+ years)" checked>
+                                <label for="experienced">Experienced (1+ years)</label>
+                            </div>
+                            <div class="filter-option">
+                                <input type="checkbox" id="recent-grad" name="experience" value="Recent Graduate" checked>
+                                <label for="recent-grad">Recent Graduate</label>
+                            </div>
+                        </div>
+                        
+                        <div class="filter-section">
+                            <h4>Equipment</h4>
+                            <div class="filter-option">
+                                <input type="checkbox" id="dry-van" name="equipment" value="Dry Van" checked>
+                                <label for="dry-van">Dry Van</label>
+                            </div>
+                            <div class="filter-option">
+                                <input type="checkbox" id="refrigerated" name="equipment" value="Refrigerated" checked>
+                                <label for="refrigerated">Refrigerated</label>
+                            </div>
+                            <div class="filter-option">
+                                <input type="checkbox" id="flatbed" name="equipment" value="Flatbed" checked>
+                                <label for="flatbed">Flatbed</label>
+                            </div>
+                        </div>
+                        
+                        <div class="filter-section">
+                            <h4>Region</h4>
+                            <div class="filter-option">
+                                <input type="checkbox" id="midwest" name="region" value="Midwest" checked>
+                                <label for="midwest">Midwest</label>
+                            </div>
+                            <div class="filter-option">
+                                <input type="checkbox" id="northeast" name="region" value="Northeast" checked>
+                                <label for="northeast">Northeast</label>
+                            </div>
+                            <div class="filter-option">
+                                <input type="checkbox" id="southeast" name="region" value="Southeast" checked>
+                                <label for="southeast">Southeast</label>
+                            </div>
+                            <div class="filter-option">
+                                <input type="checkbox" id="southwest" name="region" value="Southwest" checked>
+                                <label for="southwest">Southwest</label>
+                            </div>
+                            <div class="filter-option">
+                                <input type="checkbox" id="west" name="region" value="West" checked>
+                                <label for="west">West</label>
+                            </div>
+                        </div>
+                        
+                        <button id="reset-filters" class="btn btn-primary w-100 mt-3">Reset Filters</button>
+                    </div>
+                </div>
+                
+                <div class="col-lg-9">
+                    <div id="job-map"></div>
+                    <div class="mt-4">
+                        <p><strong>Note:</strong> Yellow circles indicate hiring radius for each position. Click on a marker to view job details and apply.</p>
+                        <p>For assistance finding the right position, call us at <strong>(972) 573-8906</strong> or email <strong>info@tornado-transport.com</strong></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <h4 class="footer-heading">Tornado Transport</h4>
+                    <p>Professional Trucking Carrier</p>
+                    <div class="mt-4">
+                        <a href="https://www.facebook.com/tornadotransport" target="_blank" class="social-icon"><i class="fab fa-facebook-f"></i></a>
+                        <a href="https://www.linkedin.com/company/tornado-transport" target="_blank" class="social-icon"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="https://www.instagram.com/tornado_transport" target="_blank" class="social-icon"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+                
+                <div class="col-lg-2 col-md-6 mb-4">
+                    <h4 class="footer-heading">Quick Links</h4>
+                    <ul class="list-unstyled">
+                        <li class="mb-2"><a href="index.html">Home</a></li>
+                        <li class="mb-2"><a href="job-map.html">Job Map</a></li>
+                        <li class="mb-2"><a href="available-runs.html">Available Runs</a></li>
+                        <li class="mb-2"><a href="about.html">About Us</a></li>
+                        <li class="mb-2"><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                
+                <div class="col-lg-3 col-md-6 mb-4">
+                    <h4 class="footer-heading">Job Types</h4>
+                    <ul class="list-unstyled">
+                        <li class="mb-2"><a href="available-runs.html">OTR Positions</a></li>
+                        <li class="mb-2"><a href="available-runs.html">Regional Routes</a></li>
+                        <li class="mb-2"><a href="available-runs.html">Local Delivery</a></li>
+                        <li class="mb-2"><a href="available-runs.html">Dedicated Accounts</a></li>
+                        <li class="mb-2"><a href="available-runs.html">Recent Graduate Programs</a></li>
+                    </ul>
+                </div>
+                
+                <div class="col-lg-3 col-md-6 mb-4">
+                    <h4 class="footer-heading">Contact                    <p><i class="fas fa-phone me-2"></i> (972) 573-8906</p>
+                    <p><i class="fas fa-envelope me-2"></i> info@tornado-transport.com</p>                   <p><i class="fas fa-user me-2"></i> Hiring Manager: taylor@tornado-transport.com</p>
+                    <a href="https://intelliapp.driverapponline.com/c/tornadotransport" target="_blank" class="btn btn-primary mt-3">Apply Now</a>
+                </div>
+            </div>
+            
+            <div class="row mt-4">
+                <div class="col-12 text-center">
+                    <p>&copy; 2025 Tornado Transport. All rights reserved.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"></script>
+    <script>
+        // Ensure Leaflet is fully loaded before initializing the map
+        document.addEventListener('DOMContentLoaded', function() {
+            // Initialize the map
+            const map = L.map('job-map').setView([39.8283, -98.5795], 4); // Center of US
+
+            // Add the tile layer (OpenStreetMap)
+            L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+                attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors',
+                maxZoom: 18
+            }).addTo(map);
+
+            // Load job data from JSON file
+            fetch('data/jobs.json')
+                .then(response => {
+                    if (!response.ok) {
+                        throw new Error('Network response was not ok: ' + response.statusText);
+                    }
+                    return response.json();
+                })
+                .then(jobs => {
+                    // Store jobs globally
+                    window.tornadoJobs = jobs;
+                    
+                    // Render job markers
+                    renderJobMarkers(jobs);
+                    
+                    // Add event listeners to filter checkboxes
+                    document.querySelectorAll('input[type="checkbox"]').forEach(checkbox => {
+                        checkbox.addEventListener('change', function() {
+                            applyFilters();
+                        });
+                    });
+                    
+                    // Reset filters button
+                    document.getElementById('reset-filters').addEventListener('click', function() {
+                        document.querySelectorAll('input[type="checkbox"]').forEach(checkbox => {
+                            checkbox.checked = true;
+                        });
+                        applyFilters();
+                    });
+                })
+                .catch(error => {
+                    console.error('Error loading job data:', error);
+                    document.getElementById('job-map').innerHTML = '<div class="alert alert-danger">Error loading job map data. Please try again later.</div>';
+                });
+
+            // Markers and circles for jobs
+            let jobMarkers = [];
+            let jobCircles = [];
+
+            // Function to render job markers on the map
+            function renderJobMarkers(jobs) {
+                // Clear existing markers and circles
+                jobMarkers.forEach(marker => map.removeLayer(marker));
+                jobCircles.forEach(circle => map.removeLayer(circle));
+                jobMarkers = [];
+                jobCircles = [];
+
+                // Add markers for jobs
+                jobs.forEach(job => {
+                    // Create marker
+                    const marker = L.marker([job.lat, job.lng])
+                        .bindPopup(createJobPopup(job))
+                        .addTo(map);
+                    
+                    // Create hiring radius circle
+                    const circle = L.circle([job.lat, job.lng], {
+                        color: '#FFD700',
+                        fillColor: '#FFD700',
+                        fillOpacity: 0.1,
+                        radius: job.hiringRadius * 1609.34 // Convert miles to meters
+                    }).addTo(map);
+                    
+                    jobMarkers.push(marker);
+                    jobCircles.push(circle);
+                });
+
+                // Update job count
+                document.getElementById('job-count').textContent = jobs.length;
+            }
+
+            // Function to create job popup content
+            function createJobPopup(job) {
+                return `
+                    <div class="job-popup">
+                        <h3>${job.title}</h3>
+                        <p><strong>Location:</strong> ${job.location}</p>
+                        <p><strong>Pay:</strong> ${job.pay}</p>
+                        <p><strong>Experience:</strong> ${job.experience}</p>
+                        <p><strong>Equipment:</strong> ${job.equipment}</p>
+                        <p>${job.description}</p>
+                        <a href="https://intelliapp.driverapponline.com/c/truckers4hire?r=UthemesT" 
+                           class="apply-btn" target="_blank">Apply Now</a>
+                    </div>
+                `;
+            }
+
+            // Function to apply filters
+            function applyFilters() {
+                // Get filter values
+                const jobTypeFilters = getCheckedValues('job-type');
+                const experienceFilters = getCheckedValues('experience');
+                const equipmentFilters = getCheckedValues('equipment');
+                const regionFilters = getCheckedValues('region');
+
+                // Filter jobs based on selected criteria
+                const filteredJobs = window.tornadoJobs.filter(job => {
+                    return (jobTypeFilters.length === 0 || jobTypeFilters.includes(job.type)) &&
+                           (experienceFilters.length === 0 || experienceFilters.includes(job.experience)) &&
+                           (equipmentFilters.length === 0 || equipmentFilters.includes(job.equipment)) &&
+                           (regionFilters.length === 0 || regionFilters.includes(job.region));
+                });
+
+                // Render filtered jobs
+                renderJobMarkers(filteredJobs);
+            }
+
+            // Function to get checked values from checkboxes
+            function getCheckedValues(name) {
+                const checkboxes = document.querySelectorAll(`input[name="${name}"]:checked`);
+                return Array.from(checkboxes).map(cb => cb.value);
+            }
+
+            // Admin panel access (Ctrl+Shift+A)
+            let adminMode = false;
+            document.addEventListener('keydown', function(e) {
+                if (e.ctrlKey && e.shiftKey && e.key === 'A') {
+                    adminMode = !adminMode;
+                    toggleAdminPanel();
+                }
+            });
+
+            function toggleAdminPanel() {
+                let adminPanel = document.getElementById('admin-panel');
+                if (adminMode) {
+                    if (!adminPanel) {
+                        createAdminPanel();
+                    } else {
+                        adminPanel.style.display = 'block';
+                    }
+                } else {
+                    if (adminPanel) {
+                        adminPanel.style.display = 'none';
+                    }
+                }
+            }
+
+            function createAdminPanel() {
+                const panel = document.createElement('div');
+                panel.id = 'admin-panel';
+                panel.className = 'admin-panel';
+                panel.innerHTML = `
+                    <h3>Job Map Admin Panel</h3>
+                    <p>Add, edit, or remove job listings</p>
+                    <div class="admin-controls">
+                        <button id="add-job">Add New Job</button>
+                        <button id="export-jobs">Export Jobs</button>
+                        <button id="close-admin">Close Panel</button>
+                    </div>
+                    <div id="job-list" class="job-list">
+                        <h4>Current Jobs</h4>
+                        <ul id="admin-job-list"></ul>
+                    </div>
+                    <div id="job-form" class="job-form" style="display: none;">
+                        <h4 id="form-title">Add New Job</h4>
+                        <form id="admin-job-form">
+                            <input type="hidden" id="job-id">
+                            <div class="form-group">
+                                <label for="job-title">Job Title</label>
+                                <input type="text" id="job-title" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="job-type">Job Type</label>
+                                <select id="job-type" required>
+                                    <option value="OTR">OTR</option>
+                                    <option value="Regional">Regional</option>
+                                    <option value="Local">Local</option>
+                                </select>
+                            </div>
+                            <div class="form-group">
+                                <label for="job-location">Location</label>
+                                <input type="text" id="job-location" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="job-lat">Latitude</label>
+                                <input type="number" id="job-lat" step="0.0001" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="job-lng">Longitude</label>
+                                <input type="number" id="job-lng" step="0.0001" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="job-radius">Hiring Radius (miles)</label>
+                                <input type="number" id="job-radius" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="job-pay">Pay Range</label>
+                                <input type="text" id="job-pay" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="job-experience">Experience</label>
+                                <select id="job-experience" required>
+                                    <option value="Experienced (1+ years)">Experienced (1+ years)</option>
+                                    <option value="Recent Graduate">Recent Graduate</option>
+                                </select>
+                            </div>
+                            <div class="form-group">
+                                <label for="job-equipment">Equipment</label>
+                                <select id="job-equipment" required>
+                                    <option value="Dry Van">Dry Van</option>
+                                    <option value="Refrigerated">Refrigerated</option>
+                                    <option value="Flatbed">Flatbed</option>
+                                </select>
+                            </div>
+                            <div class="form-group">
+                                <label for="job-region">Region</label>
+                                <select id="job-region" required>
+                                    <option value="Midwest">Midwest</option>
+                                    <option value="Northeast">Northeast</option>
+                                    <option value="Southeast">Southeast</option>
+                                    <option value="Southwest">Southwest</option>
+                                    <option value="West">West</option>
+                                </select>
+                            </div>
+                            <div class="form-group">
+                                <label for="job-description">Description</label>
+                                <textarea id="job-description" required></textarea>
+                            </div>
+                            <div class="form-actions">
+                                <button type="submit">Save Job</button>
+                                <button type="button" id="cancel-form">Cancel</button>
+                            </div>
+                        </form>
+                    </div>
+                `;
+                document.body.appendChild(panel);
+
+                // Admin panel event listeners
+                document.getElementById('close-admin').addEventListener('click', function() {
+                    adminMode = false;
+                    toggleAdminPanel();
+                });
+
+                document.getElementById('add-job').addEventListener('click', function() {
+                    showJobForm();
+                });
+
+                document.getElementById('cancel-form').addEventListener('click', function() {
+                    hideJobForm();
+                });
+
+                document.getElementById('export-jobs').addEventListener('click', function() {
+                    exportJobs();
+                });
+
+                document.getElementById('admin-job-form').addEventListener('submit', function(e) {
+                    e.preventDefault();
+                    saveJob();
+                });
+
+                updateAdminJobList();
+            }
+
+            function updateAdminJobList() {
+                const jobList = document.getElementById('admin-job-list');
+                if (!jobList) return;
+
+                jobList.innerHTML = '';
+                window.tornadoJobs.forEach(job => {
+                    const li = document.createElement('li');
+                    li.innerHTML = `
+                        <span>${job.title} (${job.location})</span>
+                        <div class="job-actions">
+                            <button class="edit-job" data-id="${job.id}">Edit</button>
+                            <button class="delete-job" data-id="${job.id}">Delete</button>
+                        </div>
+                    `;
+                    jobList.appendChild(li);
+                });
+
+                // Add event listeners to edit and delete buttons
+                document.querySelectorAll('.edit-job').forEach(button => {
+                    button.addEventListener('click', function() {
+                        const jobId = parseInt(this.getAttribute('data-id'));
+                        editJob(jobId);
+                    });
+                });
+
+                document.querySelectorAll('.delete-job').forEach(button => {
+                    button.addEventListener('click', function() {
+                        const jobId = parseInt(this.getAttribute('data-id'));
+                        deleteJob(jobId);
+                    });
+                });
+            }
+
+            function showJobForm(job = null) {
+                const jobForm = document.getElementById('job-form');
+                const formTitle = document.getElementById('form-title');
+                
+                if (job) {
+                    formTitle.textContent = 'Edit Job';
+                    document.getElementById('job-id').value = job.id;
+                    document.getElementById('job-title').value = job.title;
+                    document.getElementById('job-type').value = job.type;
+                    document.getElementById('job-location').value = job.location;
+                    document.getElementById('job-lat').value = job.lat;
+                    document.getElementById('job-lng').value = job.lng;
+                    document.getElementById('job-radius').value = job.hiringRadius;
+                    document.getElementById('job-pay').value = job.pay;
+                    document.getElementById('job-experience').value = job.experience;
+                    document.getElementById('job-equipment').value = job.equipment;
+                    document.getElementById('job-region').value = job.region;
+                    document.getElementById('job-description').value = job.description;
+                } else {
+                    formTitle.textContent = 'Add New Job';
+                    document.getElementById('admin-job-form').reset();
+                    document.getElementById('job-id').value = '';
+                }
+                
+                jobForm.style.display = 'block';
+                document.getElementById('job-list').style.display = 'none';
+            }
+
+            function hideJobForm() {
+                document.getElementById('job-form').style.display = 'none';
+                document.getElementById('job-list').style.display = 'block';
+            }
+
+            function saveJob() {
+                const jobId = document.getElementById('job-id').value;
+                const newJob = {
+                    id: jobId ? parseInt(jobId) : Date.now(),
+                    title: document.getElementById('job-title').value,
+                    type: document.getElementById('job-type').value,
+                    location: document.getElementById('job-location').value,
+                    lat: parseFloat(document.getElementById('job-lat').value),
+                    lng: parseFloat(document.getElementById('job-lng').value),
+                    hiringRadius: parseInt(document.getElementById('job-radius').value),
+                    pay: document.getElementById('job-pay').value,
+                    experience: document.getElementById('job-experience').value,
+                    equipment: document.getElementById('job-equipment').value,
+                    region: document.getElementById('job-region').value,
+                    description: document.getElementById('job-description').value
+                };
+
+                if (jobId) {
+                    // Update existing job
+                    const index = window.tornadoJobs.findIndex(job => job.id === parseInt(jobId));
+                    if (index !== -1) {
+                        window.tornadoJobs[index] = newJob;
+                    }
+                } else {
+                    // Add new job
+                    window.tornadoJobs.push(newJob);
+                }
+
+                // Update the map and admin panel
+                applyFilters();
+                updateAdminJobList();
+                hideJobForm();
+            }
+
+            function editJob(jobId) {
+                const job = window.tornadoJobs.find(job => job.id === jobId);
+                if (job) {
+                    showJobForm(job);
+                }
+            }
+
+            function deleteJob(jobId) {
+                if (confirm('Are you sure you want to delete this job?')) {
+                    window.tornadoJobs = window.tornadoJobs.filter(job => job.id !== jobId);
+                    applyFilters();
+                    updateAdminJobList();
+                }
+            }
+
+            function exportJobs() {
+                const dataStr = "data:text/json;charset=utf-8," + encodeURIComponent(JSON.stringify(window.tornadoJobs, null, 2));
+                const downloadAnchorNode = document.createElement('a');
+                downloadAnchorNode.setAttribute("href", dataStr);
+                downloadAnchorNode.setAttribute("download", "tornado_transport_jobs.json");
+                document.body.appendChild(downloadAnchorNode);
+                downloadAnchorNode.click();
+                downloadAnchorNode.remove();
+            }
+        });
+    </script>
+</body>
+</html>

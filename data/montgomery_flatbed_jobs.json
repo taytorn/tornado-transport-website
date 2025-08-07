@@ -1,0 +1,170 @@
+{
+  "jobs": [
+    {
+      "id": 101,
+      "title": "Premium Flatbed Driver - Home Weekly",
+      "location": "Birmingham, AL",
+      "description": "Join our elite flatbed fleet! Haul premium flatbed freight including lumber, coils, machinery, rebar, pipe, and oversized loads throughout the Midwest and Eastern US. Enjoy weekly home time with top industry pay and modern equipment.",
+      "requirements": [
+        "1+ year OTR flatbed experience in last 3 years",
+        "Experience with strapping, tarping, chains and binders",
+        "Experience hauling steel (coils or beams/pipes)",
+        "Class A CDL",
+        "No more than 2 preventable accidents in the past 3 years",
+        "No more than 2 moving violations in the past 3 years"
+      ],
+      "benefits": [
+        "Comprehensive health, vision, dental benefits",
+        "401K with company match",
+        "Paid holidays after six months",
+        "Vacation pay beginning after six months",
+        "$5,000 bonus in first 120 days"
+      ],
+      "pay": "$0.53-0.55/mile based on experience + performance incentives",
+      "homeTime": "Home weekly (not guaranteed on weekends)",
+      "experience": "1+ years flatbed",
+      "equipment": "Peterbilt 579 with 72\" high roof sleeper",
+      "applyUrl": "https://intelliapp.driverapponline.com/c/truckers4hire?r=UthemesT",
+      "featured": true,
+      "regionRestriction": {
+        "states": [
+          "AL", "GA", "FL", "TN", "SC", "NC", "KY", "VA", "WV", "OH", "PA", 
+          "MD", "DE", "NJ", "MS", "LA", "AR", "MO", "IL", "IN", "MI", "WI"
+        ],
+        "excludedStates": [
+          "CT", "RI", "MA", "NH", "VT", "ME", "NY", "MN", "IA", "ND", "SD", 
+          "NE", "KS", "OK", "TX", "NM", "CO", "WY", "MT", "ID", "UT", "AZ", 
+          "NV", "CA", "OR", "WA"
+        ],
+        "zipRanges": [
+          {"min": 35000, "max": 36999},
+          {"min": 30000, "max": 31999},
+          {"min": 32000, "max": 34999},
+          {"min": 37000, "max": 38599},
+          {"min": 29000, "max": 29999},
+          {"min": 27000, "max": 28999},
+          {"min": 40000, "max": 42999},
+          {"min": 22000, "max": 24699},
+          {"min": 25000, "max": 26899},
+          {"min": 43000, "max": 45999},
+          {"min": 15000, "max": 19699},
+          {"min": 20000, "max": 21999},
+          {"min": 19700, "max": 19999},
+          {"min": 7000, "max": 8999},
+          {"min": 38600, "max": 39999},
+          {"min": 70000, "max": 71599},
+          {"min": 71600, "max": 72999},
+          {"min": 63000, "max": 65899},
+          {"min": 60000, "max": 62999},
+          {"min": 46000, "max": 47999},
+          {"min": 48000, "max": 49999},
+          {"min": 53000, "max": 54999}
+        ]
+      }
+    },
+    {
+      "id": 102,
+      "title": "Bi-Weekly Flatbed Specialist",
+      "location": "Tampa, FL",
+      "description": "Flatbed specialist position available for drivers in Florida and Texas/Louisiana regions. Haul premium flatbed freight with bi-weekly home time. Average weekly pay $1,400 with performance incentives up to $600/month. 50% of loads require tarping.",
+      "requirements": [
+        "1+ year OTR flatbed experience in last 3 years",
+        "Experience with strapping, tarping, chains and binders",
+        "Experience hauling steel (coils or beams/pipes)",
+        "Class A CDL",
+        "No more than 2 preventable accidents in the past 3 years",
+        "No more than 2 moving violations in the past 3 years"
+      ],
+      "benefits": [
+        "Comprehensive health, vision, dental benefits",
+        "401K with company match",
+        "Paid holidays after six months",
+        "Vacation pay beginning after six months",
+        "$5,000 bonus in first 120 days"
+      ],
+      "pay": "$0.53-0.55/mile based on experience + performance incentives",
+      "homeTime": "Home every other week for 2 days",
+      "experience": "1+ years flatbed",
+      "equipment": "Peterbilt 579 with 72\" high roof sleeper",
+      "applyUrl": "https://intelliapp.driverapponline.com/c/truckers4hire?r=UthemesT",
+      "featured": false,
+      "regionRestriction": {
+        "states": [
+          "FL", "TX", "LA"
+        ],
+        "excludedStates": [
+          "AL", "GA", "TN", "SC", "NC", "KY", "VA", "WV", "OH", "PA", "MD", "DE", 
+          "NJ", "CT", "RI", "MA", "NH", "VT", "ME", "NY", "MI", "WI", "MN", "IA", 
+          "MO", "AR", "MS", "ND", "SD", "NE", "KS", "OK", "NM", "CO", "WY", "MT", 
+          "ID", "UT", "AZ", "NV", "CA", "OR", "WA", "IL", "IN"
+        ],
+        "zipRanges": [
+          {"min": 32000, "max": 34999},
+          {"min": 75000, "max": 79999},
+          {"min": 70000, "max": 71599}
+        ]
+      }
+    },
+    {
+      "id": 103,
+      "title": "Extended Haul Flatbed Driver",
+      "location": "Denver, CO",
+      "description": "Extended haul flatbed position for drivers willing to stay out 2-3 months at a time. Haul premium flatbed freight including lumber, coils, machinery, rebar, pipe, and oversized loads nationwide. Top pay and modern equipment.",
+      "requirements": [
+        "1+ year OTR flatbed experience in last 3 years",
+        "Experience with strapping, tarping, chains and binders",
+        "Experience hauling steel (coils or beams/pipes)",
+        "Class A CDL",
+        "No more than 2 preventable accidents in the past 3 years",
+        "No more than 2 moving violations in the past 3 years"
+      ],
+      "benefits": [
+        "Comprehensive health, vision, dental benefits",
+        "401K with company match",
+        "Paid holidays after six months",
+        "Vacation pay beginning after six months",
+        "$5,000 bonus in first 120 days"
+      ],
+      "pay": "$0.53-0.55/mile based on experience + performance incentives",
+      "homeTime": "Extended runs (2-3 months out)",
+      "experience": "1+ years flatbed",
+      "equipment": "Peterbilt 579 with 72\" high roof sleeper",
+      "applyUrl": "https://intelliapp.driverapponline.com/c/truckers4hire?r=UthemesT",
+      "featured": false,
+      "regionRestriction": {
+        "states": [
+          "CO", "WY", "MT", "ID", "UT", "AZ", "NV", "CA", "OR", "WA", "NM", "TX",
+          "OK", "KS", "NE", "SD", "ND", "MN", "IA", "MO", "AR", "LA", "MS"
+        ],
+        "excludedStates": [
+          "CT"
+        ],
+        "zipRanges": [
+          {"min": 80000, "max": 81699},
+          {"min": 82000, "max": 83199},
+          {"min": 59000, "max": 59999},
+          {"min": 83200, "max": 83899},
+          {"min": 84000, "max": 84799},
+          {"min": 85000, "max": 86599},
+          {"min": 88900, "max": 89899},
+          {"min": 90000, "max": 96699},
+          {"min": 97000, "max": 97999},
+          {"min": 98000, "max": 99499},
+          {"min": 87000, "max": 88499},
+          {"min": 75000, "max": 79999},
+          {"min": 73000, "max": 74999},
+          {"min": 66000, "max": 67999},
+          {"min": 68000, "max": 69399},
+          {"min": 57000, "max": 57799},
+          {"min": 58000, "max": 58899},
+          {"min": 55000, "max": 56799},
+          {"min": 50000, "max": 52899},
+          {"min": 63000, "max": 65899},
+          {"min": 71600, "max": 72999},
+          {"min": 70000, "max": 71599},
+          {"min": 38600, "max": 39999}
+        ]
+      }
+    }
+  ]
+}

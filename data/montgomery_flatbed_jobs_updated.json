@@ -1,0 +1,224 @@
+{
+  "jobs": [
+    {
+      "id": "montgomery_yellow",
+      "title": "Premium Flatbed Driver - Home Weekly",
+      "location": "Eastern & Southeastern US",
+      "description": "<div class=\"job-summary\">\n  <div class=\"job-section\">\n    <h4>Running Area:</h4>\n    <p>Haul premium flatbed freight including lumber, coils, machinery, rebar, pipe, and oversized loads throughout the Eastern and Southeastern US. Enjoy weekly home time with modern equipment.</p>\n  </div>\n  <div class=\"job-section\">\n    <h4>Pay & Mileage:</h4>\n    <ul>\n      <li><strong>Gross Weekly Average:</strong> $1,400/week</li>\n      <li>Choice of pay: $0.53-0.55/mile OR 27% of load</li>\n      <li>Weekly minimum guarantee of $1,200 after 30 days</li>\n      <li>Performance bonuses up to $600/month</li>\n      <li>Path to Success Pay totaling $5,000 in first 120 days</li>\n      <li>Over-dimensional loads pay 7-15\u00a2 more per mile</li>\n      <li>Tarp pay, detention pay, and layover pay included</li>\n    </ul>\n  </div>\n  <div class=\"job-section\">\n    <h4>Freight & Schedule:</h4>\n    <p>Weekly home time options with consistent freight.</p>\n  </div>\n</div>",
+      "requirements": [
+        "1+ years flatbed experience",
+        "No more than 2 moving violations in 12 months",
+        "No more than 4 moving violations in 3 years",
+        "No more than 1 serious violation in 3 years",
+        "No more than 3 accidents in 36 months"
+      ],
+      "benefits": [
+        "Blue Cross/Blue Shield Medical, Dental & Prescription Insurance",
+        "Guardian Vision Insurance",
+        "401(k) with employer match",
+        "Paid holidays after 6 months",
+        "Vacation pay beginning after 6 months"
+      ],
+      "pay": "Choice of $0.53-0.55/mile OR 27% of load",
+      "homeTime": "Home weekly (not guaranteed on weekends)",
+      "equipment": "Peterbilt 579 with 72\" high roof sleeper",
+      "experience": "1+ years flatbed experience",
+      "featured": true,
+      "applyUrl": "https://intelliapp.driverapponline.com/c/tornadotransport",
+      "regionRestriction": {
+        "states": [
+          "OH",
+          "IN",
+          "IL",
+          "KY",
+          "WV",
+          "VA",
+          "PA",
+          "MD",
+          "DE",
+          "NJ",
+          "TN",
+          "NC",
+          "SC",
+          "GA",
+          "AL",
+          "MS",
+          "CT",
+          "RI",
+          "MA",
+          "NH",
+          "VT",
+          "NY",
+          "MI",
+          "MO",
+          "AR",
+          "LA",
+          "OK",
+          "KS",
+          "NE",
+          "IA",
+          "WI",
+          "MN"
+        ],
+        "excludedStates": [
+          "CO",
+          "ME"
+        ],
+        "zipRanges": []
+      },
+      "coordinates": {
+        "lat": 39.8283,
+        "lng": -98.5795
+      }
+    },
+    {
+      "id": "montgomery_blue_florida",
+      "title": "Bi-Weekly Flatbed Specialist - Florida",
+      "location": "Peninsular Florida",
+      "description": "<div class=\"job-summary\">\n  <div class=\"job-section\">\n    <h4>Running Area:</h4>\n    <p>Haul premium flatbed freight throughout Florida and the Southeast with consistent miles. Home every other week with modern equipment.</p>\n  </div>\n  <div class=\"job-section\">\n    <h4>Pay & Mileage:</h4>\n    <ul>\n      <li><strong>Gross Weekly Average:</strong> $1,500/week</li>\n      <li>Choice of pay: $0.54-0.57/mile OR 27% of load</li>\n      <li>Weekly minimum guarantee of $1,200 after 30 days</li>\n      <li>Performance bonuses up to $600/month</li>\n      <li>Path to Success Pay totaling $5,000 in first 120 days</li>\n      <li>Over-dimensional loads pay 7-15\u00a2 more per mile</li>\n      <li>Tarp pay, detention pay, and layover pay included</li>\n    </ul>\n  </div>\n  <div class=\"job-section\">\n    <h4>Freight & Schedule:</h4>\n    <p>Bi-weekly home time with consistent freight.</p>\n  </div>\n</div>",
+      "requirements": [
+        "1+ years flatbed experience",
+        "No more than 2 moving violations in 12 months",
+        "No more than 4 moving violations in 3 years",
+        "No more than 1 serious violation in 3 years",
+        "No more than 3 accidents in 36 months"
+      ],
+      "benefits": [
+        "Blue Cross/Blue Shield Medical, Dental & Prescription Insurance",
+        "Guardian Vision Insurance",
+        "401(k) with employer match",
+        "Paid holidays after 6 months",
+        "Vacation pay beginning after 6 months"
+      ],
+      "pay": "Choice of $0.54-0.57/mile OR 27% of load",
+      "homeTime": "Home every other week for 2 days",
+      "equipment": "Peterbilt 579 with 72\" high roof sleeper",
+      "experience": "1+ years flatbed experience",
+      "featured": false,
+      "applyUrl": "https://intelliapp.driverapponline.com/c/tornadotransport",
+      "regionRestriction": {
+        "states": [
+          "FL"
+        ],
+        "excludedStates": [
+          "CO"
+        ],
+        "zipRanges": [
+          {
+            "min": 32000,
+            "max": 33999
+          }
+        ]
+      },
+      "coordinates": {
+        "lat": 28.5383,
+        "lng": -81.3792
+      }
+    },
+    {
+      "id": "montgomery_blue_texas",
+      "title": "Bi-Weekly Flatbed Specialist - Gulf Coast",
+      "location": "Texas & Louisiana Gulf Coast",
+      "description": "<div class=\"job-summary\">\n  <div class=\"job-section\">\n    <h4>Running Area:</h4>\n    <p>Haul premium flatbed freight throughout the Gulf Coast region with consistent miles. Home every other week with modern equipment.</p>\n  </div>\n  <div class=\"job-section\">\n    <h4>Pay & Mileage:</h4>\n    <ul>\n      <li><strong>Gross Weekly Average:</strong> $1,500/week</li>\n      <li>Choice of pay: $0.54-0.57/mile OR 27% of load</li>\n      <li>Weekly minimum guarantee of $1,200 after 30 days</li>\n      <li>Performance bonuses up to $600/month</li>\n      <li>Path to Success Pay totaling $5,000 in first 120 days</li>\n      <li>Over-dimensional loads pay 7-15\u00a2 more per mile</li>\n      <li>Tarp pay, detention pay, and layover pay included</li>\n    </ul>\n  </div>\n  <div class=\"job-section\">\n    <h4>Freight & Schedule:</h4>\n    <p>Bi-weekly home time with consistent freight.</p>\n  </div>\n</div>",
+      "requirements": [
+        "1+ years flatbed experience",
+        "No more than 2 moving violations in 12 months",
+        "No more than 4 moving violations in 3 years",
+        "No more than 1 serious violation in 3 years",
+        "No more than 3 accidents in 36 months"
+      ],
+      "benefits": [
+        "Blue Cross/Blue Shield Medical, Dental & Prescription Insurance",
+        "Guardian Vision Insurance",
+        "401(k) with employer match",
+        "Paid holidays after 6 months",
+        "Vacation pay beginning after 6 months"
+      ],
+      "pay": "Choice of $0.54-0.57/mile OR 27% of load",
+      "homeTime": "Home every other week for 2 days",
+      "equipment": "Peterbilt 579 with 72\" high roof sleeper",
+      "experience": "1+ years flatbed experience",
+      "featured": false,
+      "applyUrl": "https://intelliapp.driverapponline.com/c/tornadotransport",
+      "regionRestriction": {
+        "states": [
+          "TX",
+          "LA"
+        ],
+        "excludedStates": [
+          "CO"
+        ],
+        "zipRanges": [
+          {
+            "min": 77000,
+            "max": 77999
+          },
+          {
+            "min": 70000,
+            "max": 70999
+          }
+        ]
+      },
+      "coordinates": {
+        "lat": 29.7604,
+        "lng": -95.3698
+      }
+    },
+    {
+      "id": "montgomery_grey",
+      "title": "Extended Haul Flatbed Driver",
+      "location": "Western & Northern US",
+      "description": "<div class=\"job-summary\">\n  <div class=\"job-section\">\n    <h4>Running Area:</h4>\n    <p>Haul premium flatbed freight throughout the Western and Northern US with maximum miles and earnings potential. Top industry pay and modern equipment.</p>\n  </div>\n  <div class=\"job-section\">\n    <h4>Pay & Mileage:</h4>\n    <ul>\n      <li><strong>Gross Weekly Average:</strong> $1,600+/week</li>\n      <li>Choice of pay: $0.56-0.60/mile OR 27% of load</li>\n      <li>Weekly minimum guarantee of $1,200 after 30 days</li>\n      <li>Performance bonuses up to $600/month</li>\n      <li>Path to Success Pay totaling $5,000 in first 120 days</li>\n      <li>Over-dimensional loads pay 7-15\u00a2 more per mile</li>\n      <li>Tarp pay, detention pay, and layover pay included</li>\n    </ul>\n  </div>\n  <div class=\"job-section\">\n    <h4>Freight & Schedule:</h4>\n    <p>Extended runs with 2-3 months out followed by generous home time.</p>\n  </div>\n</div>",
+      "requirements": [
+        "1+ years flatbed experience",
+        "No more than 2 moving violations in 12 months",
+        "No more than 4 moving violations in 3 years",
+        "No more than 1 serious violation in 3 years",
+        "No more than 3 accidents in 36 months"
+      ],
+      "benefits": [
+        "Blue Cross/Blue Shield Medical, Dental & Prescription Insurance",
+        "Guardian Vision Insurance",
+        "401(k) with employer match",
+        "Paid holidays after 6 months",
+        "Vacation pay beginning after 6 months"
+      ],
+      "pay": "Choice of $0.56-0.60/mile OR 27% of load",
+      "homeTime": "Extended runs (2-3 months out)",
+      "equipment": "Peterbilt 579 with 72\" high roof sleeper",
+      "experience": "1+ years flatbed experience",
+      "featured": false,
+      "applyUrl": "https://intelliapp.driverapponline.com/c/tornadotransport",
+      "regionRestriction": {
+        "states": [
+          "WA",
+          "OR",
+          "CA",
+          "NV",
+          "ID",
+          "UT",
+          "AZ",
+          "MT",
+          "WY",
+          "NM",
+          "ND",
+          "SD",
+          "NE",
+          "KS",
+          "OK",
+          "TX",
+          "ME"
+        ],
+        "excludedStates": [
+          "CO",
+          "CT"
+        ],
+        "zipRanges": []
+      },
+      "coordinates": {
+        "lat": 44.9778,
+        "lng": -93.265
+      }
+    }
+  ]
+}

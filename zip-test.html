@@ -1,0 +1,399 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ZIP Code Test Page</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <style>
+        .test-container {
+            max-width: 1200px;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: #f8f9fa;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+        .test-header {
+            margin-bottom: 20px;
+            padding-bottom: 10px;
+            border-bottom: 1px solid #dee2e6;
+        }
+        .test-controls {
+            display: flex;
+            gap: 10px;
+            margin-bottom: 20px;
+        }
+        .test-results {
+            margin-top: 20px;
+        }
+        .result-item {
+            margin-bottom: 15px;
+            padding: 15px;
+            background-color: white;
+            border-radius: 5px;
+            box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+        }
+        .error {
+            background-color: #f8d7da;
+            border-color: #f5c6cb;
+        }
+        .success {
+            background-color: #d4edda;
+            border-color: #c3e6cb;
+        }
+        .test-summary {
+            margin-top: 20px;
+            padding: 15px;
+            background-color: #e9ecef;
+            border-radius: 5px;
+        }
+        .progress-bar {
+            height: 20px;
+            background-color: #e9ecef;
+            border-radius: 5px;
+            margin-bottom: 10px;
+            overflow: hidden;
+        }
+        .progress {
+            height: 100%;
+            background-color: #007bff;
+            width: 0%;
+            transition: width 0.3s ease;
+        }
+    </style>
+</head>
+<body>
+    <header class="site-header">
+        <div class="container">
+            <div class="logo">
+                <a href="index.html">TORNADO TRANSPORT</a>
+            </div>
+            <nav class="main-nav">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="find-jobs.html">Find Jobs</a></li>
+                    <li><a href="equipment.html">Equipment</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <li class="apply-btn"><a href="https://intelliapp.driverapponline.com/c/truckers4hire?r=UthemesT" target="_blank">Apply Now</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section class="hero blue-bg">
+        <div class="container">
+            <h1>ZIP Code Testing Tool</h1>
+            <p>This tool tests ZIP codes across the USA to ensure correct job matching.</p>
+        </div>
+    </section>
+
+    <div class="container test-container">
+        <div class="test-header">
+            <h2>ZIP Code Test Dashboard</h2>
+            <p>Run tests to verify that ZIP codes correctly match with available jobs based on region restrictions.</p>
+        </div>
+
+        <div class="test-controls">
+            <button id="run-all-tests" class="btn btn-primary">Run All Tests</button>
+            <button id="run-single-test" class="btn btn-secondary">Test Single ZIP</button>
+            <input type="text" id="single-zip" placeholder="Enter ZIP code" class="form-control" style="width: 150px;">
+        </div>
+
+        <div class="progress-container" style="display: none;">
+            <h3>Testing Progress</h3>
+            <div class="progress-bar">
+                <div class="progress" id="test-progress"></div>
+            </div>
+            <p id="progress-text">0 of 0 tests completed</p>
+        </div>
+
+        <div class="test-summary" id="test-summary" style="display: none;">
+            <h3>Test Summary</h3>
+            <p id="summary-text"></p>
+        </div>
+
+        <div class="test-results" id="test-results">
+            <p>Click "Run All Tests" to start testing ZIP codes across the USA.</p>
+        </div>
+    </div>
+
+    <footer class="site-footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-info">
+                    <h3>Tornado Transport</h3>
+                    <p>Professional Trucking Carrier</p>
+                    <div class="social-icons">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+                <div class="footer-links">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="find-jobs.html">Find Jobs</a></li>
+                        <li><a href="equipment.html">Equipment</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-links">
+                    <h3>Job Types</h3>
+                    <ul>
+                        <li><a href="#">OTR Positions</a></li>
+                        <li><a href="#">Regional Runs</a></li>
+                        <li><a href="#">Local Positions</a></li>
+                        <li><a href="#">Team Driving</a></li>
+                        <li><a href="#">Recent Graduate Programs</a></li>
+                    </ul>
+                </div>
+                <div class="footer-contact">
+                    <h3>Contact Info</h3>
+                    <p><i class="fas fa-phone"></i> (972) 573-8906</p>
+                    <p><i class="fas fa-envelope"></i> info@tornado-transport.com</p>
+                    <p><i class="fas fa-clock"></i> Mon-Fri: 8:00 AM - 6:00 PM CT</p>
+                    <a href="https://intelliapp.driverapponline.com/c/truckers4hire?r=UthemesT" class="btn btn-primary">Apply Now</a>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Tornado Transport. All rights reserved.</p>
+                <p>Professional Trucking Carrier</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/zip-code-tester.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const runAllTestsBtn = document.getElementById('run-all-tests');
+            const runSingleTestBtn = document.getElementById('run-single-test');
+            const singleZipInput = document.getElementById('single-zip');
+            const testResults = document.getElementById('test-results');
+            const testSummary = document.getElementById('test-summary');
+            const summaryText = document.getElementById('summary-text');
+            const progressContainer = document.querySelector('.progress-container');
+            const progressBar = document.getElementById('test-progress');
+            const progressText = document.getElementById('progress-text');
+            
+            // Load jobs data
+            let jobsData = null;
+            
+            fetch('data/jobs.json')
+                .then(response => response.json())
+                .then(data => {
+                    jobsData = data;
+                    console.log('Jobs data loaded successfully');
+                })
+                .catch(error => {
+                    console.error('Error loading jobs data:', error);
+                    testResults.innerHTML = '<div class="result-item error"><h3>Error</h3><p>Failed to load jobs data. Please try again later.</p></div>';
+                });
+            
+            // Run all tests
+            runAllTestsBtn.addEventListener('click', function() {
+                if (!jobsData) {
+                    alert('Jobs data is still loading. Please try again in a moment.');
+                    return;
+                }
+                
+                testResults.innerHTML = '<p>Running tests...</p>';
+                testSummary.style.display = 'none';
+                progressContainer.style.display = 'block';
+                progressBar.style.width = '0%';
+                
+                // Get test ZIP codes from the zip-code-tester.js file
+                const results = [];
+                const errors = [];
+                let completed = 0;
+                
+                // Update progress
+                function updateProgress(current, total) {
+                    const percentage = (current / total) * 100;
+                    progressBar.style.width = percentage + '%';
+                    progressText.textContent = `${current} of ${total} tests completed`;
+                }
+                
+                // Run tests sequentially to avoid overwhelming the browser
+                function runTests(index) {
+                    if (index >= testZipCodes.length) {
+                        // All tests completed
+                        displayResults(results, errors);
+                        return;
+                    }
+                    
+                    const testCase = testZipCodes[index];
+                    testZipCode(testCase.zip)
+                        .then(result => {
+                            // Check for carrier names in job titles or descriptions
+                            const hasCarrierNames = result.jobs && result.jobs.some(job => 
+                                job.title.includes("Montgomery") || 
+                                job.title.includes("Transport") ||
+                                job.location.includes("Montgomery") ||
+                                job.location.includes("Transport")
+                            );
+                            
+                            if (hasCarrierNames) {
+                                errors.push({
+                                    zipCode: testCase.zip,
+                                    city: testCase.city,
+                                    state: testCase.state,
+                                    error: "Carrier name found in job results"
+                                });
+                            }
+                            
+                            results.push({
+                                ...testCase,
+                                result
+                            });
+                            
+                            completed++;
+                            updateProgress(completed, testZipCodes.length);
+                            
+                            // Continue with next test
+                            setTimeout(() => runTests(index + 1), 100);
+                        })
+                        .catch(error => {
+                            console.error(`Error in test for ${testCase.zip}:`, error);
+                            errors.push({
+                                zipCode: testCase.zip,
+                                city: testCase.city,
+                                state: testCase.state,
+                                error: error.message
+                            });
+                            
+                            completed++;
+                            updateProgress(completed, testZipCodes.length);
+                            
+                            // Continue with next test
+                            setTimeout(() => runTests(index + 1), 100);
+                        });
+                }
+                
+                // Start running tests
+                runTests(0);
+            });
+            
+            // Run single test
+            runSingleTestBtn.addEventListener('click', function() {
+                const zipCode = singleZipInput.value.trim();
+                
+                if (!jobsData) {
+                    alert('Jobs data is still loading. Please try again in a moment.');
+                    return;
+                }
+                
+                if (!/^\d{5}$/.test(zipCode)) {
+                    alert('Please enter a valid 5-digit ZIP code.');
+                    return;
+                }
+                
+                testResults.innerHTML = '<p>Testing ZIP code ' + zipCode + '...</p>';
+                testSummary.style.display = 'none';
+                progressContainer.style.display = 'none';
+                
+                testZipCode(zipCode)
+                    .then(result => {
+                        // Check for carrier names
+                        const hasCarrierNames = result.jobs && result.jobs.some(job => 
+                            job.title.includes("Montgomery") || 
+                            job.title.includes("Transport") ||
+                            job.location.includes("Montgomery") ||
+                            job.location.includes("Transport")
+                        );
+                        
+                        let html = '<div class="result-item ' + (hasCarrierNames ? 'error' : 'success') + '">';
+                        html += '<h3>Results for ZIP ' + zipCode + '</h3>';
+                        html += '<p>State: ' + result.state + '</p>';
+                        html += '<p>Matching Jobs: ' + result.matchCount + '</p>';
+                        
+                        if (hasCarrierNames) {
+                            html += '<p class="error">ERROR: Carrier names found in job results!</p>';
+                        }
+                        
+                        if (result.jobs && result.jobs.length > 0) {
+                            html += '<h4>Matching Jobs:</h4>';
+                            html += '<ul>';
+                            result.jobs.forEach(job => {
+                                html += '<li>' + job.title + ' - ' + job.location + '</li>';
+                            });
+                            html += '</ul>';
+                        } else {
+                            html += '<p>No matching jobs found for this ZIP code.</p>';
+                        }
+                        
+                        html += '</div>';
+                        testResults.innerHTML = html;
+                    })
+                    .catch(error => {
+                        console.error('Error testing ZIP code:', error);
+                        testResults.innerHTML = '<div class="result-item error"><h3>Error</h3><p>Failed to test ZIP code: ' + error.message + '</p></div>';
+                    });
+            });
+            
+            // Display test results
+            function displayResults(results, errors) {
+                let html = '';
+                
+                // Display summary
+                testSummary.style.display = 'block';
+                summaryText.innerHTML = `
+                    <p>Total tests: ${results.length}</p>
+                    <p>Successful tests: ${results.length - errors.length}</p>
+                    <p>Errors: ${errors.length}</p>
+                `;
+                
+                // Display errors first
+                if (errors.length > 0) {
+                    html += '<h3>Errors Found:</h3>';
+                    errors.forEach(error => {
+                        html += `
+                            <div class="result-item error">
+                                <h4>${error.zipCode} (${error.city}, ${error.state})</h4>
+                                <p>Error: ${error.error}</p>
+                            </div>
+                        `;
+                    });
+                }
+                
+                // Display results by region
+                const regionGroups = {};
+                results.forEach(result => {
+                    if (!regionGroups[result.region]) {
+                        regionGroups[result.region] = [];
+                    }
+                    regionGroups[result.region].push(result);
+                });
+                
+                Object.keys(regionGroups).forEach(region => {
+                    html += `<h3>${region} Region</h3>`;
+                    regionGroups[region].forEach(item => {
+                        const hasError = errors.some(e => e.zipCode === item.zip);
+                        html += `
+                            <div class="result-item ${hasError ? 'error' : 'success'}">
+                                <h4>${item.zip} (${item.city}, ${item.state})</h4>
+                                <p>Matching Jobs: ${item.result.matchCount}</p>
+                            </div>
+                        `;
+                    });
+                });
+                
+                testResults.innerHTML = html;
+                
+                // Save report to localStorage
+                const report = {
+                    timestamp: new Date().toISOString(),
+                    totalTests: results.length,
+                    successfulTests: results.length - errors.length,
+                    errors: errors,
+                    results: results
+                };
+                localStorage.setItem('zipCodeTestReport', JSON.stringify(report));
+            }
+        });
+    </script>
+</body>
+</html>

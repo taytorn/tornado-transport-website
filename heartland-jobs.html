@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tornado Transport - Find Jobs</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="css/style.css?v=3">
+    <link rel="stylesheet" href="css/job-cards.css?v=3">
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">
+                TORNADO TRANSPORT
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="find-jobs.html">Find Jobs</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="equipment.html">Equipment</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="about.html">About Us</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contact.html">Contact</a>
+                    </li>
+                </ul>
+                <a href="find-jobs.html" class="btn btn-primary ms-lg-3">Apply Now</a>
+            </div>
+        </div>
+    </nav>
+
+    <section class="hero-section find-jobs-hero">
+        <div class="container text-center">
+            <h1>Find Your Perfect Driving Job</h1>
+            <p class="lead">Enter your ZIP code to discover driving opportunities in your area.</p>
+        </div>
+    </section>
+
+    <section class="container my-5">
+        <div class="row justify-content-center">
+            <div class="col-md-10">
+                <div class="job-search-container">
+                    <div class="row mb-4">
+                        <div class="col-12 text-center">
+                            <h2 class="section-title">Search Available Jobs</h2>
+                            <div class="divider"></div>
+                            <p>We'll show you positions that match your location and experience.</p>
+                        </div>
+                    </div>
+                    
+                    <form id="zipCodeSearchForm">
+                        <div class="row mb-4">
+                            <div class="col-md-4">
+                                <label for="zipCodeInput" class="form-label">ZIP Code</label>
+                                <input type="text" class="form-control" id="zipCodeInput" placeholder="Enter ZIP code">
+                            </div>
+                            <div class="col-md-4">
+                                <label for="jobTypeSelect" class="form-label">Job Type</label>
+                                <select class="form-select" id="jobTypeSelect">
+                                    <option value="all">All Jobs</option>
+                                    <option value="otr">OTR</option>
+                                    <option value="regional">Regional</option>
+                                    <option value="dedicated">Dedicated</option>
+                                    <option value="team">Team</option>
+                                </select>
+                            </div>
+                            <div class="col-md-4">
+                                <label for="experienceSelect" class="form-label">Experience</label>
+                                <select class="form-select" id="experienceSelect">
+                                    <option value="all">All Experience</option>
+                                    <option value="experienced">Experienced (12+ months)</option>
+                                    <option value="recent">Recent Graduate</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="text-center">
+                            <button type="submit" class="btn btn-primary btn-lg">Search Jobs</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+        
+        <div id="jobResults" class="row mt-5">
+            <!-- Job results will be displayed here -->
+        </div>
+    </section>
+
+    <section class="container my-5">
+        <div class="row mb-4">
+            <div class="col-12 text-center">
+                <h2 class="section-title">Why Drive With Us</h2>
+                <div class="divider"></div>
+            </div>
+        </div>
+        
+        <div class="row">
+            <div class="col-md-4 mb-4">
+                <div class="feature-card">
+                    <div class="icon">
+                        <i class="fas fa-dollar-sign"></i>
+                    </div>
+                    <h3>Competitive Pay</h3>
+                    <p>Our drivers earn between $55,000-$90,000 annually depending on experience and position type.</p>
+                </div>
+            </div>
+            
+            <div class="col-md-4 mb-4">
+                <div class="feature-card">
+                    <div class="icon">
+                        <i class="fas fa-home"></i>
+                    </div>
+                    <h3>Home Time Options</h3>
+                    <p>Choose from positions with daily, weekly, or bi-weekly home time to match your lifestyle.</p>
+                </div>
+            </div>
+            
+            <div class="col-md-4 mb-4">
+                <div class="feature-card">
+                    <div class="icon">
+                        <i class="fas fa-heartbeat"></i>
+                    </div>
+                    <h3>Comprehensive Benefits</h3>
+                    <p>Medical, dental, vision, 401(k), paid time off, and more available with our carriers.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="bg-dark text-white py-4">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="d-flex align-items-center mb-3">
+                        <h5 class="mb-0">TORNADO TRANSPORT</h5>
+                    </div>
+                    <p>Connecting professional drivers with premier carriers nationwide.</p>
+                    <div class="social-icons">
+                        <a href="https://www.linkedin.com/company/tornado-transport/" target="_blank" title="LinkedIn"><i class="fab fa-linkedin"></i></a>
+                        <a href="https://www.facebook.com/p/Tornado-Transport-100089185253427/" target="_blank" title="Facebook"><i class="fab fa-facebook-square"></i></a>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <h5>Quick Links</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="index.html" class="text-white">Home</a></li>
+                        <li><a href="about.html" class="text-white">About Us</a></li>
+                        <li><a href="equipment.html" class="text-white">Equipment</a></li>
+                        <li><a href="find-jobs.html" class="text-white">Find Jobs</a></li>
+                        <li><a href="contact.html" class="text-white">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-3 text-md-end">
+                    <p>&copy; 2025 Tornado Transport. All rights reserved.</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="js/heartland-job-search.js?v=3"></script>
+</body>
+</html>
