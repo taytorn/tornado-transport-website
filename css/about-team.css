@@ -1,18 +1,4 @@
-/* About Us Team Member Styles */
+/* Temporarily hide team photos */
 .team-card img {
-    width: 120px;
-    height: 120px;
-    object-fit: cover;
-    border-radius: 50%;
-    margin: 0 auto 15px;
-    display: block;
-}
-
-.team-card {
-    text-align: center;
-    padding: 20px;
-}
-
-.team-card-body {
-    padding-top: 10px;
+        display: none !important;
 }
