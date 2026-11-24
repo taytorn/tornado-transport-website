@@ -1,399 +1,85 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ZIP Code Test Page</title>
-    <link rel="stylesheet" href="css/styles.css">
-    <style>
-        .test-container {
-            max-width: 1200px;
-            margin: 20px auto;
-            padding: 20px;
-            background-color: #f8f9fa;
-            border-radius: 8px;
-            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
-        }
-        .test-header {
-            margin-bottom: 20px;
-            padding-bottom: 10px;
-            border-bottom: 1px solid #dee2e6;
-        }
-        .test-controls {
-            display: flex;
-            gap: 10px;
-            margin-bottom: 20px;
-        }
-        .test-results {
-            margin-top: 20px;
-        }
-        .result-item {
-            margin-bottom: 15px;
-            padding: 15px;
-            background-color: white;
-            border-radius: 5px;
-            box-shadow: 0 1px 3px rgba(0,0,0,0.1);
-        }
-        .error {
-            background-color: #f8d7da;
-            border-color: #f5c6cb;
-        }
-        .success {
-            background-color: #d4edda;
-            border-color: #c3e6cb;
-        }
-        .test-summary {
-            margin-top: 20px;
-            padding: 15px;
-            background-color: #e9ecef;
-            border-radius: 5px;
-        }
-        .progress-bar {
-            height: 20px;
-            background-color: #e9ecef;
-            border-radius: 5px;
-            margin-bottom: 10px;
-            overflow: hidden;
-        }
-        .progress {
-            height: 100%;
-            background-color: #007bff;
-            width: 0%;
-            transition: width 0.3s ease;
-        }
-    </style>
-</head>
-<body>
-    <header class="site-header">
-        <div class="container">
-            <div class="logo">
-                <a href="index.html">TORNADO TRANSPORT</a>
-            </div>
-            <nav class="main-nav">
-                <ul>
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="find-jobs.html">Find Jobs</a></li>
-                    <li><a href="equipment.html">Equipment</a></li>
-                    <li><a href="about.html">About Us</a></li>
-                    <li><a href="contact.html">Contact</a></li>
-                    <li class="apply-btn"><a href="https://intelliapp.driverapponline.com/c/truckers4hire?r=UthemesT" target="_blank">Apply Now</a></li>
-                </ul>
-            </nav>
-        </div>
-    </header>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="robots" content="noindex,follow"><title>ZIP Code Testing Tool | Tornado Transport</title><style>
+.tt-equipment-image{height:auto}
+:root{--ink:#192129;--charcoal:#212529;--gold:#f0b775;--blue:#3a6ea5;--text:#475460;--muted:#64707b;--paper:#f4f5f5;--line:#dce2e6;--white:#fff;--ease:cubic-bezier(.23,1,.32,1)}
+*{box-sizing:border-box}html{scroll-behavior:smooth;scroll-padding-top:100px}body{margin:0;background:var(--white);color:var(--text);font-family:"Segoe UI",Tahoma,Geneva,Verdana,sans-serif;line-height:1.65;-webkit-font-smoothing:antialiased}a{color:inherit;text-decoration:none}button{font:inherit}img{display:block;max-width:100%}h1,h2,h3,p{margin:0}h1,h2,h3{color:var(--ink);line-height:1.12}button,a{-webkit-tap-highlight-color:transparent}a:focus-visible,button:focus-visible,summary:focus-visible{outline:3px solid var(--gold);outline-offset:5px}.tt-container{width:min(1240px,100%);margin-inline:auto;padding-inline:32px}.tt-skip-link{position:fixed;left:16px;top:-80px;z-index:100;background:var(--white);padding:12px;color:var(--ink)}.tt-skip-link:focus{top:12px}.tt-eyebrow{font-size:.75rem;font-weight:750;letter-spacing:.15em;text-transform:uppercase;color:var(--blue);margin-bottom:16px}.tt-text-link{display:inline-flex;align-items:center;gap:12px;color:#285a89;font-weight:700;border-bottom:1px solid #aab9c7;padding-bottom:4px}.tt-text-link:hover{border-color:var(--blue)}.tt-arrow{font-size:1.2em;line-height:1}.tt-button{display:inline-flex;align-items:center;justify-content:center;gap:24px;min-height:50px;padding:13px 24px;border:1px solid transparent;border-radius:4px;font-size:.925rem;font-weight:700;transition:background 160ms var(--ease),transform 160ms var(--ease);cursor:pointer}.tt-button:active{transform:scale(.98)}.tt-button-gold{background:var(--gold);color:var(--ink)}.tt-button-gold:hover{background:#f7c796}.tt-button-outline{border-color:#a5afb7;color:var(--white);background:#19212926}.tt-button-outline:hover{background:#ffffff12}.tt-button-blue{background:var(--blue);color:white}.tt-button-blue:hover{background:#2d5b8b}
+.tt-site-header{position:sticky;top:0;z-index:20;background:var(--ink);color:#e9edf0;border-bottom:1px solid #ffffff12}.tt-header-inner{display:flex;align-items:center;justify-content:space-between;gap:28px;min-height:92px}.tt-brand{display:flex;flex-direction:column;flex-shrink:0;line-height:1.15}.tt-brand-name{color:var(--gold);font-size:1.18rem;font-weight:850;letter-spacing:.035em}.tt-brand-tagline{font-size:.66rem;color:#b9c2ca;letter-spacing:.16em;text-transform:uppercase;margin-top:8px}.tt-nav-panel{display:flex;align-items:center;gap:30px}.tt-nav-links{display:flex;align-items:center;gap:26px}.tt-nav-links a{font-size:.825rem;font-weight:600;white-space:nowrap;padding:10px 0;color:#d4dbe1}.tt-nav-links a:hover,.tt-nav-links a[aria-current="page"]{color:var(--gold)}.tt-header-apply{min-height:43px;padding:10px 18px;gap:12px;font-size:.825rem}.tt-menu-toggle{display:none;background:none;border:1px solid #67727c;border-radius:4px;color:white;padding:9px 14px;font-size:.8rem;cursor:pointer}
+.tt-hero{position:relative;isolation:isolate;background:#1b2935;overflow:hidden;color:white}.tt-hero-image{position:absolute;inset:0;z-index:-2;width:100%;height:100%;object-fit:cover;object-position:75% center}.tt-hero:after{content:"";position:absolute;inset:0;z-index:-1;background:linear-gradient(90deg,rgba(17,25,33,.97) 0%,rgba(17,25,33,.9) 28%,rgba(17,25,33,.55) 53%,rgba(17,25,33,.08) 85%)}.tt-hero-content{padding-block:100px 96px;max-width:670px;min-height:625px}.tt-hero .tt-eyebrow{color:var(--gold);display:flex;align-items:center;gap:12px}.tt-hero .tt-eyebrow:before{content:"";height:2px;width:30px;background:var(--gold)}.tt-hero h1{font-size:clamp(3.2rem,5.8vw,5.3rem);font-weight:800;letter-spacing:-.055em;color:white;line-height:1.04;margin-bottom:25px}.tt-hero h1 span{display:block;color:var(--gold)}.tt-hero-copy{font-size:1.05rem;line-height:1.75;color:#d4dce3;max-width:450px;margin-bottom:30px}.tt-hero-actions{display:flex;flex-wrap:wrap;gap:14px;margin-bottom:24px}.tt-hero-contact{font-size:.825rem;color:#bfc9d2}.tt-hero-contact a{color:white;text-decoration:underline;text-underline-offset:4px}.tt-hero-contact a:hover{color:var(--gold)}
+.tt-intro-strip{background:var(--ink);border-top:1px solid #ffffff16;color:#d6dee4}.tt-strip-inner{display:grid;grid-template-columns:repeat(3,1fr);gap:40px;padding-block:26px}.tt-strip-item{display:flex;align-items:center;gap:18px}.tt-strip-item+.tt-strip-item{border-left:1px solid #ffffff1c;padding-left:36px}.tt-strip-number{color:var(--gold);font-size:.7rem;font-weight:750;letter-spacing:.12em}.tt-strip-item strong{font-size:.825rem;font-weight:600;letter-spacing:.02em}
+.tt-section{padding-block:92px}.tt-section-heading{display:grid;grid-template-columns:1.15fr 1fr;gap:90px;align-items:end;margin-bottom:48px}.tt-section h2{font-size:clamp(2rem,3.4vw,3.25rem);font-weight:750;letter-spacing:-.045em}.tt-section-intro{font-size:.975rem;max-width:420px;line-height:1.8}.tt-benefit-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:32px}.tt-benefit{border-top:2px solid var(--gold);padding:28px 0 8px}.tt-benefit-index{font-size:.7rem;color:var(--blue);letter-spacing:.12em;font-weight:750;display:block;margin-bottom:22px}.tt-benefit h3{font-size:1.25rem;font-weight:700;letter-spacing:-.025em;margin-bottom:12px}.tt-benefit p{font-size:.925rem;line-height:1.8;color:var(--muted)}
+.tt-equipment-section{background:var(--paper)}.tt-equipment-grid{display:grid;grid-template-columns:1.04fr 1fr;gap:78px;align-items:center}.tt-equipment-visual{position:relative}.tt-equipment-image{width:100%;aspect-ratio:4/3;object-fit:cover;border-radius:5px}.tt-image-caption{font-size:.7rem;color:#717c85;margin-top:10px}.tt-equipment-copy h2{margin-bottom:22px}.tt-equipment-copy>p{font-size:.975rem;line-height:1.8;margin-bottom:26px}.tt-equipment-points{margin:0 0 28px;padding:0;list-style:none}.tt-equipment-points li{padding:11px 0;border-bottom:1px solid var(--line);font-size:.875rem;display:flex;align-items:flex-start;gap:14px}.tt-equipment-points li:before{content:"";height:6px;width:6px;flex-shrink:0;background:var(--blue);margin-top:10px}.tt-equipment-points li:first-child{border-top:1px solid var(--line)}
+.tt-career-section{padding-block:80px;background:var(--blue);color:#e8eff6}.tt-career-grid{display:grid;grid-template-columns:1fr auto;gap:56px;align-items:center}.tt-career-section .tt-eyebrow{color:#ffdfb8}.tt-career-section h2{color:white;max-width:620px;font-size:clamp(2rem,3.4vw,3rem);letter-spacing:-.04em;margin-bottom:18px}.tt-career-section p{max-width:610px;font-size:.975rem;color:#dae5ef}.tt-career-actions{display:flex;flex-direction:column;gap:15px;align-items:center}.tt-career-actions .tt-button{min-width:210px}.tt-career-actions .tt-text-link{color:white;border-color:#99b2cd;font-size:.825rem}
+.tt-steps-header{display:flex;justify-content:space-between;gap:30px;align-items:end;margin-bottom:42px}.tt-steps-header h2{max-width:660px}.tt-steps{display:grid;grid-template-columns:repeat(3,1fr);gap:40px}.tt-step{position:relative}.tt-step-number{display:inline-flex;align-items:center;justify-content:center;width:42px;height:42px;border:1px solid #cad3db;color:var(--blue);font-size:.8rem;font-weight:750;border-radius:50%;margin-bottom:23px}.tt-step h3{font-size:1.15rem;margin-bottom:12px}.tt-step p{font-size:.925rem;color:var(--muted);margin-bottom:18px;line-height:1.8}.tt-step .tt-text-link{font-size:.825rem}
+.tt-questions{background:var(--paper)}.tt-faq-layout{display:grid;grid-template-columns:.85fr 1.3fr;gap:100px}.tt-faq-heading h2{margin-bottom:22px}.tt-faq-heading p{font-size:.95rem;margin-bottom:24px;max-width:320px}.tt-faq-list{border-top:1px solid #cdd5dc}.tt-faq-list details{border-bottom:1px solid #cdd5dc;padding:23px 0}.tt-faq-list summary{display:flex;align-items:center;justify-content:space-between;gap:25px;list-style:none;cursor:pointer;color:var(--ink);font-size:.975rem;font-weight:650}.tt-faq-list summary::-webkit-details-marker{display:none}.tt-faq-list summary:after{content:"+";font-weight:400;font-size:1.45rem;color:var(--blue);flex-shrink:0;line-height:1}.tt-faq-list details[open] summary:after{content:"−"}.tt-faq-list details p{padding-top:16px;font-size:.9rem;line-height:1.8;max-width:560px;color:var(--muted)}.tt-faq-list details a{color:#285a89;text-decoration:underline;text-underline-offset:3px}
+.tt-site-footer{background:var(--ink);color:#bcc6ce;padding-block:62px 25px}.tt-footer-grid{display:grid;grid-template-columns:1.5fr .8fr 1fr;gap:76px;padding-bottom:42px}.tt-footer-brand .tt-brand-name{display:block;margin-bottom:18px}.tt-footer-brand p{font-size:.825rem;max-width:300px;line-height:1.8}.tt-footer-partner{color:var(--gold);margin-top:18px!important;font-size:.75rem!important}.tt-footer-column h2{font-size:.75rem;font-weight:700;letter-spacing:.12em;text-transform:uppercase;color:white;margin-bottom:19px}.tt-footer-column ul{list-style:none;margin:0;padding:0}.tt-footer-column li{margin-bottom:9px;font-size:.825rem}.tt-footer-column a:hover{color:var(--gold)}.tt-footer-contact a{display:block;font-size:.85rem;margin-bottom:10px;overflow-wrap:anywhere}.tt-footer-contact small{display:block;font-size:.73rem;color:#9faeb9;margin-top:15px}.tt-social-links{display:flex;gap:20px;margin-top:21px;font-size:.8rem}.tt-footer-bottom{border-top:1px solid #ffffff17;padding-top:23px;display:flex;align-items:flex-start;justify-content:space-between;gap:30px}.tt-footer-bottom p{font-size:.7rem;color:#96a5b1}.tt-legal-links{display:flex;flex-wrap:wrap;gap:18px;font-size:.7rem;justify-content:flex-end}.tt-legal-links a:hover{color:var(--gold)}.tt-scope-note{margin-top:17px;font-size:.7rem!important;color:#8e9ca8!important;max-width:900px;line-height:1.7}
+@media(max-width:1100px){.tt-nav-panel{gap:20px}.tt-nav-links{gap:17px}.tt-nav-links a{font-size:.775rem}.tt-brand-name{font-size:1.06rem}.tt-header-inner{gap:20px}.tt-equipment-grid{gap:50px}.tt-faq-layout{gap:65px}.tt-footer-grid{gap:45px}}
+@media(max-width:880px){.tt-container{padding-inline:24px}.tt-header-inner{min-height:78px;flex-wrap:wrap;padding-block:17px;gap:0}.tt-brand-name{font-size:1.05rem}.tt-brand-tagline{font-size:.6rem;margin-top:7px}.tt-menu-toggle{display:block}.tt-nav-panel{display:none;flex-basis:100%;flex-direction:column;align-items:stretch;padding-top:22px;gap:20px}.tt-nav-panel[data-open]{display:flex}.tt-nav-links{flex-direction:column;align-items:stretch;gap:0}.tt-nav-links a{padding:12px 0;border-bottom:1px solid #ffffff15;font-size:.875rem}.tt-header-apply{align-self:flex-start}.tt-hero-content{padding-block:75px;min-height:540px;max-width:590px}.tt-hero h1{font-size:clamp(3.2rem,7vw,4.5rem)}.tt-hero:after{background:linear-gradient(90deg,rgba(17,25,33,.95),rgba(17,25,33,.82) 45%,rgba(17,25,33,.22))}.tt-hero-copy{max-width:400px}.tt-strip-inner{gap:20px}.tt-strip-item{gap:10px}.tt-strip-item+.tt-strip-item{padding-left:20px}.tt-strip-item strong{font-size:.75rem}.tt-section{padding-block:70px}.tt-section-heading{gap:40px}.tt-equipment-grid{gap:36px}.tt-faq-layout{gap:40px}.tt-footer-grid{gap:30px}.tt-career-grid{gap:40px}}
+@media(max-width:620px){html{scroll-padding-top:86px}.tt-container{padding-inline:22px}.tt-hero-content{min-height:570px;padding-block:64px 58px}.tt-hero h1{font-size:clamp(2.65rem,10.4vw,3.7rem);margin-bottom:24px}.tt-hero-image{object-position:68% center}.tt-hero:after{background:linear-gradient(90deg,rgba(17,25,33,.93),rgba(17,25,33,.78)),linear-gradient(0deg,rgba(17,25,33,.18),transparent)}.tt-hero-copy{font-size:.975rem;line-height:1.8;max-width:360px}.tt-hero-actions{gap:12px}.tt-hero-actions .tt-button{padding-inline:19px;font-size:.875rem;gap:16px;min-height:49px}.tt-hero-contact{font-size:.8rem;max-width:285px;line-height:1.9}.tt-strip-inner{gap:0;padding-block:25px;grid-template-columns:1fr}.tt-strip-item{gap:17px;padding-block:8px}.tt-strip-item+.tt-strip-item{padding-left:0;border-left:0}.tt-strip-item strong{font-size:.8rem}.tt-section{padding-block:58px}.tt-section h2{font-size:2.25rem;line-height:1.14}.tt-section-heading{grid-template-columns:1fr;gap:22px;margin-bottom:34px}.tt-section-intro{font-size:.925rem}.tt-benefit-grid{grid-template-columns:1fr;gap:25px}.tt-benefit{padding-top:22px}.tt-benefit-index{margin-bottom:15px}.tt-benefit h3{font-size:1.2rem}.tt-equipment-grid{grid-template-columns:1fr;gap:35px}.tt-equipment-copy h2{margin-bottom:20px}.tt-equipment-copy>p{font-size:.925rem}.tt-career-section{padding-block:58px}.tt-career-grid{grid-template-columns:1fr;gap:29px}.tt-career-section h2{font-size:2.3rem}.tt-career-section p{font-size:.925rem}.tt-career-actions{align-items:flex-start}.tt-career-actions .tt-button{min-width:190px}.tt-steps-header{align-items:flex-start;flex-direction:column;margin-bottom:34px}.tt-steps{grid-template-columns:1fr;gap:32px}.tt-step{padding-left:62px}.tt-step-number{position:absolute;left:0;top:0;margin-bottom:0}.tt-step h3{padding-top:6px}.tt-step p{margin-bottom:12px}.tt-faq-layout{grid-template-columns:1fr;gap:34px}.tt-faq-heading p{max-width:none}.tt-faq-list details{padding-block:22px}.tt-faq-list summary{font-size:.925rem}.tt-site-footer{padding-block:48px 24px}.tt-footer-grid{grid-template-columns:1fr;gap:32px;padding-bottom:30px}.tt-footer-brand p{max-width:350px}.tt-footer-column h2{margin-bottom:15px}.tt-footer-bottom{flex-direction:column;gap:16px}.tt-legal-links{justify-content:flex-start;gap:12px 20px}.tt-scope-note{font-size:.68rem!important}}
+@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}*,*:before,*:after{transition:none!important;animation:none!important}}
 
-    <section class="hero blue-bg">
-        <div class="container">
-            <h1>ZIP Code Testing Tool</h1>
-            <p>This tool tests ZIP codes across the USA to ensure correct job matching.</p>
-        </div>
-    </section>
+.page-hero{background:#192129;color:#d5dee5;padding:65px 0 60px}.page-hero h1{color:#fff;font-size:clamp(2.3rem,4.5vw,4.2rem);font-weight:800;letter-spacing:-.05em;max-width:850px;margin:0 0 22px}.page-hero p{max-width:730px}.page-hero .tt-eyebrow{color:#f0b775}.page-breadcrumb{font-size:.75rem;color:#aebbc6;margin-bottom:25px}.page-breadcrumb a{color:#f0b775}.page-content{padding:64px 0 76px}.page-content h2{font-size:clamp(1.8rem,3vw,2.65rem);letter-spacing:-.04em;margin-bottom:20px}.page-content h3{font-size:1.2rem;margin-bottom:12px}.page-content p{margin-bottom:16px}.page-panel{background:#f4f5f5;border:1px solid #dce2e6;border-radius:6px;padding:28px}.page-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:34px}.page-note{font-size:.825rem;color:#64707b;margin-top:18px}.page-image{width:100%;height:auto;border-radius:6px}.page-section{margin-top:50px}.d-none{display:none!important}@media(max-width:700px){.page-hero{padding:46px 0}.page-content{padding:45px 0 55px}.page-grid{grid-template-columns:1fr;gap:24px}.page-panel{padding:22px}}
 
-    <div class="container test-container">
-        <div class="test-header">
-            <h2>ZIP Code Test Dashboard</h2>
-            <p>Run tests to verify that ZIP codes correctly match with available jobs based on region restrictions.</p>
-        </div>
 
-        <div class="test-controls">
-            <button id="run-all-tests" class="btn btn-primary">Run All Tests</button>
-            <button id="run-single-test" class="btn btn-secondary">Test Single ZIP</button>
-            <input type="text" id="single-zip" placeholder="Enter ZIP code" class="form-control" style="width: 150px;">
-        </div>
 
-        <div class="progress-container" style="display: none;">
-            <h3>Testing Progress</h3>
-            <div class="progress-bar">
-                <div class="progress" id="test-progress"></div>
-            </div>
-            <p id="progress-text">0 of 0 tests completed</p>
-        </div>
+.container{width:min(1200px,calc(100% - 48px));margin-inline:auto}.diagnostic-body{padding:48px 0 64px}.test-container{background:#f4f5f5;border:1px solid #dce2e6;border-radius:6px;padding:26px}.test-header h2{font-size:1.6rem;margin-bottom:14px}.test-controls{display:flex;align-items:end;gap:12px;flex-wrap:wrap;margin:26px 0}.zip-field{display:grid;gap:6px}.zip-field label{font-weight:650;font-size:.875rem}.form-control{border:1px solid #aab5c0;border-radius:5px;padding:12px;font:inherit;max-width:180px}.btn{background:#3a6ea5;border:1px solid #3a6ea5;color:#fff;border-radius:5px;padding:12px 18px;font:inherit;font-weight:650;text-decoration:none;cursor:pointer}.btn-secondary{background:#fff;color:#285789}.btn:disabled{opacity:.65;cursor:wait}.test-note{font-size:.85rem;color:#64707b}.table-scroll{max-width:100%;overflow-x:auto}.results-table{width:100%;border-collapse:collapse;margin:20px 0;font-size:.875rem}.results-table th,.results-table td{padding:12px;border-bottom:1px solid #dce2e6;text-align:left;vertical-align:top}.results-table th{background:#212529;color:#fff}.summary{padding:18px;background:#edf2f7;border-left:3px solid #3a6ea5;margin:22px 0}.diagnostic-actions{display:flex;gap:16px;flex-wrap:wrap;margin-top:28px}.progress-bar{height:12px;background:#dce2e6;border-radius:4px;overflow:hidden}.progress{height:100%;background:#3a6ea5;width:0}.diagnostic-error{color:#a01d22;font-weight:650}[hidden]{display:none!important}@media(max-width:600px){.container{width:calc(100% - 36px)}.test-container{padding:20px}.test-controls{align-items:stretch;flex-direction:column}.zip-field input{width:100%;max-width:none}.test-controls button{width:100%}.diagnostic-body{padding:32px 0 42px}}
+</style></head><body data-diagnostic="tool"><a href="#main-content" class="tt-skip-link">Skip to content</a><header class="tt-site-header">
+<div class="tt-container tt-header-inner">
+<a aria-label="Tornado Transport home" class="tt-brand" href="index.html"><span class="tt-brand-name">TORNADO TRANSPORT</span><span class="tt-brand-tagline">Professional Trucking Carrier</span></a>
+<button aria-controls="tt-site-navigation" aria-expanded="false" class="tt-menu-toggle" type="button">Menu</button>
+<nav aria-label="Main navigation" class="tt-nav-panel" id="tt-site-navigation">
+<div class="tt-nav-links"><a href="index.html">Home</a><a href="find-jobs.html">Find Jobs</a><a href="equipment.html">Equipment</a><a href="about.html">About Us</a><a href="contact.html">Contact</a><a href="sms-consent.html">Text Preferences</a></div>
+<a class="tt-button tt-button-gold tt-header-apply" href="https://intelliapp.driverapponline.com/c/truckers4hire?r=UthemesT" rel="noopener noreferrer" target="_blank">Apply Now <span aria-hidden="true" class="tt-arrow">↗</span></a>
+</nav>
+</div>
+</header>
+<main id="main-content"><section class="page-hero"><div class="tt-container"><p class="tt-eyebrow">Public-site diagnostic</p><h1>ZIP Code Testing Tool</h1><p>Check how saved public job data matches a ZIP code.</p></div></section><section class="diagnostic-body"><div class="container test-container"><div class="test-header"><h2>ZIP Code Test Dashboard</h2><p class="test-note">This legacy diagnostic checks ZIP ranges in the site's saved job data. It does not verify current openings, hiring eligibility, distance to a job, or every city and state.</p></div><div class="test-controls"><button id="run-all-tests" class="btn" type="button">Run All Tests</button><button id="run-single-test" class="btn btn-secondary" type="button">Test Single ZIP</button><div class="zip-field"><label for="single-zip">Five-digit ZIP code</label><input type="text" inputmode="numeric" maxlength="5" id="single-zip" placeholder="e.g. 30301" class="form-control"></div></div><div class="progress-container" hidden><h3>Testing Progress</h3><div class="progress-bar"><div class="progress" id="test-progress"></div></div><p id="progress-text" aria-live="polite"></p></div><div id="test-results" aria-live="polite"><p>Choose a single ZIP or run the existing 28 sample ZIP checks.</p></div><div class="diagnostic-actions"><a href="find-jobs.html">Return to Job Search</a><a href="zip-test-results.html">View Saved Results</a></div></div></section></main><footer class="tt-site-footer"><div class="tt-container">
+<div class="tt-footer-grid"><div class="tt-footer-brand"><a class="tt-brand-name" href="index.html">TORNADO TRANSPORT</a><p>Professional trucking carrier.<br/>Driver-focused. Road-ready.</p><p class="tt-footer-partner">Partnered with Bee Exposed Marketing</p><div class="tt-social-links"><a href="https://www.linkedin.com/company/tornado-transport/" rel="noopener noreferrer" target="_blank">LinkedIn ↗</a><a href="https://www.facebook.com/p/Tornado-Transport-100089185253427/" rel="noopener noreferrer" target="_blank">Facebook ↗</a></div></div>
+<div class="tt-footer-column"><h2>Explore Tornado</h2><ul><li><a href="find-jobs.html">Find Jobs</a></li><li><a href="equipment.html">Equipment</a></li><li><a href="about.html">About Us</a></li><li><a href="contact.html">Contact</a></li><li><a href="sms-consent.html">Text Preferences (SMS Consent)</a></li></ul></div>
+<div class="tt-footer-column tt-footer-contact"><h2>Connect With Our Team</h2><a href="tel:+19725738906">(972) 573-8906</a><a href="tel:+14702608355">(470) 260-8355</a><a href="mailto:taylor@tornado-transport.com">taylor@tornado-transport.com</a><small>Existing business voice lines.<br/>SMS is awaiting mobile-network SMS approval.</small></div></div>
+<div class="tt-footer-bottom"><p>© 2026 Tornado Transport LLC. All rights reserved.</p><div class="tt-legal-links"><a href="sms-consent.html">Text Preferences</a><a href="sms-terms.html">SMS Program Terms</a><a href="sms-privacy.html">Recruiting / SMS Privacy</a></div></div>
+<p class="tt-scope-note">Some advertised opportunities may be offered by a partner employer rather than Tornado Transport. Employer, pay, equipment and home-time details are confirmed for each role. Tornado’s SMS consent is optional and is not transferred with an external application.</p>
+</div></footer>
+<script>
+(() => {
+  const toggle = document.querySelector('.tt-menu-toggle');
+  const panel = document.getElementById('tt-site-navigation');
+  function closeMenu() { panel.removeAttribute('data-open'); toggle.setAttribute('aria-expanded', 'false'); toggle.textContent = 'Menu'; }
+  toggle.addEventListener('click', () => { const opening = !panel.hasAttribute('data-open'); panel.toggleAttribute('data-open', opening); toggle.setAttribute('aria-expanded', String(opening)); toggle.textContent = opening ? 'Close' : 'Menu'; });
+  panel.addEventListener('click', event => { if (event.target.closest('a')) closeMenu(); });
+  document.addEventListener('keydown', event => { if (event.key === 'Escape' && panel.hasAttribute('data-open')) { closeMenu(); toggle.focus(); } });
+  window.matchMedia('(min-width:881px)').addEventListener('change', closeMenu);
+})();
 
-        <div class="test-summary" id="test-summary" style="display: none;">
-            <h3>Test Summary</h3>
-            <p id="summary-text"></p>
-        </div>
-
-        <div class="test-results" id="test-results">
-            <p>Click "Run All Tests" to start testing ZIP codes across the USA.</p>
-        </div>
-    </div>
-
-    <footer class="site-footer">
-        <div class="container">
-            <div class="footer-content">
-                <div class="footer-info">
-                    <h3>Tornado Transport</h3>
-                    <p>Professional Trucking Carrier</p>
-                    <div class="social-icons">
-                        <a href="#"><i class="fab fa-facebook-f"></i></a>
-                        <a href="#"><i class="fab fa-linkedin-in"></i></a>
-                        <a href="#"><i class="fab fa-instagram"></i></a>
-                    </div>
-                </div>
-                <div class="footer-links">
-                    <h3>Quick Links</h3>
-                    <ul>
-                        <li><a href="index.html">Home</a></li>
-                        <li><a href="find-jobs.html">Find Jobs</a></li>
-                        <li><a href="equipment.html">Equipment</a></li>
-                        <li><a href="about.html">About Us</a></li>
-                        <li><a href="contact.html">Contact</a></li>
-                    </ul>
-                </div>
-                <div class="footer-links">
-                    <h3>Job Types</h3>
-                    <ul>
-                        <li><a href="#">OTR Positions</a></li>
-                        <li><a href="#">Regional Runs</a></li>
-                        <li><a href="#">Local Positions</a></li>
-                        <li><a href="#">Team Driving</a></li>
-                        <li><a href="#">Recent Graduate Programs</a></li>
-                    </ul>
-                </div>
-                <div class="footer-contact">
-                    <h3>Contact Info</h3>
-                    <p><i class="fas fa-phone"></i> (972) 573-8906</p>
-                    <p><i class="fas fa-envelope"></i> info@tornado-transport.com</p>
-                    <p><i class="fas fa-clock"></i> Mon-Fri: 8:00 AM - 6:00 PM CT</p>
-                    <a href="https://intelliapp.driverapponline.com/c/truckers4hire?r=UthemesT" class="btn btn-primary">Apply Now</a>
-                </div>
-            </div>
-            <div class="footer-bottom">
-                <p>&copy; 2025 Tornado Transport. All rights reserved.</p>
-                <p>Professional Trucking Carrier</p>
-            </div>
-        </div>
-    </footer>
-
-    <script src="js/zip-code-tester.js"></script>
-    <script>
-        document.addEventListener('DOMContentLoaded', function() {
-            const runAllTestsBtn = document.getElementById('run-all-tests');
-            const runSingleTestBtn = document.getElementById('run-single-test');
-            const singleZipInput = document.getElementById('single-zip');
-            const testResults = document.getElementById('test-results');
-            const testSummary = document.getElementById('test-summary');
-            const summaryText = document.getElementById('summary-text');
-            const progressContainer = document.querySelector('.progress-container');
-            const progressBar = document.getElementById('test-progress');
-            const progressText = document.getElementById('progress-text');
-            
-            // Load jobs data
-            let jobsData = null;
-            
-            fetch('data/jobs.json')
-                .then(response => response.json())
-                .then(data => {
-                    jobsData = data;
-                    console.log('Jobs data loaded successfully');
-                })
-                .catch(error => {
-                    console.error('Error loading jobs data:', error);
-                    testResults.innerHTML = '<div class="result-item error"><h3>Error</h3><p>Failed to load jobs data. Please try again later.</p></div>';
-                });
-            
-            // Run all tests
-            runAllTestsBtn.addEventListener('click', function() {
-                if (!jobsData) {
-                    alert('Jobs data is still loading. Please try again in a moment.');
-                    return;
-                }
-                
-                testResults.innerHTML = '<p>Running tests...</p>';
-                testSummary.style.display = 'none';
-                progressContainer.style.display = 'block';
-                progressBar.style.width = '0%';
-                
-                // Get test ZIP codes from the zip-code-tester.js file
-                const results = [];
-                const errors = [];
-                let completed = 0;
-                
-                // Update progress
-                function updateProgress(current, total) {
-                    const percentage = (current / total) * 100;
-                    progressBar.style.width = percentage + '%';
-                    progressText.textContent = `${current} of ${total} tests completed`;
-                }
-                
-                // Run tests sequentially to avoid overwhelming the browser
-                function runTests(index) {
-                    if (index >= testZipCodes.length) {
-                        // All tests completed
-                        displayResults(results, errors);
-                        return;
-                    }
-                    
-                    const testCase = testZipCodes[index];
-                    testZipCode(testCase.zip)
-                        .then(result => {
-                            // Check for carrier names in job titles or descriptions
-                            const hasCarrierNames = result.jobs && result.jobs.some(job => 
-                                job.title.includes("Montgomery") || 
-                                job.title.includes("Transport") ||
-                                job.location.includes("Montgomery") ||
-                                job.location.includes("Transport")
-                            );
-                            
-                            if (hasCarrierNames) {
-                                errors.push({
-                                    zipCode: testCase.zip,
-                                    city: testCase.city,
-                                    state: testCase.state,
-                                    error: "Carrier name found in job results"
-                                });
-                            }
-                            
-                            results.push({
-                                ...testCase,
-                                result
-                            });
-                            
-                            completed++;
-                            updateProgress(completed, testZipCodes.length);
-                            
-                            // Continue with next test
-                            setTimeout(() => runTests(index + 1), 100);
-                        })
-                        .catch(error => {
-                            console.error(`Error in test for ${testCase.zip}:`, error);
-                            errors.push({
-                                zipCode: testCase.zip,
-                                city: testCase.city,
-                                state: testCase.state,
-                                error: error.message
-                            });
-                            
-                            completed++;
-                            updateProgress(completed, testZipCodes.length);
-                            
-                            // Continue with next test
-                            setTimeout(() => runTests(index + 1), 100);
-                        });
-                }
-                
-                // Start running tests
-                runTests(0);
-            });
-            
-            // Run single test
-            runSingleTestBtn.addEventListener('click', function() {
-                const zipCode = singleZipInput.value.trim();
-                
-                if (!jobsData) {
-                    alert('Jobs data is still loading. Please try again in a moment.');
-                    return;
-                }
-                
-                if (!/^\d{5}$/.test(zipCode)) {
-                    alert('Please enter a valid 5-digit ZIP code.');
-                    return;
-                }
-                
-                testResults.innerHTML = '<p>Testing ZIP code ' + zipCode + '...</p>';
-                testSummary.style.display = 'none';
-                progressContainer.style.display = 'none';
-                
-                testZipCode(zipCode)
-                    .then(result => {
-                        // Check for carrier names
-                        const hasCarrierNames = result.jobs && result.jobs.some(job => 
-                            job.title.includes("Montgomery") || 
-                            job.title.includes("Transport") ||
-                            job.location.includes("Montgomery") ||
-                            job.location.includes("Transport")
-                        );
-                        
-                        let html = '<div class="result-item ' + (hasCarrierNames ? 'error' : 'success') + '">';
-                        html += '<h3>Results for ZIP ' + zipCode + '</h3>';
-                        html += '<p>State: ' + result.state + '</p>';
-                        html += '<p>Matching Jobs: ' + result.matchCount + '</p>';
-                        
-                        if (hasCarrierNames) {
-                            html += '<p class="error">ERROR: Carrier names found in job results!</p>';
-                        }
-                        
-                        if (result.jobs && result.jobs.length > 0) {
-                            html += '<h4>Matching Jobs:</h4>';
-                            html += '<ul>';
-                            result.jobs.forEach(job => {
-                                html += '<li>' + job.title + ' - ' + job.location + '</li>';
-                            });
-                            html += '</ul>';
-                        } else {
-                            html += '<p>No matching jobs found for this ZIP code.</p>';
-                        }
-                        
-                        html += '</div>';
-                        testResults.innerHTML = html;
-                    })
-                    .catch(error => {
-                        console.error('Error testing ZIP code:', error);
-                        testResults.innerHTML = '<div class="result-item error"><h3>Error</h3><p>Failed to test ZIP code: ' + error.message + '</p></div>';
-                    });
-            });
-            
-            // Display test results
-            function displayResults(results, errors) {
-                let html = '';
-                
-                // Display summary
-                testSummary.style.display = 'block';
-                summaryText.innerHTML = `
-                    <p>Total tests: ${results.length}</p>
-                    <p>Successful tests: ${results.length - errors.length}</p>
-                    <p>Errors: ${errors.length}</p>
-                `;
-                
-                // Display errors first
-                if (errors.length > 0) {
-                    html += '<h3>Errors Found:</h3>';
-                    errors.forEach(error => {
-                        html += `
-                            <div class="result-item error">
-                                <h4>${error.zipCode} (${error.city}, ${error.state})</h4>
-                                <p>Error: ${error.error}</p>
-                            </div>
-                        `;
-                    });
-                }
-                
-                // Display results by region
-                const regionGroups = {};
-                results.forEach(result => {
-                    if (!regionGroups[result.region]) {
-                        regionGroups[result.region] = [];
-                    }
-                    regionGroups[result.region].push(result);
-                });
-                
-                Object.keys(regionGroups).forEach(region => {
-                    html += `<h3>${region} Region</h3>`;
-                    regionGroups[region].forEach(item => {
-                        const hasError = errors.some(e => e.zipCode === item.zip);
-                        html += `
-                            <div class="result-item ${hasError ? 'error' : 'success'}">
-                                <h4>${item.zip} (${item.city}, ${item.state})</h4>
-                                <p>Matching Jobs: ${item.result.matchCount}</p>
-                            </div>
-                        `;
-                    });
-                });
-                
-                testResults.innerHTML = html;
-                
-                // Save report to localStorage
-                const report = {
-                    timestamp: new Date().toISOString(),
-                    totalTests: results.length,
-                    successfulTests: results.length - errors.length,
-                    errors: errors,
-                    results: results
-                };
-                localStorage.setItem('zipCodeTestReport', JSON.stringify(report));
-            }
-        });
-    </script>
-</body>
-</html>
+</script><script>
+(() => {
+ const list=['31909','30301','35201','32099','37201','29201','28201','60601','48201','55401','53201','46201','43201','10001','19101','02101','21201','15201','75201','70112','33101','23219','90001','97201','98101','80201','85001','89101'];
+ const output=document.getElementById('test-results')||document.getElementById('results');
+ const storageKey='zipCodeTestReport';
+ function render(report){
+  output.replaceChildren();
+  const summary=document.createElement('div');summary.className='summary';
+  summary.textContent='ZIP codes checked: '+report.results.length+'. Saved public-data range matching only; not a current hiring or nationwide coverage verification.';output.append(summary);
+  const scroller=document.createElement('div');scroller.className='table-scroll';scroller.tabIndex=0;scroller.setAttribute('aria-label','ZIP diagnostic result table');
+  const table=document.createElement('table');table.className='results-table';const head=table.createTHead().insertRow();
+  ['ZIP Code','Jobs Matching Saved Ranges','Example Job','Advertised Location'].forEach(text=>{const th=document.createElement('th');th.scope='col';th.textContent=text;head.append(th)});
+  const body=table.createTBody();report.results.forEach(item=>{const row=body.insertRow();[item.zip,item.matchCount,item.firstTitle||'None',item.firstLocation||'Not stated'].forEach(text=>{const cell=row.insertCell();cell.textContent=text})});
+  scroller.append(table);output.append(scroller);
+ }
+ if(document.body.dataset.diagnostic==='saved'){
+  try{const report=JSON.parse(localStorage.getItem(storageKey)||'null');if(report&&Array.isArray(report.results)&&report.results.length&&report.results.every(r=>r.zip&&typeof r.matchCount==='number'))render(report);else output.textContent='No results from this diagnostic version are saved in this browser. Open the ZIP testing tool to run a check.';}catch(_){output.textContent='Saved results are unavailable. Open the ZIP testing tool to run a new check.';}return;
+ }
+ const all=document.getElementById('run-all-tests'),single=document.getElementById('run-single-test'),zip=document.getElementById('single-zip'),progress=document.querySelector('.progress-container'),bar=document.getElementById('test-progress'),text=document.getElementById('progress-text');
+ async function run(zips){
+  all.disabled=true;single.disabled=true;output.textContent='Loading saved public job data…';progress.hidden=false;bar.style.width='0%';
+  try{
+   const controller=new AbortController();const timeout=setTimeout(()=>controller.abort(),15000);let response;try{response=await fetch('data/jobs.json',{signal:controller.signal});}finally{clearTimeout(timeout)}
+   if(!response.ok)throw Error('Saved job data could not be loaded.');const data=await response.json();if(!Array.isArray(data.jobs))throw Error('Saved job data has an unexpected format.');
+   const results=[];
+   for(const value of zips){const n=Number(value);const matching=data.jobs.filter(job=>!job.regionRestriction||!job.regionRestriction.zipRanges||job.regionRestriction.zipRanges.some(range=>n>=range.min&&n<=range.max));results.push({zip:value,matchCount:matching.length,firstTitle:matching[0]?.title||'',firstLocation:matching[0]?.location||''});bar.style.width=(results.length/zips.length*100)+'%';text.textContent=results.length+' of '+zips.length+' checks completed';}
+   const report={timestamp:new Date().toISOString(),matchingScope:'Saved public job ZIP ranges',totalTests:results.length,results};render(report);try{localStorage.setItem(storageKey,JSON.stringify(report))}catch(_){const note=document.createElement('p');note.textContent='Results are shown but browser storage is unavailable.';output.append(note)}
+  }catch(error){output.textContent=error.name==='AbortError'?'Loading timed out. Please try again.':error.message;output.classList.add('diagnostic-error');text.textContent='Check did not complete.';}
+  finally{all.disabled=false;single.disabled=false;}
+ }
+ all.addEventListener('click',()=>run(list));single.addEventListener('click',()=>{if(!/^\d{5}$/.test(zip.value.trim())){zip.setCustomValidity('Enter a five-digit ZIP code.');zip.reportValidity();return;}zip.setCustomValidity('');output.classList.remove('diagnostic-error');run([zip.value.trim()]);});zip.addEventListener('input',()=>zip.setCustomValidity(''));
+})();
+</script></body></html>

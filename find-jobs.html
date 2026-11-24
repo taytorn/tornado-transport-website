@@ -1,175 +1,505 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tornado Transport - Find Jobs</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
-    <link rel="stylesheet" href="css/style.css?v=3">
-    <link rel="stylesheet" href="css/job-cards.css?v=3">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Search CDL-A driving opportunities by ZIP code, job type and experience. Review listed pay, home time and equipment, then confirm role details with Tornado Transport.">
+<meta name="theme-color" content="#192129">
+<title>Find Driving Jobs | Tornado Transport</title>
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+<link rel="stylesheet" href="css/job-cards.css?v=3">
+<style>
+
+.tt-equipment-image{height:auto}
+:root{--ink:#192129;--charcoal:#212529;--gold:#f0b775;--blue:#3a6ea5;--text:#475460;--muted:#64707b;--paper:#f4f5f5;--line:#dce2e6;--white:#fff;--ease:cubic-bezier(.23,1,.32,1)}
+*{box-sizing:border-box}html{scroll-behavior:smooth;scroll-padding-top:100px}body{margin:0;background:var(--white);color:var(--text);font-family:"Segoe UI",Tahoma,Geneva,Verdana,sans-serif;line-height:1.65;-webkit-font-smoothing:antialiased}a{color:inherit;text-decoration:none}button{font:inherit}img{display:block;max-width:100%}h1,h2,h3,p{margin:0}h1,h2,h3{color:var(--ink);line-height:1.12}button,a{-webkit-tap-highlight-color:transparent}a:focus-visible,button:focus-visible,summary:focus-visible{outline:3px solid var(--gold);outline-offset:5px}.tt-container{width:min(1240px,100%);margin-inline:auto;padding-inline:32px}.tt-skip-link{position:fixed;left:16px;top:-80px;z-index:100;background:var(--white);padding:12px;color:var(--ink)}.tt-skip-link:focus{top:12px}.tt-eyebrow{font-size:.75rem;font-weight:750;letter-spacing:.15em;text-transform:uppercase;color:var(--blue);margin-bottom:16px}.tt-text-link{display:inline-flex;align-items:center;gap:12px;color:#285a89;font-weight:700;border-bottom:1px solid #aab9c7;padding-bottom:4px}.tt-text-link:hover{border-color:var(--blue)}.tt-arrow{font-size:1.2em;line-height:1}.tt-button{display:inline-flex;align-items:center;justify-content:center;gap:24px;min-height:50px;padding:13px 24px;border:1px solid transparent;border-radius:4px;font-size:.925rem;font-weight:700;transition:background 160ms var(--ease),transform 160ms var(--ease);cursor:pointer}.tt-button:active{transform:scale(.98)}.tt-button-gold{background:var(--gold);color:var(--ink)}.tt-button-gold:hover{background:#f7c796}.tt-button-outline{border-color:#a5afb7;color:var(--white);background:#19212926}.tt-button-outline:hover{background:#ffffff12}.tt-button-blue{background:var(--blue);color:white}.tt-button-blue:hover{background:#2d5b8b}
+.tt-site-header{position:sticky;top:0;z-index:20;background:var(--ink);color:#e9edf0;border-bottom:1px solid #ffffff12}.tt-header-inner{display:flex;align-items:center;justify-content:space-between;gap:28px;min-height:92px}.tt-brand{display:flex;flex-direction:column;flex-shrink:0;line-height:1.15}.tt-brand-name{color:var(--gold);font-size:1.18rem;font-weight:850;letter-spacing:.035em}.tt-brand-tagline{font-size:.66rem;color:#b9c2ca;letter-spacing:.16em;text-transform:uppercase;margin-top:8px}.tt-nav-panel{display:flex;align-items:center;gap:30px}.tt-nav-links{display:flex;align-items:center;gap:26px}.tt-nav-links a{font-size:.825rem;font-weight:600;white-space:nowrap;padding:10px 0;color:#d4dbe1}.tt-nav-links a:hover,.tt-nav-links a[aria-current="page"]{color:var(--gold)}.tt-header-apply{min-height:43px;padding:10px 18px;gap:12px;font-size:.825rem}.tt-menu-toggle{display:none;background:none;border:1px solid #67727c;border-radius:4px;color:white;padding:9px 14px;font-size:.8rem;cursor:pointer}
+.tt-hero{position:relative;isolation:isolate;background:#1b2935;overflow:hidden;color:white}.tt-hero-image{position:absolute;inset:0;z-index:-2;width:100%;height:100%;object-fit:cover;object-position:75% center}.tt-hero:after{content:"";position:absolute;inset:0;z-index:-1;background:linear-gradient(90deg,rgba(17,25,33,.97) 0%,rgba(17,25,33,.9) 28%,rgba(17,25,33,.55) 53%,rgba(17,25,33,.08) 85%)}.tt-hero-content{padding-block:100px 96px;max-width:670px;min-height:625px}.tt-hero .tt-eyebrow{color:var(--gold);display:flex;align-items:center;gap:12px}.tt-hero .tt-eyebrow:before{content:"";height:2px;width:30px;background:var(--gold)}.tt-hero h1{font-size:clamp(3.2rem,5.8vw,5.3rem);font-weight:800;letter-spacing:-.055em;color:white;line-height:1.04;margin-bottom:25px}.tt-hero h1 span{display:block;color:var(--gold)}.tt-hero-copy{font-size:1.05rem;line-height:1.75;color:#d4dce3;max-width:450px;margin-bottom:30px}.tt-hero-actions{display:flex;flex-wrap:wrap;gap:14px;margin-bottom:24px}.tt-hero-contact{font-size:.825rem;color:#bfc9d2}.tt-hero-contact a{color:white;text-decoration:underline;text-underline-offset:4px}.tt-hero-contact a:hover{color:var(--gold)}
+.tt-intro-strip{background:var(--ink);border-top:1px solid #ffffff16;color:#d6dee4}.tt-strip-inner{display:grid;grid-template-columns:repeat(3,1fr);gap:40px;padding-block:26px}.tt-strip-item{display:flex;align-items:center;gap:18px}.tt-strip-item+.tt-strip-item{border-left:1px solid #ffffff1c;padding-left:36px}.tt-strip-number{color:var(--gold);font-size:.7rem;font-weight:750;letter-spacing:.12em}.tt-strip-item strong{font-size:.825rem;font-weight:600;letter-spacing:.02em}
+.tt-section{padding-block:92px}.tt-section-heading{display:grid;grid-template-columns:1.15fr 1fr;gap:90px;align-items:end;margin-bottom:48px}.tt-section h2{font-size:clamp(2rem,3.4vw,3.25rem);font-weight:750;letter-spacing:-.045em}.tt-section-intro{font-size:.975rem;max-width:420px;line-height:1.8}.tt-benefit-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:32px}.tt-benefit{border-top:2px solid var(--gold);padding:28px 0 8px}.tt-benefit-index{font-size:.7rem;color:var(--blue);letter-spacing:.12em;font-weight:750;display:block;margin-bottom:22px}.tt-benefit h3{font-size:1.25rem;font-weight:700;letter-spacing:-.025em;margin-bottom:12px}.tt-benefit p{font-size:.925rem;line-height:1.8;color:var(--muted)}
+.tt-equipment-section{background:var(--paper)}.tt-equipment-grid{display:grid;grid-template-columns:1.04fr 1fr;gap:78px;align-items:center}.tt-equipment-visual{position:relative}.tt-equipment-image{width:100%;aspect-ratio:4/3;object-fit:cover;border-radius:5px}.tt-image-caption{font-size:.7rem;color:#717c85;margin-top:10px}.tt-equipment-copy h2{margin-bottom:22px}.tt-equipment-copy>p{font-size:.975rem;line-height:1.8;margin-bottom:26px}.tt-equipment-points{margin:0 0 28px;padding:0;list-style:none}.tt-equipment-points li{padding:11px 0;border-bottom:1px solid var(--line);font-size:.875rem;display:flex;align-items:flex-start;gap:14px}.tt-equipment-points li:before{content:"";height:6px;width:6px;flex-shrink:0;background:var(--blue);margin-top:10px}.tt-equipment-points li:first-child{border-top:1px solid var(--line)}
+.tt-career-section{padding-block:80px;background:var(--blue);color:#e8eff6}.tt-career-grid{display:grid;grid-template-columns:1fr auto;gap:56px;align-items:center}.tt-career-section .tt-eyebrow{color:#ffdfb8}.tt-career-section h2{color:white;max-width:620px;font-size:clamp(2rem,3.4vw,3rem);letter-spacing:-.04em;margin-bottom:18px}.tt-career-section p{max-width:610px;font-size:.975rem;color:#dae5ef}.tt-career-actions{display:flex;flex-direction:column;gap:15px;align-items:center}.tt-career-actions .tt-button{min-width:210px}.tt-career-actions .tt-text-link{color:white;border-color:#99b2cd;font-size:.825rem}
+.tt-steps-header{display:flex;justify-content:space-between;gap:30px;align-items:end;margin-bottom:42px}.tt-steps-header h2{max-width:660px}.tt-steps{display:grid;grid-template-columns:repeat(3,1fr);gap:40px}.tt-step{position:relative}.tt-step-number{display:inline-flex;align-items:center;justify-content:center;width:42px;height:42px;border:1px solid #cad3db;color:var(--blue);font-size:.8rem;font-weight:750;border-radius:50%;margin-bottom:23px}.tt-step h3{font-size:1.15rem;margin-bottom:12px}.tt-step p{font-size:.925rem;color:var(--muted);margin-bottom:18px;line-height:1.8}.tt-step .tt-text-link{font-size:.825rem}
+.tt-questions{background:var(--paper)}.tt-faq-layout{display:grid;grid-template-columns:.85fr 1.3fr;gap:100px}.tt-faq-heading h2{margin-bottom:22px}.tt-faq-heading p{font-size:.95rem;margin-bottom:24px;max-width:320px}.tt-faq-list{border-top:1px solid #cdd5dc}.tt-faq-list details{border-bottom:1px solid #cdd5dc;padding:23px 0}.tt-faq-list summary{display:flex;align-items:center;justify-content:space-between;gap:25px;list-style:none;cursor:pointer;color:var(--ink);font-size:.975rem;font-weight:650}.tt-faq-list summary::-webkit-details-marker{display:none}.tt-faq-list summary:after{content:"+";font-weight:400;font-size:1.45rem;color:var(--blue);flex-shrink:0;line-height:1}.tt-faq-list details[open] summary:after{content:"−"}.tt-faq-list details p{padding-top:16px;font-size:.9rem;line-height:1.8;max-width:560px;color:var(--muted)}.tt-faq-list details a{color:#285a89;text-decoration:underline;text-underline-offset:3px}
+.tt-site-footer{background:var(--ink);color:#bcc6ce;padding-block:62px 25px}.tt-footer-grid{display:grid;grid-template-columns:1.5fr .8fr 1fr;gap:76px;padding-bottom:42px}.tt-footer-brand .tt-brand-name{display:block;margin-bottom:18px}.tt-footer-brand p{font-size:.825rem;max-width:300px;line-height:1.8}.tt-footer-partner{color:var(--gold);margin-top:18px!important;font-size:.75rem!important}.tt-footer-column h2{font-size:.75rem;font-weight:700;letter-spacing:.12em;text-transform:uppercase;color:white;margin-bottom:19px}.tt-footer-column ul{list-style:none;margin:0;padding:0}.tt-footer-column li{margin-bottom:9px;font-size:.825rem}.tt-footer-column a:hover{color:var(--gold)}.tt-footer-contact a{display:block;font-size:.85rem;margin-bottom:10px;overflow-wrap:anywhere}.tt-footer-contact small{display:block;font-size:.73rem;color:#9faeb9;margin-top:15px}.tt-social-links{display:flex;gap:20px;margin-top:21px;font-size:.8rem}.tt-footer-bottom{border-top:1px solid #ffffff17;padding-top:23px;display:flex;align-items:flex-start;justify-content:space-between;gap:30px}.tt-footer-bottom p{font-size:.7rem;color:#96a5b1}.tt-legal-links{display:flex;flex-wrap:wrap;gap:18px;font-size:.7rem;justify-content:flex-end}.tt-legal-links a:hover{color:var(--gold)}.tt-scope-note{margin-top:17px;font-size:.7rem!important;color:#8e9ca8!important;max-width:900px;line-height:1.7}
+@media(max-width:1100px){.tt-nav-panel{gap:20px}.tt-nav-links{gap:17px}.tt-nav-links a{font-size:.775rem}.tt-brand-name{font-size:1.06rem}.tt-header-inner{gap:20px}.tt-equipment-grid{gap:50px}.tt-faq-layout{gap:65px}.tt-footer-grid{gap:45px}}
+@media(max-width:880px){.tt-container{padding-inline:24px}.tt-header-inner{min-height:78px;flex-wrap:wrap;padding-block:17px;gap:0}.tt-brand-name{font-size:1.05rem}.tt-brand-tagline{font-size:.6rem;margin-top:7px}.tt-menu-toggle{display:block}.tt-nav-panel{display:none;flex-basis:100%;flex-direction:column;align-items:stretch;padding-top:22px;gap:20px}.tt-nav-panel[data-open]{display:flex}.tt-nav-links{flex-direction:column;align-items:stretch;gap:0}.tt-nav-links a{padding:12px 0;border-bottom:1px solid #ffffff15;font-size:.875rem}.tt-header-apply{align-self:flex-start}.tt-hero-content{padding-block:75px;min-height:540px;max-width:590px}.tt-hero h1{font-size:clamp(3.2rem,7vw,4.5rem)}.tt-hero:after{background:linear-gradient(90deg,rgba(17,25,33,.95),rgba(17,25,33,.82) 45%,rgba(17,25,33,.22))}.tt-hero-copy{max-width:400px}.tt-strip-inner{gap:20px}.tt-strip-item{gap:10px}.tt-strip-item+.tt-strip-item{padding-left:20px}.tt-strip-item strong{font-size:.75rem}.tt-section{padding-block:70px}.tt-section-heading{gap:40px}.tt-equipment-grid{gap:36px}.tt-faq-layout{gap:40px}.tt-footer-grid{gap:30px}.tt-career-grid{gap:40px}}
+@media(max-width:620px){html{scroll-padding-top:86px}.tt-container{padding-inline:22px}.tt-hero-content{min-height:570px;padding-block:64px 58px}.tt-hero h1{font-size:clamp(2.65rem,10.4vw,3.7rem);margin-bottom:24px}.tt-hero-image{object-position:68% center}.tt-hero:after{background:linear-gradient(90deg,rgba(17,25,33,.93),rgba(17,25,33,.78)),linear-gradient(0deg,rgba(17,25,33,.18),transparent)}.tt-hero-copy{font-size:.975rem;line-height:1.8;max-width:360px}.tt-hero-actions{gap:12px}.tt-hero-actions .tt-button{padding-inline:19px;font-size:.875rem;gap:16px;min-height:49px}.tt-hero-contact{font-size:.8rem;max-width:285px;line-height:1.9}.tt-strip-inner{gap:0;padding-block:25px;grid-template-columns:1fr}.tt-strip-item{gap:17px;padding-block:8px}.tt-strip-item+.tt-strip-item{padding-left:0;border-left:0}.tt-strip-item strong{font-size:.8rem}.tt-section{padding-block:58px}.tt-section h2{font-size:2.25rem;line-height:1.14}.tt-section-heading{grid-template-columns:1fr;gap:22px;margin-bottom:34px}.tt-section-intro{font-size:.925rem}.tt-benefit-grid{grid-template-columns:1fr;gap:25px}.tt-benefit{padding-top:22px}.tt-benefit-index{margin-bottom:15px}.tt-benefit h3{font-size:1.2rem}.tt-equipment-grid{grid-template-columns:1fr;gap:35px}.tt-equipment-copy h2{margin-bottom:20px}.tt-equipment-copy>p{font-size:.925rem}.tt-career-section{padding-block:58px}.tt-career-grid{grid-template-columns:1fr;gap:29px}.tt-career-section h2{font-size:2.3rem}.tt-career-section p{font-size:.925rem}.tt-career-actions{align-items:flex-start}.tt-career-actions .tt-button{min-width:190px}.tt-steps-header{align-items:flex-start;flex-direction:column;margin-bottom:34px}.tt-steps{grid-template-columns:1fr;gap:32px}.tt-step{padding-left:62px}.tt-step-number{position:absolute;left:0;top:0;margin-bottom:0}.tt-step h3{padding-top:6px}.tt-step p{margin-bottom:12px}.tt-faq-layout{grid-template-columns:1fr;gap:34px}.tt-faq-heading p{max-width:none}.tt-faq-list details{padding-block:22px}.tt-faq-list summary{font-size:.925rem}.tt-site-footer{padding-block:48px 24px}.tt-footer-grid{grid-template-columns:1fr;gap:32px;padding-bottom:30px}.tt-footer-brand p{max-width:350px}.tt-footer-column h2{margin-bottom:15px}.tt-footer-bottom{flex-direction:column;gap:16px}.tt-legal-links{justify-content:flex-start;gap:12px 20px}.tt-scope-note{font-size:.68rem!important}}
+@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}*,*:before,*:after{transition:none!important;animation:none!important}}
+
+.page-hero{background:#192129;color:#d5dee5;padding:65px 0 60px}.page-hero h1{color:#fff;font-size:clamp(2.3rem,4.5vw,4.2rem);font-weight:800;letter-spacing:-.05em;max-width:850px;margin:0 0 22px}.page-hero p{max-width:730px}.page-hero .tt-eyebrow{color:#f0b775}.page-breadcrumb{font-size:.75rem;color:#aebbc6;margin-bottom:25px}.page-breadcrumb a{color:#f0b775}.page-content{padding:64px 0 76px}.page-content h2{font-size:clamp(1.8rem,3vw,2.65rem);letter-spacing:-.04em;margin-bottom:20px}.page-content h3{font-size:1.2rem;margin-bottom:12px}.page-content p{margin-bottom:16px}.page-panel{background:#f4f5f5;border:1px solid #dce2e6;border-radius:6px;padding:28px}.page-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:34px}.page-note{font-size:.825rem;color:#64707b;margin-top:18px}.page-image{width:100%;height:auto;border-radius:6px}.page-section{margin-top:50px}.d-none{display:none!important}@media(max-width:700px){.page-hero{padding:46px 0}.page-content{padding:45px 0 55px}.page-grid{grid-template-columns:1fr;gap:24px}.page-panel{padding:22px}}
+</style>
+<style>
+/* Find Jobs: scoped search workspace and generated-card skin. */
+.jobs-hero{padding-block:56px 52px;border-bottom:3px solid var(--gold)}
+.jobs-hero .page-breadcrumb{margin-bottom:25px}
+.jobs-hero-layout{display:grid;grid-template-columns:minmax(0,1.75fr) minmax(0,1fr);gap:72px;align-items:end}
+.jobs-hero h1{font-size:clamp(2.7rem,4.7vw,4.1rem);max-width:720px;margin-bottom:21px;line-height:1.06}
+.jobs-hero h1 span{color:var(--gold)}
+.jobs-hero-copy{font-size:1rem;line-height:1.8;max-width:630px!important;color:#d5dee5}
+.jobs-hero-aside{padding:7px 0 7px 28px;border-left:1px solid #ffffff30;min-width:0}
+.jobs-hero-aside strong{display:block;color:#fff;font-size:1rem;margin-bottom:11px}
+.jobs-hero-aside p{color:#bcc9d3;font-size:.875rem;margin-bottom:15px}
+.jobs-hero-aside .tt-text-link{color:var(--gold);font-size:.825rem;border-color:#7e756a}
+.jobs-workspace{background:var(--paper);padding-block:45px 64px}
+.jobs-workspace h2{font-size:clamp(1.65rem,2.5vw,2.2rem);font-weight:750;letter-spacing:-.04em;margin-bottom:11px}
+.jobs-search-layout{display:grid;grid-template-columns:minmax(0,1fr) 292px;gap:26px;align-items:start}
+.job-search-container{background:white;border:1px solid var(--line);border-top:3px solid var(--blue);border-radius:5px;padding:30px;min-width:0}
+.jobs-search-heading{display:flex;gap:18px;align-items:flex-start;margin-bottom:25px}
+.jobs-step-label{display:flex;align-items:center;justify-content:center;width:38px;height:38px;border:1px solid #cfdae3;border-radius:50%;color:#285a89;flex-shrink:0;font-size:.75rem;font-weight:750}
+.jobs-search-heading p{font-size:.875rem;line-height:1.75}
+.jobs-fields{display:grid;grid-template-columns:.82fr 1fr 1.35fr;gap:17px}
+.jobs-fields>div{min-width:0}
+.jobs-fields .form-label{font-size:.8rem;font-weight:700;color:var(--ink);margin-bottom:9px}
+.jobs-fields .form-control,.jobs-fields .form-select{font-family:inherit;font-size:.875rem;min-height:49px;border:1px solid #adb9c4;border-radius:4px;color:var(--ink);box-shadow:none;padding:11px 12px}
+.jobs-fields .form-select{padding-right:30px}
+.jobs-fields .form-control::placeholder{color:#69747e;opacity:1}
+.jobs-fields .form-control:focus,.jobs-fields .form-select:focus{border-color:var(--blue);outline:3px solid #3a6ea52b;outline-offset:2px;box-shadow:none}
+.jobs-field-help{display:block;font-size:.72rem;color:#64707b;margin-top:7px}
+.jobs-search-actions{display:flex;align-items:center;justify-content:space-between;gap:20px;margin-top:24px;padding-top:23px;border-top:1px solid var(--line)}
+.jobs-search-actions p{font-size:.75rem;max-width:285px;line-height:1.7}
+.jobs-search-actions .btn-primary{display:inline-flex;gap:24px;align-items:center;justify-content:center;background:var(--blue);color:#fff;border-color:var(--blue);border-radius:4px;padding:12px 21px;min-height:49px;font-size:.875rem;font-weight:700;flex-shrink:0;box-shadow:none;transform:none;transition:background 160ms ease}
+.jobs-search-actions .btn-primary:hover,.jobs-search-actions .btn-primary:active{background:#2d5b8b;border-color:#2d5b8b;color:#fff;box-shadow:none;transform:none}
+.jobs-search-actions .btn-primary:focus-visible{outline:3px solid var(--gold);outline-offset:4px;box-shadow:none}
+.jobs-guide{padding:7px 0 0 6px;min-width:0}
+.jobs-guide-label{color:#285a89;font-size:.7rem;font-weight:750;letter-spacing:.12em;text-transform:uppercase;margin-bottom:16px}
+.jobs-guide h3{font-size:1.22rem;font-weight:700;letter-spacing:-.025em;margin-bottom:12px;line-height:1.2}
+.jobs-guide p{font-size:.825rem;line-height:1.8}
+.jobs-guide ul{list-style:none;padding:0;margin:18px 0 0;border-top:1px solid #ced7de}
+.jobs-guide li{padding:12px 0;border-bottom:1px solid #ced7de;display:flex;gap:11px;font-size:.775rem;line-height:1.7}
+.jobs-guide li span{font-size:.65rem;color:#285a89;font-weight:750;padding-top:2px;flex-shrink:0}
+.jobs-results-section{margin-top:44px}
+.jobs-results-heading{display:flex;justify-content:space-between;align-items:end;gap:30px;padding-bottom:21px}
+.jobs-results-heading h2{font-size:1.55rem;margin-bottom:9px}
+.jobs-results-heading p{font-size:.8rem;max-width:660px;line-height:1.8}
+.jobs-results-heading .tt-text-link{font-size:.8rem;white-space:nowrap}
+#jobResults{display:block;margin:0!important;padding:0;--bs-gutter-x:0;--bs-gutter-y:0}
+#jobResults>.row{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:24px;margin:0;--bs-gutter-x:0;--bs-gutter-y:0}
+#jobResults>.row>[class*="col-"]{width:auto;max-width:100%;padding:0;margin:0!important;min-width:0}
+.jobs-initial{display:flex;align-items:center;gap:25px;background:white;border:1px dashed #aebbc6;border-radius:5px;padding:30px}
+.jobs-initial-icon{display:flex;justify-content:center;align-items:center;flex-shrink:0;width:48px;height:48px;background:#edf2f6;color:var(--blue);border-radius:50%;font-size:1.1rem}
+.jobs-initial h3{font-size:1.05rem;line-height:1.3;margin-bottom:7px;font-weight:700}
+.jobs-initial p{font-size:.825rem;margin:0;max-width:660px;line-height:1.8}
+#jobResults>.text-center{background:#fff;padding:32px;border:1px solid var(--line);border-radius:5px;font-size:.875rem}
+#jobResults .text-primary{color:var(--blue)!important}
+#jobResults>.alert{font-size:.875rem;line-height:1.8;border-radius:4px;width:100%;margin-bottom:22px;padding:18px 22px}
+#jobResults .alert-info{background:#eaf0f5;border-color:#cad9e6;color:#244d72}
+#jobResults .alert-danger{background:#fff1ee;border-color:#e7c5bd;color:#7d3125}
+#jobResults .job-card{border:1px solid #cfd8df;background:#fff;border-radius:5px;box-shadow:none;overflow:hidden;display:flex;flex-direction:column;transition:border-color 160ms ease;transform:none;min-width:0}
+#jobResults .job-card:hover,#jobResults .job-card:focus-within{border-color:#7892aa;transform:none;box-shadow:none}
+#jobResults .job-card.border-primary{border-color:#a7b9c9!important;border-top:3px solid var(--blue)!important}
+#jobResults .job-card-header{background:var(--ink);border-bottom:none;padding:24px 26px 23px}
+#jobResults .job-card-header h3{font-size:1.35rem;line-height:1.25;font-weight:750;letter-spacing:-.025em;color:white;margin-bottom:10px;overflow-wrap:anywhere}
+#jobResults .job-card-header p{font-size:.8rem;line-height:1.7;color:#cfdae3;overflow-wrap:anywhere}
+#jobResults .job-card-header p:before{content:"";display:inline-block;width:6px;height:6px;background:var(--gold);margin-right:9px;vertical-align:middle;border-radius:50%}
+#jobResults .job-card-body{padding:24px 26px 18px;flex-grow:1;min-width:0;overflow-wrap:anywhere}
+#jobResults .job-feature{display:flex;align-items:flex-start;gap:12px;border-bottom:1px solid #e3e8ec;padding:0 0 13px;margin-bottom:13px;font-size:.86rem;line-height:1.65}
+#jobResults .job-feature i{color:var(--blue);width:18px;margin:5px 0 0;flex-shrink:0;text-align:center;font-size:.85rem}
+#jobResults .job-feature:first-child{font-size:1rem;font-weight:700;color:var(--ink)}
+#jobResults .job-summary{margin-top:24px;font-size:.825rem;line-height:1.8}
+#jobResults .job-section{margin-bottom:19px}
+#jobResults .job-section:last-child{margin-bottom:0}
+#jobResults .job-section h4{color:#244e75;border:0;font-size:.7rem;line-height:1.5;text-transform:uppercase;letter-spacing:.07em;font-weight:750;padding:0;margin-bottom:8px}
+#jobResults .job-section p{margin-bottom:9px;color:var(--text)}
+#jobResults .job-section ul{padding-left:19px;margin:0}
+#jobResults .job-section li{padding-left:2px;margin-bottom:6px}
+#jobResults .job-section li::marker{color:#7892aa}
+#jobResults .job-section strong{color:var(--ink);font-weight:650}
+#jobResults .job-tag{display:inline-block;background:#edf1f4;color:#3c5265;border:1px solid #d8e0e7;font-size:.7rem;line-height:1.6;font-weight:650;padding:5px 9px;margin:4px 6px 0 0;border-radius:3px}
+#jobResults .job-tag.bg-primary{background:#eaf0f5!important;color:#285a89!important;border-color:#c4d5e4}
+#jobResults .job-card-footer{background:white;padding:19px 26px 22px;border-top:1px solid var(--line);margin-top:auto}
+#jobResults .job-card-footer .btn-primary{display:flex;align-items:center;justify-content:space-between;background:var(--gold);color:var(--ink);border-color:var(--gold);min-height:49px;padding:12px 16px;font-size:.875rem;font-weight:700;border-radius:4px;transform:none;box-shadow:none;transition:background 160ms ease}
+#jobResults .job-card-footer .btn-primary:after{content:"↗";font-size:1.1rem;line-height:1}
+#jobResults .job-card-footer .btn-primary:hover,#jobResults .job-card-footer .btn-primary:active{background:#f7c796;border-color:#f7c796;color:var(--ink);transform:none;box-shadow:none}
+#jobResults .job-card-footer .btn-primary:focus-visible{outline:3px solid var(--blue);outline-offset:4px;box-shadow:none}
+#jobResults .job-card-footer:after{content:"Opens the external application";display:block;color:#64707b;font-size:.68rem;text-align:center;margin-top:10px;line-height:1.5}
+.jobs-next{padding-block:56px 64px}
+.jobs-next-layout{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1.8fr);gap:65px;align-items:start}
+.jobs-next h2{font-size:clamp(1.75rem,2.6vw,2.4rem);font-weight:750;letter-spacing:-.04em;line-height:1.15;margin-bottom:17px}
+.jobs-next .tt-eyebrow{margin-bottom:14px}
+.jobs-next-intro{font-size:.9rem;line-height:1.8;margin-bottom:21px}
+.jobs-next .tt-text-link{font-size:.8rem}
+.jobs-review-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:30px}
+.jobs-review-grid article{border-top:2px solid var(--gold);padding-top:21px}
+.jobs-review-grid h3{font-size:1.1rem;line-height:1.3;margin-bottom:12px;font-weight:700}
+.jobs-review-grid p{font-size:.825rem;line-height:1.8;margin-bottom:13px}
+.jobs-review-grid a{color:#285a89;text-decoration:underline;text-underline-offset:3px;overflow-wrap:anywhere}
+.jobs-review-grid small{display:block;font-size:.75rem;line-height:1.8;color:#64707b}
+@media(max-width:1100px){.jobs-hero-layout{gap:42px}.jobs-search-layout{grid-template-columns:minmax(0,1fr) 250px;gap:23px}.job-search-container{padding:25px}.jobs-fields{grid-template-columns:1fr 1fr}.jobs-fields>div:last-child{grid-column:1/-1}.jobs-next-layout{gap:38px}.jobs-search-actions{align-items:flex-start}.jobs-search-actions p{max-width:245px}.jobs-search-actions .btn-primary{gap:16px;padding-inline:16px}}
+@media(max-width:880px){.jobs-hero-layout{grid-template-columns:1fr;gap:27px}.jobs-hero-aside{padding-left:20px;max-width:560px}.jobs-hero h1{max-width:650px}.jobs-search-layout{grid-template-columns:1fr}.jobs-fields{grid-template-columns:.8fr 1fr 1.3fr}.jobs-fields>div:last-child{grid-column:auto}.jobs-guide{display:none}.jobs-next-layout{grid-template-columns:1fr;gap:30px}.jobs-next-intro{max-width:600px}.jobs-results-heading{align-items:start;flex-direction:column;gap:14px}.jobs-search-actions{align-items:center}.jobs-search-actions p{max-width:350px}}
+@media(max-width:620px){.jobs-hero{padding-block:39px 37px}.jobs-hero h1{font-size:clamp(2.4rem,10vw,3.2rem)}.jobs-hero-copy{font-size:.925rem}.jobs-hero-aside p{font-size:.8rem}.jobs-hero-layout{gap:25px}.jobs-workspace{padding-block:29px 42px}.job-search-container{padding:23px 20px}.jobs-search-heading{gap:12px;margin-bottom:23px}.jobs-search-heading h2{font-size:1.65rem}.jobs-search-heading p{font-size:.8rem}.jobs-step-label{width:32px;height:32px}.jobs-fields{grid-template-columns:1fr;gap:19px}.jobs-search-actions{flex-direction:column;align-items:stretch;gap:16px;margin-top:21px;padding-top:20px}.jobs-search-actions p{max-width:none;order:2}.jobs-search-actions .btn-primary{justify-content:space-between}.jobs-results-section{margin-top:32px}.jobs-results-heading{gap:13px;padding-bottom:20px}.jobs-results-heading p{font-size:.775rem}#jobResults>.row{grid-template-columns:1fr;gap:21px}.jobs-initial{padding:22px 20px;gap:15px;align-items:flex-start}.jobs-initial-icon{width:34px;height:34px;font-size:.85rem}.jobs-initial h3{font-size:.975rem}.jobs-initial p{font-size:.775rem}#jobResults>.alert{padding:16px 18px;font-size:.8rem}#jobResults .job-card-header{padding:22px}#jobResults .job-card-header h3{font-size:1.3rem}#jobResults .job-card-body{padding:22px 22px 16px}#jobResults .job-card-footer{padding:18px 22px 20px}.jobs-next{padding-block:42px 47px}.jobs-review-grid{grid-template-columns:1fr;gap:25px}.jobs-next h2{font-size:2rem}}
+@media(max-width:350px){.tt-container{padding-inline:17px}.tt-brand-name{font-size:.91rem}.tt-brand-tagline{font-size:.52rem}.tt-menu-toggle{padding:8px 10px}.job-search-container{padding-inline:17px}.jobs-search-heading{display:block}.jobs-step-label{margin-bottom:13px}.jobs-initial{display:block}.jobs-initial-icon{margin-bottom:13px}}
+</style>
 </head>
 <body>
-    <nav class="navbar navbar-expand-lg navbar-dark">
-        <div class="container">
-            <a class="navbar-brand" href="index.html">
-                TORNADO TRANSPORT
-            </a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav ms-auto">
-                    <li class="nav-item">
-                        <a class="nav-link" href="index.html">Home</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="find-jobs.html">Find Jobs</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="equipment.html">Equipment</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="about.html">About Us</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="contact.html">Contact</a>
-                    </li>
-                </ul>
-                <a href="https://intelliapp.driverapponline.com/c/truckers4hire?r=UthemesT" class="btn btn-primary ms-lg-3" target="_blank">Apply Now</a>
-            </div>
-        </div>
-    </nav>
-
-    <section class="hero-section find-jobs-hero">
-        <div class="container text-center">
-            <h1>Find Your Perfect Driving Job</h1>
-            <p class="lead">Enter your ZIP code to discover driving opportunities in your area.</p>
-        </div>
-    </section>
-
-    <section class="container my-5">
-        <div class="row justify-content-center">
-            <div class="col-md-10">
-                <div class="job-search-container">
-                    <div class="row mb-4">
-                        <div class="col-12 text-center">
-                            <h2 class="section-title">Search Available Jobs</h2>
-                            <div class="divider"></div>
-                            <p>We'll show you positions that match your location and experience.</p>
-                        </div>
-                    </div>
+<a class="tt-skip-link" href="#main-content">Skip to content</a>
+<header class="tt-site-header">
+<div class="tt-container tt-header-inner">
+<a aria-label="Tornado Transport home" class="tt-brand" href="index.html"><span class="tt-brand-name">TORNADO TRANSPORT</span><span class="tt-brand-tagline">Professional Trucking Carrier</span></a>
+<button aria-controls="tt-site-navigation" aria-expanded="false" class="tt-menu-toggle" type="button">Menu</button>
+<nav aria-label="Main navigation" class="tt-nav-panel" id="tt-site-navigation">
+<div class="tt-nav-links"><a href="index.html">Home</a><a href="find-jobs.html" aria-current="page">Find Jobs</a><a href="equipment.html">Equipment</a><a href="about.html">About Us</a><a href="contact.html">Contact</a><a href="sms-consent.html">Text Preferences</a></div>
+<a class="tt-button tt-button-gold tt-header-apply" href="https://intelliapp.driverapponline.com/c/truckers4hire?r=UthemesT" rel="noopener noreferrer" target="_blank">Apply Now <span aria-hidden="true" class="tt-arrow">↗</span></a>
+</nav>
+</div>
+</header>
+<main id="main-content" tabindex="-1">
+<section class="page-hero jobs-hero" aria-labelledby="jobs-title">
+<div class="tt-container">
+<nav class="page-breadcrumb" aria-label="Breadcrumb"><a href="index.html">Home</a> <span aria-hidden="true">/</span> <span>Find Jobs</span></nav>
+<div class="jobs-hero-layout">
+<div>
+<p class="tt-eyebrow">CDL-A Driving Opportunities</p>
+<h1 id="jobs-title">Your next route<br>starts <span>here.</span></h1>
+<p class="jobs-hero-copy">Start with your ZIP code. Explore driving positions by location, job type and experience, with pay, home time and equipment details in one place.</p>
+</div>
+<aside class="jobs-hero-aside" aria-label="Search support">
+<strong>A conversation before a commitment.</strong>
+<p>Have questions about a position or your experience? Talk through the details with our team.</p>
+<a class="tt-text-link" href="tel:+19725738906">Call (972) 573-8906 <span class="tt-arrow" aria-hidden="true">↗</span></a>
+</aside>
+</div>
+</div>
+</section>
+<section class="jobs-workspace" aria-labelledby="search-heading">
+<div class="tt-container">
+<div class="jobs-search-layout">
+<div class="job-search-container">
+<div class="jobs-search-heading"><span class="jobs-step-label" aria-hidden="true">01</span><div><h2 id="search-heading">Find driving jobs.</h2><p id="search-help">Enter your home ZIP code and choose the filters that fit your search.</p></div></div>
+<form id="zipCodeSearchForm" aria-describedby="search-help search-context">
+<div class="jobs-fields">
+<div>
+<label for="zipCodeInput" class="form-label">ZIP code</label>
+<input type="text" class="form-control" id="zipCodeInput" name="postal-code" inputmode="numeric" autocomplete="postal-code" placeholder="e.g. 31909" aria-describedby="zip-help">
+<small class="jobs-field-help" id="zip-help">Use a five-digit U.S. ZIP code.</small>
+</div>
+<div>
+<label for="jobTypeSelect" class="form-label">Job type</label>
+<select class="form-select" id="jobTypeSelect" name="job-type">
+<option value="all">All Jobs</option>
+<option value="otr">OTR</option>
+<option value="regional">Regional</option>
+<option value="dedicated">Dedicated</option>
+<option value="team">Team</option>
+</select>
+</div>
+<div>
+<label for="experienceSelect" class="form-label">Experience</label>
+<select class="form-select" id="experienceSelect" name="experience">
+<option value="all">All Experience</option>
+<option value="experienced">Experienced (12+ months)</option>
+<option value="recent">Recent Graduate</option>
+</select>
+</div>
+</div>
+<div class="jobs-search-actions"><p id="search-context">Searches the listings on this site. Availability and role-specific details are confirmed with the team before placement.</p><button type="submit" class="btn btn-primary btn-lg">Search Jobs <span class="tt-arrow" aria-hidden="true">→</span></button></div>
+</form>
+</div>
+<aside class="jobs-guide" aria-labelledby="guide-heading">
+<p class="jobs-guide-label">Make the search your own</p>
+<h3 id="guide-heading">The details that matter.</h3>
+<p>Compare the position, not just the title. Start broad, then narrow your options.</p>
+<ul><li><span aria-hidden="true">01</span>Check the listed location and running area.</li><li><span aria-hidden="true">02</span>Review pay structure and home-time schedules.</li><li><span aria-hidden="true">03</span>Confirm qualifications with the team.</li></ul>
+</aside>
+</div>
+<section class="jobs-results-section" aria-labelledby="results-heading">
+<div class="jobs-results-heading"><div><h2 id="results-heading">Job search results</h2><p>Listed details are a starting point, not an offer or guarantee of eligibility. Confirm pay, home time, equipment and the hiring employer for the role you’re considering.</p></div><a class="tt-text-link" href="job-map.html">Explore the job map <span class="tt-arrow" aria-hidden="true">→</span></a></div>
+<div id="jobResults" class="row mt-5" aria-live="polite" aria-relevant="additions text">
+<div class="jobs-initial"><span class="jobs-initial-icon" aria-hidden="true"><i class="fas fa-search"></i></span><div><h3>Start with your location.</h3><p>Your results will appear here after a search. Try All Jobs and All Experience first, then adjust the filters to compare your options.</p></div></div>
+</div>
+<noscript><div class="alert alert-info mt-3">This search needs JavaScript to load job listings. You can still <a href="contact.html">contact our team</a> or call <a href="tel:+19725738906">(972) 573-8906</a> for help.</div></noscript>
+</section>
+</div>
+</section>
+<section class="jobs-next" aria-labelledby="next-heading">
+<div class="tt-container jobs-next-layout">
+<div><p class="tt-eyebrow">Before Your Next Move</p><h2 id="next-heading">Review the role.<br>Know the next step.</h2><p class="jobs-next-intro">A ZIP-code match helps you explore. A conversation helps you confirm whether a position fits your goals and qualifications.</p><a class="tt-text-link" href="contact.html">Talk with our team <span class="tt-arrow" aria-hidden="true">→</span></a></div>
+<div class="jobs-review-grid">
+<article><h3>Ask about the specifics.</h3><p>Discuss the pay calculation, expected schedule, assigned equipment and role requirements before making your decision.</p><p>Email <a href="mailto:taylor@tornado-transport.com">taylor@tornado-transport.com</a> with your questions.</p></article>
+<article><h3>Apply when you’re ready.</h3><p>Apply Now opens the Bee Exposed Marketing application hosted by Tenstreet/IntelliApp. It is a separate site with its own notices; your application may be forwarded to the relevant hiring employer.</p><small>Applying or calling does not require SMS permission. Text preferences are separate and optional.</small></article>
+</div>
+</div>
+</section>
+</main>
+<footer class="tt-site-footer"><div class="tt-container">
+<div class="tt-footer-grid"><div class="tt-footer-brand"><a class="tt-brand-name" href="index.html">TORNADO TRANSPORT</a><p>Professional trucking carrier.<br/>Driver-focused. Road-ready.</p><p class="tt-footer-partner">Partnered with Bee Exposed Marketing</p><div class="tt-social-links"><a href="https://www.linkedin.com/company/tornado-transport/" rel="noopener noreferrer" target="_blank">LinkedIn ↗</a><a href="https://www.facebook.com/p/Tornado-Transport-100089185253427/" rel="noopener noreferrer" target="_blank">Facebook ↗</a></div></div>
+<div class="tt-footer-column"><h2>Explore Tornado</h2><ul><li><a href="find-jobs.html">Find Jobs</a></li><li><a href="equipment.html">Equipment</a></li><li><a href="about.html">About Us</a></li><li><a href="contact.html">Contact</a></li><li><a href="sms-consent.html">Text Preferences (SMS Consent)</a></li></ul></div>
+<div class="tt-footer-column tt-footer-contact"><h2>Connect With Our Team</h2><a href="tel:+19725738906">(972) 573-8906</a><a href="tel:+14702608355">(470) 260-8355</a><a href="mailto:taylor@tornado-transport.com">taylor@tornado-transport.com</a><small>Existing business voice lines.<br/>SMS is awaiting mobile-network SMS approval.</small></div></div>
+<div class="tt-footer-bottom"><p>© 2026 Tornado Transport LLC. All rights reserved.</p><div class="tt-legal-links"><a href="sms-consent.html">Text Preferences</a><a href="sms-terms.html">SMS Program Terms</a><a href="sms-privacy.html">Recruiting / SMS Privacy</a></div></div>
+<p class="tt-scope-note">Some advertised opportunities may be offered by a partner employer rather than Tornado Transport. Employer, pay, equipment and home-time details are confirmed for each role. Tornado’s SMS consent is optional and is not transferred with an external application.</p>
+</div></footer>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+<script>
+// Integrated job search script for Tornado Transport jobs
+document.addEventListener('DOMContentLoaded', function() {
+    const searchForm = document.getElementById('zipCodeSearchForm');
+    const jobResults = document.getElementById('jobResults');
+    
+    if (searchForm) {
+        searchForm.addEventListener('submit', function(e) {
+            e.preventDefault();
+            
+            const zipCode = document.getElementById('zipCodeInput').value.trim();
+            const jobType = document.getElementById('jobTypeSelect').value;
+            const experience = document.getElementById('experienceSelect').value;
+            
+            // Validate ZIP code
+            if (!/^\d{5}$/.test(zipCode)) {
+                alert('Please enter a valid 5-digit ZIP code.');
+                return;
+            }
+            
+            // Show loading indicator
+            jobResults.innerHTML = '<div class="text-center"><div class="spinner-border text-primary" role="status"><span class="visually-hidden">Loading...</span></div><p class="mt-2">Searching for jobs in your area...</p></div>';
+            
+            // Fetch jobs data from all job databases
+            Promise.all([
+                fetch('data/job_listings.json').then(response => response.json())
+            ])
+            .then(([jobData]) => {
+                // Use all jobs from the unified data file
+                const allJobs = jobData.jobs;
+                
+                // Find matching jobs
+                const matchingJobs = findMatchingJobs(allJobs, zipCode, jobType, experience);
+                displayJobs(matchingJobs, zipCode);
+            })
+            .catch(error => {
+                console.error('Error fetching jobs:', error);
+                jobResults.innerHTML = '<div class="alert alert-danger">Error loading jobs. Please try again later.</div>';
+            });
+        });
+    }
+    
+    // Function to find matching jobs based on ZIP code and filters
+    function findMatchingJobs(jobs, zipCode, jobType, experience) {
+        const zipNum = parseInt(zipCode, 10);
+        const state = getStateFromZip(zipCode);
+        
+        return jobs.filter(job => {
+            // Filter by job type if specified
+            if (jobType !== 'all') {
+                const jobTitle = job.title.toLowerCase();
+                if (jobType === 'otr' && !jobTitle.includes('otr')) return false;
+                if (jobType === 'regional' && !jobTitle.includes('regional')) return false;
+                if (jobType === 'local' && !jobTitle.includes('local') && !jobTitle.includes('salary')) return false;
+                if (jobType === 'team' && !jobTitle.includes('team')) return false;
+                if (jobType === 'dedicated' && !jobTitle.includes('route')) return false;
+                if (jobType === 'flatbed' && !jobTitle.includes('flatbed')) return false;
+            }
+            
+            // Filter by experience if specified
+            if (experience !== 'all') {
+                if (experience === 'experienced' && !job.experience.includes('12+')) return false;
+                if (experience === 'recent' && job.experience.includes('12+')) return false;
+            }
+            
+            // Check region restrictions
+            if (job.regionRestriction) {
+                // Check states
+                if (job.regionRestriction.states && job.regionRestriction.states.length > 0) {
+                    if (!job.regionRestriction.states.includes(state)) {
+                        return false;
+                    }
+                }
+                
+                // Check excluded states
+                if (job.regionRestriction.excludedStates && job.regionRestriction.excludedStates.length > 0) {
+                    if (job.regionRestriction.excludedStates.includes(state)) {
+                        return false;
+                    }
+                }
+                
+                // Check ZIP ranges
+                if (job.regionRestriction.zipRanges && job.regionRestriction.zipRanges.length > 0) {
+                    const inZipRange = job.regionRestriction.zipRanges.some(range => 
+                        zipNum >= range.min && zipNum <= range.max
+                    );
                     
-                    <form id="zipCodeSearchForm">
-                        <div class="row mb-4">
-                            <div class="col-md-4">
-                                <label for="zipCodeInput" class="form-label">ZIP Code</label>
-                                <input type="text" class="form-control" id="zipCodeInput" placeholder="Enter ZIP code">
+                    // Special handling for specific ZIP codes
+                    if (zipCode === '31909' || zipCode === '30213') {
+                        // Ensure Georgia OTR Driver appears for these ZIP codes
+                        if (job.title === "Georgia OTR Driver") return true;
+                        if (job.title === "Four-State Southeast Route") return true;
+                        if (job.title === "Middle Tennessee Regional Driver") return true;
+                        if (job.title === "National OTR Driver") return true;
+                        if (job.title === "Coast to Coast Team") return true;
+                    }
+                    
+                    // Special handling for California ZIP codes
+                    if (['90001', '90028', '90036', '90045', '90049', '90069', '90210', '90291', '90292', '91335', '91401'].includes(zipCode)) {
+                        if (job.title === "Southern California Regional") return true;
+                        if (job.title === "California to Phoenix Route") return true;
+                        if (job.title === "California-Nevada-Arizona Route") return true;
+                    }
+                    
+                    // Special handling for Chicago ZIP code
+                    if (zipCode === '60614') {
+                        if (job.title === "Chicago to Minneapolis Route") return true;
+                        if (job.title === "Chicago to St. Louis to Kansas City") return true;
+                        if (job.title === "Chicago to Omaha Route") return true;
+                        if (job.title === "Chicago to North Dakota Route") return true;
+                    }
+                    
+                    if (!inZipRange) {
+                        return false;
+                    }
+                }
+            }
+            
+            return true;
+        });
+    }
+    
+    // Function to display jobs
+    function displayJobs(jobs, zipCode) {
+        if (jobs.length === 0) {
+            jobResults.innerHTML = '<div class="alert alert-info">No jobs found for ZIP code ' + zipCode + '. Please try another ZIP code or call us for assistance.</div>';
+            return;
+        }
+        
+        // Display eligibility message
+        let eligibilityHtml = `
+            <div class="alert alert-info mb-4">
+                <i class="fas fa-info-circle me-2"></i>
+                These listings match your ZIP code and selected filters. A search match does not confirm eligibility; review the listed experience requirements and confirm availability with our team.
+            </div>
+        `;
+        
+        // Sort jobs: featured first, then by title
+        jobs.sort((a, b) => {
+            if (a.featured && !b.featured) return -1;
+            if (!a.featured && b.featured) return 1;
+            return a.title.localeCompare(b.title);
+        });
+        
+        // Generate HTML for job cards
+        let html = eligibilityHtml + '<div class="row">';
+        jobs.forEach(job => {
+            html += `
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <div class="job-card h-100 ${job.featured ? 'border-primary' : ''}">
+                        <div class="job-card-header">
+                            <h3>${job.title}</h3>
+                            <p class="mb-0">${job.location}</p>
+                        </div>
+                        <div class="job-card-body">
+                            <div class="job-feature">
+                                <i class="fas fa-money-bill-wave"></i>
+                                <span>${job.pay}</span>
                             </div>
-                            <div class="col-md-4">
-                                <label for="jobTypeSelect" class="form-label">Job Type</label>
-                                <select class="form-select" id="jobTypeSelect">
-                                    <option value="all">All Jobs</option>
-                                    <option value="otr">OTR</option>
-                                    <option value="regional">Regional</option>
-                                    <option value="dedicated">Dedicated</option>
-                                    <option value="team">Team</option>
-                                </select>
+                            <div class="job-feature">
+                                <i class="fas fa-home"></i>
+                                <span>${job.homeTime}</span>
                             </div>
-                            <div class="col-md-4">
-                                <label for="experienceSelect" class="form-label">Experience</label>
-                                <select class="form-select" id="experienceSelect">
-                                    <option value="all">All Experience</option>
-                                    <option value="experienced">Experienced (12+ months)</option>
-                                    <option value="recent">Recent Graduate</option>
-                                </select>
+                            <div class="job-feature">
+                                <i class="fas fa-truck"></i>
+                                <span>${job.equipment}</span>
+                            </div>
+                            
+                            <div class="mt-3">${job.description}</div>
+                            
+                            <div class="mt-3 mb-3">
+                                <span class="job-tag">Experience: ${job.experience}</span>
+                                ${job.featured ? '<span class="job-tag bg-primary text-white">Featured</span>' : ''}
                             </div>
                         </div>
-                        <div class="text-center">
-                            <button type="submit" class="btn btn-primary btn-lg">Search Jobs</button>
+                        <div class="job-card-footer">
+                            <a href="${job.applyUrl}" class="btn btn-primary btn-lg w-100" target="_blank" rel="noopener noreferrer">Apply Now</a>
                         </div>
-                    </form>
+                    </div>
                 </div>
-            </div>
-        </div>
+            `;
+        });
+        html += '</div>';
         
-        <div id="jobResults" class="row mt-5">
-            <!-- Job results will be displayed here -->
-        </div>
-    </section>
-
-    <section class="container my-5">
-        <div class="row mb-4">
-            <div class="col-12 text-center">
-                <h2 class="section-title">Why Drive With Us</h2>
-                <div class="divider"></div>
-            </div>
-        </div>
+        jobResults.innerHTML = html;
+    }
+    
+    // Helper function to get state from ZIP code
+    function getStateFromZip(zip) {
+        const zipInt = parseInt(zip, 10);
         
-        <div class="row">
-            <div class="col-md-4 mb-4">
-                <div class="feature-card">
-                    <div class="icon">
-                        <i class="fas fa-dollar-sign"></i>
-                    </div>
-                    <h3>Competitive Pay</h3>
-                    <p>Our drivers earn between $55,000-$90,000 annually depending on experience and position type.</p>
-                </div>
-            </div>
-            
-            <div class="col-md-4 mb-4">
-                <div class="feature-card">
-                    <div class="icon">
-                        <i class="fas fa-home"></i>
-                    </div>
-                    <h3>Home Time Options</h3>
-                    <p>Choose from positions with daily, weekly, or bi-weekly home time to match your lifestyle.</p>
-                </div>
-            </div>
-            
-            <div class="col-md-4 mb-4">
-                <div class="feature-card">
-                    <div class="icon">
-                        <i class="fas fa-heartbeat"></i>
-                    </div>
-                    <h3>Comprehensive Benefits</h3>
-                    <p>Medical, dental, vision, 401(k), paid time off, and more available with our carriers.</p>
-                </div>
-            </div>
-        </div>
-    </section>
+        // ZIP code ranges by state
+        const zipRanges = {
+            'AL': [{min: 35000, max: 36999}],
+            'AK': [{min: 99500, max: 99999}],
+            'AZ': [{min: 85000, max: 86599}],
+            'AR': [{min: 71600, max: 72999}],
+            'CA': [{min: 90000, max: 96699}],
+            'CO': [{min: 80000, max: 81699}],
+            'CT': [{min: 6000, max: 6999}],
+            'DE': [{min: 19700, max: 19999}],
+            'DC': [{min: 20000, max: 20099}, {min: 20200, max: 20599}, {min: 56900, max: 56999}],
+            'FL': [{min: 32000, max: 34999}],
+            'GA': [{min: 30000, max: 31999}, {min: 39800, max: 39999}],
+            'HI': [{min: 96700, max: 96899}],
+            'ID': [{min: 83200, max: 83899}],
+            'IL': [{min: 60000, max: 62999}],
+            'IN': [{min: 46000, max: 47999}],
+            'IA': [{min: 50000, max: 52899}],
+            'KS': [{min: 66000, max: 67999}],
+            'KY': [{min: 40000, max: 42999}],
+            'LA': [{min: 70000, max: 71599}],
+            'ME': [{min: 3900, max: 4999}],
+            'MD': [{min: 20600, max: 21999}],
+            'MA': [{min: 1000, max: 2799}, {min: 5500, max: 5599}],
+            'MI': [{min: 48000, max: 49999}],
+            'MN': [{min: 55000, max: 56799}],
+            'MS': [{min: 38600, max: 39999}, {min: 71000, max: 71599}],
+            'MO': [{min: 63000, max: 65899}],
+            'MT': [{min: 59000, max: 59999}],
+            'NE': [{min: 68000, max: 69399}],
+            'NV': [{min: 88900, max: 89899}],
+            'NH': [{min: 3000, max: 3899}],
+            'NJ': [{min: 7000, max: 8999}],
+            'NM': [{min: 87000, max: 88499}],
+            'NY': [{min: 10000, max: 14999}, {min: 501, max: 599}, {min: 6390, max: 6390}],
+            'NC': [{min: 27000, max: 28999}],
+            'ND': [{min: 58000, max: 58899}],
+            'OH': [{min: 43000, max: 45999}],
+            'OK': [{min: 73000, max: 74999}],
+            'OR': [{min: 97000, max: 97999}],
+            'PA': [{min: 15000, max: 19699}],
+            'RI': [{min: 2800, max: 2999}],
+            'SC': [{min: 29000, max: 29999}],
+            'SD': [{min: 57000, max: 57799}],
+            'TN': [{min: 37000, max: 38599}],
+            'TX': [{min: 75000, max: 79999}, {min: 88500, max: 88599}],
+            'UT': [{min: 84000, max: 84799}],
+            'VT': [{min: 5000, max: 5999}],
+            'VA': [{min: 22000, max: 24699}],
+            'WA': [{min: 98000, max: 99499}],
+            'WV': [{min: 24700, max: 26899}],
+            'WI': [{min: 53000, max: 54999}],
+            'WY': [{min: 82000, max: 83199}]
+        };
+        
+        for (const [state, ranges] of Object.entries(zipRanges)) {
+            for (const range of ranges) {
+                if (zipInt >= range.min && zipInt <= range.max) {
+                    return state;
+                }
+            }
+        }
+        
+        return '';
+    }
+});
 
-    <footer class="bg-dark text-white py-4">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-6">
-                    <div class="d-flex align-items-center mb-3">
-                        <h5 class="mb-0">TORNADO TRANSPORT</h5>
-                    </div>
-                    <p>Connecting professional drivers with premier carriers nationwide.</p>
-                    <div class="social-icons">
-                        <a href="https://www.linkedin.com/company/tornado-transport/" target="_blank" title="LinkedIn"><i class="fab fa-linkedin"></i></a>
-                        <a href="https://www.facebook.com/p/Tornado-Transport-100089185253427/" target="_blank" title="Facebook"><i class="fab fa-facebook-square"></i></a>
-                    </div>
-                </div>
-                <div class="col-md-3">
-                    <h5>Quick Links</h5>
-                    <ul class="list-unstyled">
-                        <li><a href="index.html" class="text-white">Home</a></li>
-                        <li><a href="about.html" class="text-white">About Us</a></li>
-                        <li><a href="equipment.html" class="text-white">Equipment</a></li>
-                        <li><a href="find-jobs.html" class="text-white">Find Jobs</a></li>
-                        <li><a href="contact.html" class="text-white">Contact</a></li>
-                    </ul>
-                </div>
-                <div class="col-md-3 text-md-end">
-                    <p>&copy; 2025 Tornado Transport. All rights reserved.</p>
-                </div>
-            </div>
-        </div>
-    </footer>
+</script>
+<script>
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
-    <script src="js/integrated-job-search.js"></script>
+(() => {
+  const toggle = document.querySelector('.tt-menu-toggle');
+  const panel = document.getElementById('tt-site-navigation');
+  function closeMenu() { panel.removeAttribute('data-open'); toggle.setAttribute('aria-expanded', 'false'); toggle.textContent = 'Menu'; }
+  toggle.addEventListener('click', () => { const opening = !panel.hasAttribute('data-open'); panel.toggleAttribute('data-open', opening); toggle.setAttribute('aria-expanded', String(opening)); toggle.textContent = opening ? 'Close' : 'Menu'; });
+  panel.addEventListener('click', event => { if (event.target.closest('a')) closeMenu(); });
+  document.addEventListener('keydown', event => { if (event.key === 'Escape' && panel.hasAttribute('data-open')) { closeMenu(); toggle.focus(); } });
+  window.matchMedia('(min-width:881px)').addEventListener('change', closeMenu);
+})();
+</script>
 </body>
 </html>
